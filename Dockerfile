@@ -1,55 +1,55 @@
-# Definition of Submission container
+# parameters
+ARG REPO_NAME="mooc"
 
-ARG ARCH=amd64
+# ==================================================>
+# ==> Do not change this code
+ARG ARCH=arm32v7
 ARG MAJOR=daffy
 ARG BASE_TAG=${MAJOR}-${ARCH}
+ARG BASE_IMAGE=dt-core 
+#dt-ros-commons
 
-# We start from the ROS Template
-FROM duckietown/challenge-aido_lf-template-ros:${BASE_TAG}
+# define base image
+FROM duckietown/${BASE_IMAGE}:${BASE_TAG}
 
-RUN rm -r /workspace; mkdir /workspace
-WORKDIR /workspace
+# define repository path
+ARG REPO_NAME
+ARG REPO_PATH="${CATKIN_WS_DIR}/src/dt-core"
+#${REPO_NAME}"
+WORKDIR "${REPO_PATH}"
 
-COPY setup/requirementssub.* ./
-RUN pip install -r requirementssub.txt
+# create repo directory
+RUN mkdir -p "${REPO_PATH}"
 
-# let's copy all our solution files to our workspace
-# if you have more file use the COPY command to move them to the workspace
-COPY solution.py ./
+# copy dependencies files only
+COPY ./dependencies-apt.txt "${REPO_PATH}/"
+COPY ./dependencies-py.txt "${REPO_PATH}/"
+# COPY ./exercise.ipynb "${REPO_PATH}/packages/mooc/"
 
-# For ROS Agent - Additional Files
-COPY rosagent.py ./
-COPY lf_slim.launch ./
+# install apt dependencies
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends \
+    $(awk -F: '/^[^#]/ { print $1 }' dependencies-apt.txt | uniq) \
+  && rm -rf /var/lib/apt/lists/*
 
-## Uncomment these to build your own catkin_ws
-#### START CUSTOM CATKIN_WS ####
+# install python dependencies
+RUN pip install -r ${REPO_PATH}/dependencies-py.txt
 
-# RUN /bin/bash -c "mkdir -p custom_ws/src/"
+# copy the source code
+ADD . "${REPO_PATH}/"
 
-## Copy or init your packages in here
-# COPY dt_dependent_node custom_ws/src/dt_dependent_node
-# RUN chmod +x custom_ws/src/dt_dependent_node/dt_dependent_node.py
+# build packages
+RUN . /opt/ros/${ROS_DISTRO}/setup.sh && \
+  catkin build \
+    --workspace ${CATKIN_WS_DIR}/
 
-## Do not change the below line! This ensures that your workspace is overlayed on top of the Duckietown stack!
-## MAKE sure this line is present in the build: This workspace overlays: /code/catkin_ws/devel;/opt/ros/kinetic
-# RUN /bin/bash -c "source /code/catkin_ws/devel/setup.bash && catkin_init_workspace && cd ../.."
-# RUN /bin/bash -c "source /code/catkin_ws/devel/setup.bash && catkin_make -j -C custom_ws/"
-# RUN echo "source custom_ws/devel/setup.bash" >> ~/.bashrc
+# define launch script
+ENV LAUNCHFILE "${REPO_PATH}/launch.sh"
 
-#### END CUSTOM CATKIN_WS ####
+# define command
+CMD ["bash", "-c", "${LAUNCHFILE}"]
+# <== Do not change this code
+# <==================================================
 
-# DO NOT MODIFY: your submission won't run if you do
-ENV HOSTNAME=default
-ENV VEHICLE_NAME=default
-ENV ROS_HOSTNAME=localhost
-ENV ROS_MASTER_URI=http://localhost:11311
-
-ENV DUCKIEFLEET_ROOT /data/config
-
-RUN mkdir -p /data/config
-RUN git clone https://github.com/duckietown/duckiefleet.git /data/config
-
-# let's see what you've got there...
-CMD ["python", "solution.py"]
-## Uncomment this and comment out the above command to run your own packages.
-# CMD ["/bin/bash", "-c", "source custom_ws/devel/setup.bash && python solution.py"]
+# maintainer
+LABEL maintainer="<YOUR_FULL_NAME> (<YOUR_EMAIL_ADDRESS>)"
