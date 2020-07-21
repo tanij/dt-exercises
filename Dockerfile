@@ -1,55 +1,51 @@
 # Definition of Submission container
 
-ARG ARCH=amd64
-ARG MAJOR=daffy
-ARG BASE_TAG=${MAJOR}-${ARCH}
+# We start from tensorflow-gpu image
+FROM tensorflow/tensorflow:2.1.0-gpu-py3
 
-# We start from the ROS Template
-FROM duckietown/challenge-aido_lf-template-ros:${BASE_TAG}
+# this line prevents interaction with tzdata package
+ENV DEBIAN_FRONTEND=noninteractive
+# from https://github.com/tensorflow/tensorflow/issues/10776
+# this may not be needed if you use pytorch image
+RUN cd /usr/local/cuda/lib64 \
+    && mv stubs/libcuda.so ./ \
+    && ln -s libcuda.so libcuda.so.1 \
+    && ldconfig
 
-RUN rm -r /workspace; mkdir /workspace
-WORKDIR /workspace
+# DO NOT MODIFY: your submission won't run if you do
+RUN apt-get update -y && apt-get install -y --no-install-recommends \
+         gcc \
+         libsm6\
+         libxext6\
+         libxrender-dev\
+         libc-dev\
+         git \
+         bzip2 \
+         python-tk && \
+     rm -rf /var/lib/apt/lists/*
 
-COPY setup/requirementssub.* ./
-RUN pip install -r requirementssub.txt
+# let's create our workspace, we don't want to clutter the container
+RUN mkdir /workspace
+
+# here, we install the requirements, some requirements come by default
+# you can add more if you need to in requirements.txt
+COPY requirements.txt .
+RUN pip3 install --upgrade pip
+RUN pip3 install -r requirements.txt
+
+RUN pip list
 
 # let's copy all our solution files to our workspace
 # if you have more file use the COPY command to move them to the workspace
-COPY setup/solution.py ./
-
-# For ROS Agent - Additional Files
-COPY setup/rosagent.py ./
-COPY lf_slim.launch ./
-
-## Uncomment these to build your own catkin_ws
-#### START CUSTOM CATKIN_WS ####
-
-# RUN /bin/bash -c "mkdir -p custom_ws/src/"
-
-## Copy or init your packages in here
-# COPY dt_dependent_node custom_ws/src/dt_dependent_node
-# RUN chmod +x custom_ws/src/dt_dependent_node/dt_dependent_node.py
-
-## Do not change the below line! This ensures that your workspace is overlayed on top of the Duckietown stack!
-## MAKE sure this line is present in the build: This workspace overlays: /code/catkin_ws/devel;/opt/ros/kinetic
-# RUN /bin/bash -c "source /code/catkin_ws/devel/setup.bash && catkin_init_workspace && cd ../.."
-# RUN /bin/bash -c "source /code/catkin_ws/devel/setup.bash && catkin_make -j -C custom_ws/"
-# RUN echo "source custom_ws/devel/setup.bash" >> ~/.bashrc
-
-#### END CUSTOM CATKIN_WS ####
+COPY solution.py /workspace
+#COPY BestAIDO3FrankNet.h5 /workspace
+COPY FrankNet.h5 /workspace
+COPY helperFncs.py /workspace
+# we make the workspace our working directory
+WORKDIR /workspace
 
 # DO NOT MODIFY: your submission won't run if you do
-ENV HOSTNAME=default
-ENV VEHICLE_NAME=default
-ENV ROS_HOSTNAME=localhost
-ENV ROS_MASTER_URI=http://localhost:11311
-
-ENV DUCKIEFLEET_ROOT /data/config
-
-RUN mkdir -p /data/config
-RUN git clone https://github.com/duckietown/duckiefleet.git /data/config
+ENV DUCKIETOWN_SERVER=evaluator
 
 # let's see what you've got there...
-CMD ["python", "solution.py"]
-## Uncomment this and comment out the above command to run your own packages.
-# CMD ["/bin/bash", "-c", "source custom_ws/devel/setup.bash && python solution.py"]
+CMD python3 solution.py

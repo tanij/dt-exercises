@@ -2,44 +2,19 @@ version: '3'
 
 services:
 
-    ros_core:
-      image: osrf/ros:melodic-desktop-full-bionic
-      # Use the first command to see roscore log in console
-      # command: stdbuf -o L roscore
-      command: roscore
-      environment:
-        - "ROS_MASTER_URI=http://ros_core:11311"
+    agent:
+      image: duckietown/dt-notebook:daffy
+      build:
+          context: .
+          dockerfile: setup/Dockerfile
+      working_dir: /duckietown
       networks: &networks
         - duckietown-docker-net
       env_file: &env_file
         - setup/parameters.env
-      expose:
-        - "11311"
-      ports:
-        - "11311:11311"
-
-    lanefollow:
-      image: duckietown/dt-notebook:daffy
-      build:
-          context: .
-          dockerfile: setup/DockerfileNB
-      depends_on:
-        - ros_core
-      working_dir: /duckietown
-      networks: *networks
-      env_file: *env_file
       volumes:
-        - ./catkin_ws:/duckietown/catkin_ws
-        - ./setup/notebooks:/duckietown/notebooks
-        - ./setup/utils:/duckietown/utils
-          #- ./utils:/duckietown/utils
-          #- ./custom:/duckietown/custom
-          #- ./sim_ws:/duckietown/sim_ws
-          #- ./simulation:/duckietown/simulation
-          #- /tmp/.X11-unix:/tmp/.X11-unix
         - fifos:/fifos
       environment:
-        - "ROS_MASTER_URI=http://ros_core:11311"
         - "HOSTNAME=default"
         - "VEHICLE_NAME=default"
         - "DISPLAY=:99"
@@ -47,23 +22,24 @@ services:
         - "AIDONODE_DATA_OUT=fifo:/fifos/agent-out"
       expose:
         - "8888"
+        - "5233"
       ports:
         - "8888:8888"
 
-    novnc:
-      image: duckietown/docker-ros-vnc:daffy
-      networks: *networks
-      env_file: *env_file
-      environment:
-      - "ROS_MASTER_URI=http://ros_core:11311"
-      - "HOSTNAME=default"
-      - "VEHICLE_NAME=default"
-      expose:
-      - "5901"
-      - "6901"
-      ports:
-      - "5901:5901"
-      - "6901:6901"
+          #novnc:
+          #  image: duckietown/docker-ros-vnc:daffy
+          #  networks: *networks
+          #  env_file: *env_file
+          #  environment:
+          #  - "ROS_MASTER_URI=http://ros_core:11311"
+          #  - "HOSTNAME=default"
+          #  - "VEHICLE_NAME=default"
+          #  expose:
+          #  - "5901"
+          #  - "6901"
+          #  ports:
+          #  - "5901:5901"
+          #  - "6901:6901"
 
     simulator:
       #image: courchesnea/dt-simbridge:test

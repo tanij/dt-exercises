@@ -1,95 +1,132 @@
-#!/usr/bin/env python2
-from __future__ import unicode_literals
-from PIL import Image
-import io
+#!/usr/bin/env python3
+import cv2
+import numpy as np
+import tensorflow as tf
+import threading
 
-import os
+from aido_schemas import EpisodeStart, protocol_agent_duckiebot1, PWMCommands, Duckiebot1Commands, LEDSCommands, RGB, \
+    wrap_direct, Context, Duckiebot1Observations, JPGImage
+
+
+from helperFncs import Validation_Functions, SteeringToWheelVelWrapper, image_resize
+
+from flask import Flask, render_template, Response
 import time
 
-import argparse
-import numpy as np
-import roslaunch
-from rosagent import ROSAgent
+app = Flask(__name__)
 
-from zuper_nodes_python2 import logger, wrap_direct
+MODEL = "modelname.h5"
+
+#! Global Config
+expect_shape = (480, 640, 3)
+convertion_wrapper = SteeringToWheelVelWrapper()
+eval_func = Validation_Functions()
+global_frame = None
 
 
-class ROSBaselineAgent(object):
-    def __init__(self, in_sim, launch_file):
-        # Now, initialize the ROS stuff here:
 
-        vehicle_name = os.getenv('VEHICLE_NAME')
 
-        # The in_sim switch is used for local development
-        # in that case, we do not start a launch file
-        if not in_sim:
-            # logger.info('Configuring logging')
-            uuid = roslaunch.rlutil.get_or_generate_uuid(None, False)
-            # roslaunch.configure_logging(uuid)
-            # print('configured logging 2')
-            roslaunch_path = os.path.join(os.getcwd(), launch_file)
-            logger.info('Creating ROSLaunchParent')
-            self.launch = roslaunch.parent.ROSLaunchParent(uuid, [roslaunch_path])
+def start_flask():
+    app.run(host='0.0.0.0',port='5233', debug=True, use_reloader=False)
 
-            logger.info('about to call start()')
+def gen_img():
+    while global_frame is None:
+        time.sleep(0.1)
+    while True:
+        # TODO adjust rate here
+        time.sleep(0.1)
+        yield (b'--frame\r\n'
+               b'Content-Type: image/jpeg\r\n\r\n' + global_frame + b'\r\n\r\n')
 
-            self.launch.start()
-            logger.info('returning from start()')
+@app.route('/video_feed')
+def video_feed():
+    return Response(gen_img(),mimetype='multipart/x-mixed-replace; boundary=frame')
 
-        # Start the ROSAgent, which handles publishing images and subscribing to action
-        logger.info('starting ROSAgent()')
-        self.agent = ROSAgent()
-        logger.info('started ROSAgent()')
+@app.route('/')
+def index():
+    # rendering webpage
+    return render_template('index.html')
 
-        logger.info('completed __init__()')
+class TensorflowTemplateAgent:
 
-    def on_received_seed(self, context, data):
-        logger.info('Received seed from pipes')
+    def __init__(self):
+        # define observation and output shapes
+        self.dependencies = {'rmse': eval_func.rmse, 'mse': eval_func.mse,
+                             'r_square': eval_func.r_square, 'r_square_loss': eval_func.r_square_loss}
+        self.model = tf.keras.models.load_model(
+            MODEL, custom_objects=self.dependencies)
+        print("TF version: ", tf.__version__)
+        self.current_image = np.zeros(expect_shape)
+        self.input_image = np.zeros((150, 200, 3))
+        self.to_predictor = np.expand_dims(self.input_image, axis=0)
+
+        #! for fun
+        #self.led_counter = 0
+
+    def init(self, context: Context):
+        context.info('init()')
+
+    def on_received_seed(self, data: int):
         np.random.seed(data)
 
-    def on_received_episode_start(self, context, data):
-        logger.info("Starting episode")
-        context.info('Starting episode %s.' % data)
+    def on_received_episode_start(self, context: Context, data: EpisodeStart):
+        context.info(f'Starting episode "{data.episode_name}.')
 
-    def on_received_observations(self, context, data):
-        logger.info("received observation")
-        jpg_data = data['camera']['jpg_data']
-        obs = jpg2rgb(jpg_data)
-        self.agent._publish_img(obs)
-        self.agent._publish_info()
+    #! Image pre-processing here
+    def on_received_observations(self, data: Duckiebot1Observations):
+        global global_frame
+        camera: JPGImage = data.camera
+        global_frame = camera.jpg_data
+        self.current_image = jpg2rgb(camera.jpg_data)
+        self.input_image = image_resize(self.current_image, width=200)
+        self.input_image = self.input_image[0:150, 0:200]
+        self.input_image = cv2.cvtColor(self.input_image, cv2.COLOR_RGB2YUV)
+        self.to_predictor = np.expand_dims(self.input_image, axis=0)
 
-    def on_received_get_commands(self, context, data):
-        logger.info("Agent received GetCommand request")
-        while not self.agent.updated:
-            time.sleep(0.01)
 
-        pwm_left, pwm_right = self.agent.action
-        if self.agent.started:  # before starting, we send empty commnands to keep connection
-            self.agent.updated = False
+    #! Modification here! Return with action
 
-        rgb = {'r': 0.5, 'g': 0.5, 'b': 0.5}
-        commands = {
-            'wheels': {
-                'motor_left': pwm_left,
-                'motor_right': pwm_right
-            },
-            'LEDS': {
-                'center': rgb,
-                'front_left': rgb,
-                'front_right': rgb,
-                'back_left': rgb,
-                'back_right': rgb
+    def compute_action(self, observation):
+        (linear, angular) = self.model.predict(observation)
+        return linear, angular
 
-            }
-        }
+    #! Major Manipulation here Should not always change
+    def on_received_get_commands(self, context: Context):
+        linear, angular = self.compute_action(self.to_predictor)
+        #! Inverse Kinematics
+        pwm_left, pwm_right = convertion_wrapper.convert(linear, angular)
+        pwm_left = float(np.clip(pwm_left, -1, +1))
+        pwm_right = float(np.clip(pwm_right, -1, +1))
+
+        #! LED Commands Sherrif Duck
+        grey = RGB(0.0, 0.0, 0.0)
+        red = RGB(255.0, 0.0, 0.0)
+        blue = RGB(0.0, 0.0, 255.0)
+
+        led_commands = LEDSCommands(red, grey, blue, red, blue)
+        # if (self.led_counter < 30):
+        #     led_commands = LEDSCommands(grey, red, blue, red, blue)
+        #     self.led_counter += 1
+        # elif (self.led_counter >= 60):
+        #     self.led_counter = 0
+        #     led_commands = LEDSCommands(grey, red, blue, red, blue)
+        # elif(self.led_counter > 30):
+        #     led_commands = LEDSCommands(blue, red, grey, blue, red)
+        #     self.led_counter += 1
+
+        #! Do not modify here!
+        pwm_commands = PWMCommands(motor_left=pwm_left, motor_right=pwm_right)
+        commands = Duckiebot1Commands(pwm_commands, led_commands)
         context.write('commands', commands)
 
-    def finish(self, context):
+    def finish(self, context: Context):
         context.info('finish()')
 
 
-def jpg2rgb(image_data):
+def jpg2rgb(image_data: bytes) -> np.ndarray:
     """ Reads JPG bytes as RGB"""
+    from PIL import Image
+    import io
     im = Image.open(io.BytesIO(image_data))
     im = im.convert('RGB')
     data = np.array(im)
@@ -98,20 +135,14 @@ def jpg2rgb(image_data):
     return data
 
 
+def main():
+    shared_obs = None
+    x = threading.Thread(target=start_flask)
+    x.start()
+    node = TensorflowTemplateAgent()
+    protocol = protocol_agent_duckiebot1
+    wrap_direct(node=node, protocol=protocol)
+
+
 if __name__ == '__main__':
-
-    # The following can be set in the environment file
-    LOGLEVEL = os.environ.get('LOGLEVEL', 'INFO').upper()
-    logger.setLevel(LOGLEVEL)
-    logger.warn("Logger set to level: "+str(logger.level))
-    if logger.level > 20:
-        logger.warn("Logging is set to {}, info msg will no be shown".format(LOGLEVEL))
-    logger.info("Started solution2.py")
-
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-s","--sim", action="store_true", help="Add this option to start the car interface")
-    parser.add_argument("--launch_file",default="lf_slim.launch", help="launch file that should be used (default: lf_slim.launch")
-    args = parser.parse_args()
-    agent = ROSBaselineAgent(in_sim=args.sim, launch_file = args.launch_file)
-    logger.info("Created agent in solution2 main")
-    wrap_direct(agent)
+    main()
