@@ -361,7 +361,7 @@ def run_episode(sim_ci: ComponentInterface,
                     logger.debug("Sending observation to agent")
                     agent.write_topic_and_expect_zero('observations', recv.data.observations)
                     gc = GetCommands(at_time=time.time())
-                    logger.debug("Querying commands to agent")
+                    #logger.debug("Querying commands to agent")
                     r: MsgReceived = agent.write_topic_and_expect('get_commands',gc , expect='commands')
 
                 except BaseException as e:
@@ -375,14 +375,14 @@ def run_episode(sim_ci: ComponentInterface,
 
         for robot_name in not_playable_robots:
             with tt.measure(f'sim_compute_robot_state-{robot_name}'):
-                logger.debug("get robot state")
+                #logger.debug("get robot state")
                 rs = GetRobotState(robot_name=robot_name, t_effective=t_effective)
                 _recv: MsgReceived[RobotState] = \
                     sim_ci.write_topic_and_expect('get_robot_state', rs,
                                                   expect='robot_state')
 
         with tt.measure('sim_compute_sim_state'):
-            logger.debug("Computing sim state")
+            #logger.debug("Computing sim state")
             recv: MsgReceived[SimulationState] = \
                 sim_ci.write_topic_and_expect('get_sim_state', expect='sim_state')
 
@@ -392,7 +392,7 @@ def run_episode(sim_ci: ComponentInterface,
                 break
 
         with tt.measure('sim_physics'):
-            logger.debug("calling sim_step")
+            #logger.debug("calling sim_step")
             current_sim_time += physics_dt
             sim_ci.write_topic_and_expect_zero('step', Step(current_sim_time))
 

@@ -18,24 +18,21 @@ services:
       ports:
         - "11311:11311"
 
-    lanefollow:
-      image: duckietown/dt-notebook:daffy
-      build:
-          context: .
-          dockerfile: setup/DockerfileNB
+    localworkflow:
+      image: duckietown/local-workflow:daffy-amd64
+      #      image: duckietown/dt-notebook:daffy
+      #      build:
+      #          context: .
+      #          dockerfile: setup/DockerfileNB
       depends_on:
         - ros_core
-      working_dir: /duckietown
+          #working_dir: /duckietown
       networks: *networks
       env_file: *env_file
       volumes:
-        - ./catkin_ws:/duckietown/catkin_ws
-        - ./setup/notebooks:/duckietown/notebooks
-        - ./setup/utils:/duckietown/utils
-          #- ./utils:/duckietown/utils
-          #- ./custom:/duckietown/custom
-          #- ./sim_ws:/duckietown/sim_ws
-          #- ./simulation:/duckietown/simulation
+        #- ./catkin_ws:/duckietown/catkin_ws
+        #- ./setup/notebooks:/duckietown/notebooks
+        #- ./setup/utils:/duckietown/utils
           #- /tmp/.X11-unix:/tmp/.X11-unix
         - fifos:/fifos
       environment:
