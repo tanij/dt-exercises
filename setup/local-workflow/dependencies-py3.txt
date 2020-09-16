@@ -1,0 +1,20 @@
+# LIST YOUR PYTHON3 PACKAGES HERE
+
+jupyter
+gitpython
+ipywidgets
+scipy
+sklearn
+matplotlib
+rospkg
+catkin_pkg
+pyyaml
+jupyros==0.2.0
+
+# For ros-bridge fifos
+duckietown-world-daffy-aido4==5.3.22
+aido-protocols-daffy-aido4==5.0.64
+zuper-commons-z6==6.1.3
+zuper-ipce-z6==6.0.33
+zuper-nodes-z6==6.0.25
+zuper-typing-z6==6.1.5

@@ -19,11 +19,13 @@ services:
         - "11311:11311"
 
     localworkflow:
-      image: duckietown/local-workflow:daffy-amd64
-      #      image: duckietown/dt-notebook:daffy
-      #      build:
-      #          context: .
-      #          dockerfile: setup/DockerfileNB
+      #image: duckietown/local-workflow:daffy-amd64
+      #image: duckietown/dt-notebook:daffy
+      build:
+         context: setup/local-workflow
+         dockerfile: Dockerfile
+         args:
+           - ARCH=amd64
       depends_on:
         - ros_core
           #working_dir: /duckietown
