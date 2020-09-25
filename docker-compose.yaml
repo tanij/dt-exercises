@@ -65,8 +65,9 @@ services:
       - "6901:6901"
 
     simulator:
+      image: duckietown/challenge-aido_lf-simulator-gym:updated-mooc
       #image: duckietown/challenge-aido_lf-simulator-gym:daffy-aido4
-      image: courchesnea/challenge-aido_lf-simulator-gym:mooc-exercises
+      #image: courchesnea/challenge-aido_lf-simulator-gym:mooc-exercises
       env_file: *env_file
       environment:
         AIDONODE_DATA_IN: /fifos/simulator-in
