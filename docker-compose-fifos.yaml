@@ -44,8 +44,8 @@ services:
         - "AIDONODE_DATA_OUT=fifo:/fifos/agent-out"
       # expose:
       #   - "8888"
-      # ports:
-      #   - "8888:8888"
+      ports:
+        - "8888:8888"
       depends_on:
         - ros_core
         - middleware_manager

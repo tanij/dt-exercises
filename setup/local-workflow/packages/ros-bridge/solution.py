@@ -12,7 +12,7 @@ import numpy as np
 import roslaunch
 from rosagent import ROSAgent
 
-from aido_schemas import protocol_agent
+from aido_schemas import (protocol_agent_duckiebot1,EpisodeStart,Duckiebot1Observations, Context, GetCommands, Duckiebot1Commands, RGB, PWMCommands, LEDSCommands)
 from zuper_nodes_wrapper import Context, wrap_direct, logger
 
 
@@ -45,24 +45,23 @@ class ROSBaselineAgent(object):
 
         logger.info('completed __init__()')
 
-    def on_received_seed(self, context, data):
+    def on_received_seed(self, context: Context, data: int):
         logger.info('Received seed from pipes')
         np.random.seed(data)
 
-    def on_received_episode_start(self, context, data):
+    def on_received_episode_start(self, context: Context, data: EpisodeStart):
         logger.info("Starting episode")
         context.info('Starting episode %s.' % data)
 
-    def on_received_observations(self, context, data):
+    def on_received_observations(self, context: Context, data: Duckiebot1Observations):
         logger.info("received observation")
-        print("Recievd info, sending img")
         sys.stdout.flush()
-        jpg_data = data['camera']['jpg_data']
+        jpg_data = data.camera.jpg_data
         obs = jpg2rgb(jpg_data)
         self.agent._publish_img(obs)
         self.agent._publish_info()
 
-    def on_received_get_commands(self, context, data):
+    def on_received_get_commands(self, context: Context, data: GetCommands):
         logger.info("Agent received GetCommand request")
         while not self.agent.updated:
             time.sleep(0.01)
@@ -71,27 +70,16 @@ class ROSBaselineAgent(object):
         if self.agent.started:  # before starting, we send empty commnands to keep connection
             self.agent.updated = False
 
-        rgb = {'r': 0.5, 'g': 0.5, 'b': 0.5}
-        commands = {
-            'wheels': {
-                'motor_left': pwm_left,
-                'motor_right': pwm_right
-            },
-            'LEDS': {
-                'center': rgb,
-                'front_left': rgb,
-                'front_right': rgb,
-                'back_left': rgb,
-                'back_right': rgb
-
-            }
-        }
+        grey = RGB(0.5, 0.5, 0.5)
+        led_commands = LEDSCommands(grey, grey, grey, grey, grey)
+        pwm_commands = PWMCommands(motor_left=pwm_left, motor_right=pwm_right)
+        commands = Duckiebot1Commands(pwm_commands, led_commands)
         context.write('commands', commands)
-        logger.info("Agent send command:" + str(commands["wheels"]["motor_left"]))
+        # logger.info("Agent send command:" + str(commands["wheels"]["motor_left"]))
         #print("Send command: " +str(commands["wheels"]["motor_left"]))
         #sys.stdout.flush()
 
-    def finish(self, context):
+    def finish(self, context: Context):
         context.info('finish()')
 
 
@@ -124,4 +112,4 @@ if __name__ == '__main__':
     logger.info("Created agent in solution main")
     print("Started solution")
     sys.stdout.flush()
-    wrap_direct(agent, protocol_agent)
+    wrap_direct(agent, protocol_agent_duckiebot1)
