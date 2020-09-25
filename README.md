@@ -8,7 +8,7 @@ in the root of this repo, run `make start`. The first time you run it, it will d
 
 
     novnc_1               | noVNC HTML client started:
-    novnc_1               | 	=> connect via http://172.20.0.2:6901/?password=...
+    novnc_1               | 	=> connect via http://localhost:8087/?password=...
 
 Click on the link (the one with `http`) and you should access the graphical user interface of the container. The password is `quackquack`. This is useful to run `ros` tools. Click on `Application` in the top left, and click `terminal emulator`. You can then try `rqt_image_view` and select the available topic in the dropdown list. to view what your robot sees. Other useful tools are `rostopic list`, `rosnode info`, `rviz` and others.
 
