@@ -3,7 +3,7 @@ version: '3'
 services:
 
     ros_core:
-      image: osrf/ros:melodic-desktop-full-bionic
+      image: ros:noetic-ros-core
       # Use the first command to see roscore log in console
       # command: stdbuf -o L roscore
       command: roscore
@@ -19,19 +19,18 @@ services:
         - "11311:11311"
 
     localworkflow:
-      #image: duckietown/local-workflow:daffy-amd64
-      #image: duckietown/dt-notebook:daffy
+      #image: ${AIDO_REGISTRY}/duckietown/challenge-aido_lf-template-ros:daffy-amd64
       build:
          context: setup/local-workflow
          dockerfile: Dockerfile
          args:
            - ARCH=amd64
-      depends_on:
-        - ros_core
+           - LAUNCHER=localwf
+
           #working_dir: /duckietown
       networks: *networks
       env_file: *env_file
-      volumes:
+      volumes: &fifos
         #- ./catkin_ws:/duckietown/catkin_ws
         #- ./setup/notebooks:/duckietown/notebooks
         #- ./setup/utils:/duckietown/utils
@@ -41,33 +40,32 @@ services:
         - "ROS_MASTER_URI=http://ros_core:11311"
         - "HOSTNAME=default"
         - "VEHICLE_NAME=default"
-        - "DISPLAY=:99"
         - "AIDONODE_DATA_IN=/fifos/agent-in"
         - "AIDONODE_DATA_OUT=fifo:/fifos/agent-out"
-      expose:
-        - "8888"
-      ports:
-        - "8888:8888"
+      # expose:
+      #   - "8888"
+      # ports:
+      #   - "8888:8888"
+      depends_on:
+        - ros_core
+        - middleware_manager
 
     novnc:
-      image: duckietown/docker-ros-vnc:daffy
+      image: duckietown/dt-gui-tools:daffy-amd64
+      command: dt-launcher-vnc
       networks: *networks
       env_file: *env_file
       environment:
       - "ROS_MASTER_URI=http://ros_core:11311"
       - "HOSTNAME=default"
       - "VEHICLE_NAME=default"
-      expose:
-      - "5901"
-      - "6901"
       ports:
-      - "5901:5901"
-      - "6901:6901"
+      - "8087:8087"
+      depends_on:
+        - ros_core
 
     simulator:
-      image: duckietown/challenge-aido_lf-simulator-gym:updated-mooc
-      #image: duckietown/challenge-aido_lf-simulator-gym:daffy-aido4
-      #image: courchesnea/challenge-aido_lf-simulator-gym:mooc-exercises
+      image: ${AIDO_REGISTRY}/duckietown/challenge-aido_lf-simulator-gym:daffy
       env_file: *env_file
       environment:
         AIDONODE_DATA_IN: /fifos/simulator-in
@@ -80,16 +78,17 @@ services:
             camera_height: 480
             #camera_width: 320
             #camera_height: 240
-      volumes:
-        - fifos:/fifos
+      volumes: *fifos
       networks: *networks
       env_file: *env_file
+      depends_on: 
+        - middleware_manager
 
     middleware_manager:
-      #image: courchesnea/fifos-connector:daffy-aido4
-      build:
-        context: setup/fifos-connector/
-        dockerfile: Dockerfile
+      image: ${AIDO_REGISTRY}/duckietown/mooc-fifos-connector:daffy
+      # build:
+      #   context: setup/fifos-connector/
+      #   dockerfile: Dockerfile
       environment:
         middleware_parameters: |
           episodes_per_scenario: 1
