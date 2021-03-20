@@ -140,7 +140,7 @@ Learning modules will be released on Mondays and Thursdays alternatively, with e
 
 Each learning module will include video lectures, activities, a homework exercise, and optional additional materials like supplementary readings, surveys, quizzes, etc.
 
-* Video Lectures will cover the theory behind the topics at hand.
+* Video lectures will cover the theory behind the topics at hand.
   ○ You should watch all videos
 
 * Activities
