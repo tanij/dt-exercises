@@ -2,9 +2,7 @@
 
 Here is some organizational information about the course. You can some of this information in the course Syllabus in the "Handouts" section of the "Course" page.
 
-<!--
-🤔 🚗 ❓💡
--->
+ 
 
 ## Welcome
 
@@ -12,7 +10,7 @@ Welcome, again, to Self-Driving Cars with Duckietown!
 
 This course is the result of the collaboration of ETH Zurich (ETHZ), the University of Montreal (UdM), the Toyota Technological Institute at Chicago (TTIC) and Duckietown.
 
-The Duckietown platform was created in 2016 to teach the science and technology of autonomous vehicles to the master students of MIT. You can learn more about the history of the Duckietown project [here](duckietown-history).
+The Duckietown platform was created in 2016 to teach the science and technology of autonomous vehicles to the master students of MIT. You can learn more about the history of the Duckietown project [here][duckietown-history].
 
 [duckietown-history]: https://www.duckietown.org/about/history
 
@@ -125,22 +123,27 @@ This course includes 9 learning modules in addition to this introduction.
 We will assume that if you are taking this course, you are familiar with some basics of math, physics and programming.
 
 * Basic Linux, Python, Git. We are going to:
-	-  use terminal interface, so basic knowledge of Bash is required
-	-  write "autonomy" code in Python 
-	-  pull repositories, fork, push, branch, etc.  
+  
+	- use terminal interface, so basic knowledge of Bash is required;
+	- write "autonomy" code in Python;
+	- pull repositories, fork, push, branch, etc.
 
 * Elements of linear algebra, probability, calculus. We are going to:
-	-  use matrices to represent coordinate systems 
-	-  use notions of probability (marginalization, Bayes theorem) to derive perception algorithms for the Duckiebot
-	-  write down equations of motion, which involve time ODEs (recognizing the acronym is a good start!)  
+  
+	- use matrices to represent coordinate systems;
+	- use notions of probability (marginalization, Bayes theorem) to derive perception algorithms for the Duckiebot;
+	- write down equations of motion, which involve continuous time ODEs (recognizing the acronym is a good start!).
 
 * Elements of kinematics
-  - We are going to derive a kinematic model of the Duckiebot 
-
-* Computer with native Ubuntu installation and admin network access 
+  
+  - We are going to derive a kinematic model of the Duckiebot.
+  
+* Computer with native Ubuntu installation and admin network access
+  
   - we are going to use Ubuntu 20.04 with a native (e.g., dual boot) installation
 
 * 🚙 Access to your router
+  
   - If you are using a physical Duckiebot, you will require admin access to your router to iron out potential networking issues.
 
 ## The Duckiebot and Duckietown
@@ -210,32 +213,3 @@ To provide effective support, we will focus on answering questions posted in the
 If you are in the verified track, to obtain a certificate you will need to pass the course. You pass the course with a grade bigger or equal to 60/100. All homework exercises will be graded with the same weight. Late deliveries will not be accepted.  
 
 If you are enrolled in the verified track, and/or own a Duckiebot, special instructions will follow via email.
-
-## "There and back again": a Duckietown learning experience
-
-A final word before proceeding.
-
-Like any hero of your favorite historical or mythological saga, you are, right now, walking the first steps in a transformative quest, which might lead you to become a roboticist, a hacker, a software magician, or something else you will discover on the way.
-
-You are now like Frodo preparing for the banquet in Hobbiton, unaware of the storm coming from east.
-
-In this quest you will step from the comfort zone of what is known to you, in a journey through the unknown.
-
-Like Frodo, you will be able to rely on "supernatural" aid provided by the beauty and perfection of mathematics.
-
-Like Frodo, you will meet mentors. Your Gandalf will be able to point you in the right direction and provide you with essential tools, but, like for Frodo, Gandalf not walk the journey with you.
-
-But if you look around, you will see that you are not alone in this journey. Many peers are setting their first steps, too. Associate, work together, help each other - because the eye of Sauron spotted us all. Build your fellowship of the duckie before marching towards Mount Fate.
-
-During the first part of this quest, your path will lead you downwards. You will face _trials_ and _failures_ which will test your resolve. It is through perseveration and patience that new skills are acquired and cultivated. Remember that "the master has failed more times than the novice has tried."
-
-Although your will be gathering new technical knowledge in this first part of your quest, you will come to feel overwhelmed. As you learn new things, the immensity of what you _do not_ know becomes more evident. And it weighs.
-
-Half-way through this quest you will hit rock bottom. It's the "abyss of death and rebirth". Here you will metaphorically go through a process of death (nothing works, everything is broken, the course is terrible, everybody complains) and rebirth.
-
-Rebirth is the second part of the quest, and it happens slowly, in a continuous process of revelations and transformation. As your coding skills start improving, and the "nuisances" of the real-world start to become clearer, "things will start working" slowly, but they will.
-
-The final step of your quest to become a hero will be one of atonement. Your hard work will have produced imperishable fruits for you to banquet from and share at large. You will transition from the uncomfortable world of unknown back to the comforts of known territory.
-
-There, and back again. Welcome to the Duckietown learning experience and see you on the other side!
-
