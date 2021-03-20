@@ -29,10 +29,6 @@ Throughout the course you will meet instructors from all the organizing institut
 
 Before the corse starts, we wanted to take a few minutes to introduce ourselves. You can watch this informal video on Vimeo: [Informal staff introductions][video-staff-intro].
 
-Each of us will lead one or more learning modules. The lead instructor will always be the go-to person for addressing questions.
-
-Additionally, Andrea Daniele will be responsible of supporting software challenges, and Jacopo hardware related ones. You can learn how to get help [here][sec:how-to-help]
-
 [video-staff-intro]: # **TODO**
 
 ## Intended Learning Outcomes
@@ -138,9 +134,9 @@ The physical Duckiebot and Duckietown are not required to follow and complete th
 
 ## Format, timeline
 
-The course starts on Monday, March 22, 2021 with the release of the first learning module (in addition to this welcome). This course is instructor paced. To accommodate for the "real world" nuisances we expect from using real robots, and leave no-one behind, we will release a new module every 10 days. The final learning module will be released on Monday, June 14, 2021.
+The course starts on Monday, March 22, 2021 with the release of the first learning module (in addition to this welcome). This course is instructor paced. To accommodate for the "real world" nuisances we expect from using real robots, and leave no-one behind, we will release a new module every 10 days. The final learning module will be released on Monday, June 14, 2021. The final homework assignment will be due on June 25, 2021, the end date of this course.
 
-Learning modules will be released on Mondays and Thursdays alternatively, with exceptions for modules 7 and 8, which will happen on Tuesdays and Fridays, to avoid national holidays in some countries.
+Learning modules will be released on Mondays and Thursdays alternatively, with exceptions for modules 7 and 8, which will happen on Tuesdays and Fridays, to avoid national holidays in some countries. Modules will always be released at 7AM PT | 10AM ET | 4PM CET | 7.30PM IST unless otherwise specified.
 
 Each learning module will include video lectures, activities, a homework exercise, and optional additional materials like supplementary readings, surveys, quizzes, etc.
 
@@ -155,42 +151,74 @@ Each learning module will include video lectures, activities, a homework exercis
 * Homework exercises
   ○ are based upon the theory and activities
   ○ **are** graded
+  ○ are due before the release of the next learning module (exception for the last exercise, which is due on June 25, 2021, AM PT | 10AM ET | 4PM CET | 7.30PM IST)
 
 ## Grading and the AI Driving Olympics (AI-DO)
 
-The Duckietown platform is used for benchmarking the state of the art of embodied AI through international competitions that take place biannually at premiere robotics and ML conferences such as [ICRA][icra21] and [NeurIPS][neurips21]. You can learn more about the AI-DO [here][aido-info] if you want.
+The Duckietown platform is used for benchmarking the state of the art of embodied AI through international competitions that take place biannually at premiere robotics and ML conferences such as [ICRA (external link)][icra21] and [NeurIPS (external link)][neurips21]. You can learn more about the AI-DO [here][aido-info] if you want.
 
-AI-DO is different from this course, but we will use the same technical infrastructure to grade your exercises. By construction, some exercises we will ask you to do will overlap with existing AI-DO challenges. What you will be doing is highly scientific!
+AI-DO is different from this course, but we will use the same [technical infrastructure][challenges-server] to grade your exercises. By construction, some exercises we will ask you to do will overlap with existing AI-DO challenges. What you will be doing is highly scientific!
 
 At any time, with an additional line of code, you can decide to submit your "homework" to the actual scientific competition, too. If your agent reaches the finals, you could be featured in this year's AI-DO 6 finals at ICRA 2021!
 
- 
+[icra21]: http://www.icra2021.org/
+[neurips21]: https://nips.cc/
+[aido-info]: https://www.duckietown.org/research/AI-Driving-olympics
+[challenges-server]: https://challenges.duckietown.org/v4/
 
+## How to get help {#sec:how-to-help}
 
-- You get the certificate if >60/100
-- There are 9 exercises, all with equal weights
--
+We will be answering questions related to:
 
-## How to get help {#sec:how-to-help
+* _learning materials_ on the [EdX Discussions forum][edx-disc-forum] and
 
-  - EdX Forum for questions related to learning materials
-- Instructor for each module will take the lead in answering
-- Stack Overflow for technical questions
- 
-- Hardware: Jacopo
-- Software: Andrea Daniele
--
+* _technical questions_ on the [Duckietown Stack Overflow][dt-stack-overflow] space. This is a private space and will require an invitation to join. We will send an invitations out throughout the first week of the course. To receive an invitation you will have to have completed the "Create your Accounts" activity in the very first learning module.  
 
-## The certificates
+Each instructor will lead one or more learning modules. The lead instructor will always be the go-to person for addressing questions related to that module.
 
-- You can audit the course: welcome!  
-- You can be verified and get a shiny certificate from edx
-- special instructions will be sent by email 
-- Robot not necessary for certificate
-- if you have a robot, special instruction will follow via email
-- dedicated hardware activities during throughout the course modules
+Additionally, Andrea Daniele will be responsible of supporting software challenges, and Jacopo hardware related ones.
+
+To provide effective support, we will focus on answering questions posted in the above avenues, and ignore other requests for support. Additionally, when using any forum we expect all learners to maintain a constructive, positive and professional attitude (but clearly duckie puns are always welcome!). We will ban / report / take all appropriate actions to maintain a high-quality learning environment.
+
+[dt-stack-overflow]: https://stackoverflow.com/c/duckietown/questions
+
+[EdX Discussions forum]: https://courses.edx.org/courses/course-v1:ETHx+DT-01x+1T2021/discussion/forum/
+
+## The verified track
+
+If you are in the verified track, to obtain a certificate you will need to pass the course. You pass the course with a grade bigger or equal to 60/100. All homework exercises will be graded with the same weight. Late deliveries will not be accepted.  
+
+If you are enrolled in the verified track, and/or own a Duckiebot, special instructions will follow via email.
 
 ## The Hero Quest
+
+A final word of advice before proceeding.
+
+Like any hero of your favorite historical or mythological saga, you are, right now, walking the first steps in a transformative quest, which might lead you to become a roboticist, a hacker, a software magician, or something else you will discover on the way.
+
+You are now like Frodo preparing for the banquet in Hobbiton, unaware of the storm coming from east.
+
+In this quest you will step from the comfort zone of what is known to you, in a journey through the unknown.
+
+Like Frodo, you will be able to rely on "supernatural" aid provided by the beauty and perfection of mathematics.
+
+Like Frodo, you will meet mentors. Your Gandalf will be able to point you in the right direction and provide you with essential tools, but, like for Frodo, Gandalf not walk the journey with you.
+
+But if you look around, you will see that you are not alone in this journey. Many peers are setting their first steps, too. Associate, work together, help each other - because the eye of Sauron spotted us all. Build your fellowship of the duckie before marching towards Mount Fate.
+
+During the first part of this quest, your path will lead you downwards. You will face _trials_ and _failures_ which will test your resolve. It is through perseveration and patience that new skills are acquired and cultivated. Remember that "the master has failed more times than the novice has tried."
+
+Although your will be gathering new technical knowledge in this first part of your quest, you will come to feel overwhelmed. As you learn new things, the immensity of what you _do not_ know becomes more evident. And it weighs. 
+
+Half-way through this quest you will hit rock bottom. It's the "abyss of death and rebirth". Here you will metaphorically go through a process of death (nothing works, everything is broken, the course is terrible, everybody complains) and rebirth.
+
+Rebirth is the second part of the quest, and it happens slowly, in a continuous process of revelations and transformation. As your coding skills start improving, and the "nuisances" of the real-world start to become clearer, "things will start working" slowly, but they will.
+
+The final step of your quest to become a hero   
+
+It is going to be an arduous quest, and not everybody will succeed in  
+
+You are about to
 
 - Enjoy now
 - Suffer in the middle
