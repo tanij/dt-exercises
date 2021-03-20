@@ -1,6 +1,6 @@
 # Course Logistics
 
-Here is some organizational information about the course. You can some of this information in the course Syllabus in the "Handouts" section of the "Course" page.
+Here is some organizational information about the course. Some of this information can be found in the course Syllabus in the "Handouts" section of the "Course" page.
 
 <!--
 🤔 🚗 ❓💡
