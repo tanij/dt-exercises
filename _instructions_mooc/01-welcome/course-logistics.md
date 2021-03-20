@@ -1,16 +1,46 @@
 # Course Logistics
 
-Welcome, again, to Self-Driving Cars with Duckietown!
-
 Here is some organizational information about the course. You can some of this information in the course Syllabus in the "Handouts" section of the "Course" page.
-
-This course is the result of the collaboration of ETH Zurich, the University of Montreal, the Toyota Technological Institute at Chicago and Duckietown. Throughout the course you will meet instructors from all these institutions.
 
 ## Welcome
 
-## Introductions
+Welcome, again, to Self-Driving Cars with Duckietown!
+
+This course is the result of the collaboration of ETH Zurich (ETHZ), the University of Montreal (UdM), the Toyota Technological Institute at Chicago (TTIC) and Duckietown.
+
+The Duckietown platform was created in 2016 to teach the science and technology of autonomous vehicles to the master students of MIT. You can learn more about the history of the Duckietown project [here](duckietown-history).
+
+[duckietown-history]: https://www.duckietown.org/about/history
+
+## The Staff
+
+Throughout the course you will meet instructors from all the organizing institutions. In order of appearance:
+
+* Andrea Censi, Ph. D., ETHZ
+* Jacopo Tani, Ph. D., ETHZ
+* Matthew Walther, Prof., TTIC
+* Liam Paull, Prof., UdM
+* Andrea Daniele, TTIC
+
+Before the corse starts, we wanted to take a few minutes to introduce ourselves. You can watch this informal video on Vimeo: [Informal staff introductions][video-staff-intro].
+
+Each of us will lead one or more learning modules. The lead-instructor will always be the go-to person for addressing questions.
+
+Additionally, Andrea Daniele will be responsible of supporting software challenges, and Jacopo hardware related ones. You can learn how to get help [here][sec:how-to-help]
+
+[video-staff-intro]: # **TODO**
 
 ## Intended Learning Outcomes
+
+This course is designed to be hands-on. This means that you will actually have to _do_ things in the real world with the information we will provide you. In the context of robotics, "real" world could mean a simulated environment as well as the physical world.   
+
+By the end of this course, we will learn about the fundamental of robotics. What qualifies as a robot? What do they have in common? What are the differences and implications of logical and physical autonomy architectures? How painful is the difference between what _should_ happen in theory and what _actually_ happens, and how do we go from understanding to implementation?
+
+Self-driving Cars with Duckietown is a "grand tour" of robotics. The focus is on the breadth rather than the depth. We  highlight how robotics is a system level discipline where many components interact with each other to produce real world autonomous behaviors. Any of these "components" could absorb an entire professional career.
+
+Finally, we want to provide an understanding of the difference in approaches to solving the challenges of autonomy. The buzz of AI is high, but what's it place in robotics? How does using reinforcement or imitation learning relate to the "traditional" robotics approaches to given tasks?
+
+Robotics and AI are a fast-paced field of research. This course is the beginning of a learning adventure.
 
 ## Course content
 
@@ -20,9 +50,11 @@ This course is the result of the collaboration of ETH Zurich, the University of 
 
 ## Format, timeline
 
+
+
 ## Grading and the AI Driving Olympics
 
-## How to get help
+## How to get help {#sec:how-to-help}
 
 ## The certificates
 
