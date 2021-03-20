@@ -18,14 +18,23 @@ The Duckietown platform was created in 2016 to teach the science and technology 
 
 ## The Staff
 
-Throughout the course you will meet instructors from all the organizing institutions. In order of appearance:
+Throughout the course you will meet instructors and staff from all the organizing institutions. In order of appearance:
 
-* Emilio Frazzoli, Prof., ETHZ
-* Andrea Censi, Ph. D., ETHZ
-* Jacopo Tani, Ph. D., ETHZ
-* Matthew Walther, Prof., TTIC
-* Liam Paull, Prof., UdM
-* Andrea Daniele, TTIC
+* Prof. [Emilio Frazzoli][emilio-web], Prof., ETHZ
+* Dr. [Andrea Censi][andrea-web], Ph. D., ETHZ 
+* Dr. [Jacopo Tani][jacopo-web], ETHZ
+* Prof. [Matthew Walter][matt-web], TTIC
+* Prof. [Liam Paull][liam-web], UdM
+* [Andrea Daniele][daniele-web], TTIC
+
+[jacopo-web]: https://www.linkedin.com/in/jacopo-tani/?originalSubdomain=ch
+[emilio-web]: https://idsc.ethz.ch/research-frazzoli.html
+[andrea-web]: https://censi.science/
+[andrea-linkedin]: https://www.linkedin.com/in/censi/
+
+[liam-web]: https://liampaull.ca/
+[matt-web]: https://ttic.uchicago.edu/~mwalter/
+[daniele-web]: https://afdaniele.com/
 
 Before the corse starts, we wanted to take a few minutes to introduce ourselves. You can watch this informal video on Vimeo: [Informal staff introductions][video-staff-intro].
 
@@ -39,7 +48,7 @@ By the end of this course, we will learn about the fundamental of robotics. What
 
 Self-driving Cars with Duckietown is a "grand tour" of robotics. The focus is on the breadth rather than the depth. We  highlight how robotics is a system level discipline where many components interact with each other to produce real world autonomous behaviors. Any of these "components" could absorb an entire professional career.
 
-Finally, we want to provide an understanding of the difference in approaches to solving the challenges of autonomy. The buzz of AI is high, but what's it place in robotics? How does using reinforcement or imitation learning relate to the "traditional" robotics approaches to given tasks?
+Finally, we want to provide an understanding of the difference in approaches to solving the challenges of autonomy. The buzz of AI is high, but what is its place in robotics? How does using reinforcement or imitation learning relate to the "traditional" robotics approaches to given tasks?
 
 Robotics and AI are a fast-paced field of research and this course is the beginning of a learning adventure.
 
@@ -48,82 +57,91 @@ Robotics and AI are a fast-paced field of research and this course is the beginn
 This course includes 9 learning modules in addition to this introduction.
 
 * Module 1: Introduction to self-driving cars
-  ○ The potentials and challenges
-  ○ Levels of autonomy
-  ○ The vision for autonomous vehicles (AVs)
-  ○ Activities: learning environment setup
+  
+  - The potentials and challenges
+  - Levels of autonomy
+  - The vision for autonomous vehicles (AVs)
+  - Activities: learning environment setup
 
 * Module 2: Towards autonomy
-  ○ Making a robot
-  ○ Sensorimotor architectures
-  ○ Stateful architectures
-  ○ Logical and physical architectures
-  ○ Application: Braitenberg vehicles
-
+  
+  - Making a robot
+  - Sensorimotor architectures
+  - Stateful architectures
+  - Logical and physical architectures
+  - Application: Braitenberg vehicles
+  
 * Module 3: Modeling and Control
-  ○ Introduction to control systems
-  ○ Representations and models
-  ○ PID control
-  ○ Application: Duckiebot angular velocity tracking
+  
+  - Introduction to control systems
+  - Representations and models
+  - PID control
+  - Application: Duckiebot angular velocity tracking
 
 * Module 4: Robot Vision
-  ○ Introduction to projective geometry
-  ○ Camera modeling and calibration
-  ○ Image processing
-  ○ Application: visual servoing
+  
+  - Introduction to projective geometry
+  - Camera modeling and calibration
+  - Image processing
+  - Application: visual servoing
 
 * Module 5: Object Detection
-  ○ Convolutional neural networks
-  ○ One and two stage object detection
-  ○ Application: duckie detection
+  
+  - Convolutional neural networks
+  - One and two stage object detection
+  - Application: duckie detection
 
 * Module 6: State Estimation and Localization
-  ○ Bayes filtering framework
-  ○ Parameterized methods (Kalman filter)
-  ○ Sampling-based methods (Particle and histogram filter)
-  ○ Application: lane following (LF)
+  
+  - Bayes filtering framework
+  - Parameterized methods (Kalman filter)
+  - Sampling-based methods (Particle and histogram filter)
+  - Application: lane following (LF)
 
 * Module 7: Planning
-  ○ Planning formalization
-  ○ Searching Graphs
-  ○ Sampling-based planning
-  ○ Application: duckie avoidance
+  
+  - Planning formalization
+  - Searching Graphs
+  - Sampling-based planning
+  - Application: duckie avoidance
 
 * Module 8: Learning by Reinforcement
-  ○ Markov decision processes
-  ○ Value functions
-  ○ Policy gradients
-  ○ Domain randomization
-  ○ Application: Lane following with RL
+  
+  - Markov decision processes
+  - Value functions
+  - Policy gradients
+  - Domain randomization
+  - Application: Lane following with RL
 
 * Module 9: Learning by Imitation
-  ○ Behaviour cloning
-  ○ Online imitation learning
-  ○ Safety and uncertainty
-  ○ Application: Lane following with IL
+  
+  - Behaviour cloning
+  - Online imitation learning
+  - Safety and uncertainty
+  - Application: Lane following with IL
 
 ## Prerequisites
 
 We will assume that if you are taking this course, you are familiar with some basics of math, physics and programming.
 
 * Basic Linux, Python, Git. We are going to:
-	○  use terminal interface, so basic knowledge of Bash is required
-	○  write "autonomy" code in Python 
-	○  pull repositories, fork, push, branch, etc.  
+	-  use terminal interface, so basic knowledge of Bash is required
+	-  write "autonomy" code in Python 
+	-  pull repositories, fork, push, branch, etc.  
 
 * Elements of linear algebra, probability, calculus. We are going to:
-	○  use matrices to represent coordinate systems 
-	○  use notions of probability (marginalization, Bayes theorem) to derive perception algorithms for the Duckiebot
-	○  write down equations of motion, which involve time ODEs (recognizing the acronym is a good start!)  
+	-  use matrices to represent coordinate systems 
+	-  use notions of probability (marginalization, Bayes theorem) to derive perception algorithms for the Duckiebot
+	-  write down equations of motion, which involve time ODEs (recognizing the acronym is a good start!)  
 
 * Elements of kinematics
-  ○ We are going to derive a kinematic model of the Duckiebot 
+  - We are going to derive a kinematic model of the Duckiebot 
 
 * Computer with native Ubuntu installation and admin network access 
-  ○ we are going to use Ubuntu 20.04 with a native (e.g., dual boot) installation
+  - we are going to use Ubuntu 20.04 with a native (e.g., dual boot) installation
 
 * 🚙 Access to your router
-  ○ If you are using a physical Duckiebot, you will require admin access to your router to iron out potential networking issues.
+  - If you are using a physical Duckiebot, you will require admin access to your router to iron out potential networking issues.
 
 ## The Duckiebot and Duckietown
 
@@ -141,17 +159,17 @@ Learning modules will be released on Mondays and Thursdays alternatively, with e
 Each learning module will include video lectures, activities, a homework exercise, and optional additional materials like supplementary readings, surveys, quizzes, etc.
 
 * Video Lectures will cover the theory behind the topics at hand.
-  ○ You should watch all videos
+  - You should watch all videos
 
 * Activities
-  ○ require you to follow along and reproduce some behaviors
-  ○ can be software and hardware based
-  ○ are **not** graded
+  - require you to follow along and reproduce some behaviors
+  - can be software and hardware based
+  - are **not** graded
 
 * Homework exercises
-  ○ are based upon the theory and activities
-  ○ **are** graded
-  ○ are due before the release of the next learning module (exception for the last exercise, which is due on June 25, 2021, AM PT | 10AM ET | 4PM CET | 7.30PM IST)
+  - are based upon the theory and activities
+  - **are** graded
+  - are due before the release of the next learning module (exception for the last exercise, which is due on June 25, 2021, AM PT | 10AM ET | 4PM CET | 7.30PM IST)
 
 ## Grading and the AI Driving Olympics (AI-DO)
 
