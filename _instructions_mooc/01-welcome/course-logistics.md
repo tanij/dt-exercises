@@ -2,6 +2,10 @@
 
 Here is some organizational information about the course. You can some of this information in the course Syllabus in the "Handouts" section of the "Course" page.
 
+<!--
+🤔 🚗 ❓💡
+-->
+
 ## Welcome
 
 Welcome, again, to Self-Driving Cars with Duckietown!
@@ -16,6 +20,7 @@ The Duckietown platform was created in 2016 to teach the science and technology 
 
 Throughout the course you will meet instructors from all the organizing institutions. In order of appearance:
 
+* Emilio Frazzoli, Prof., ETHZ
 * Andrea Censi, Ph. D., ETHZ
 * Jacopo Tani, Ph. D., ETHZ
 * Matthew Walther, Prof., TTIC
@@ -24,7 +29,7 @@ Throughout the course you will meet instructors from all the organizing institut
 
 Before the corse starts, we wanted to take a few minutes to introduce ourselves. You can watch this informal video on Vimeo: [Informal staff introductions][video-staff-intro].
 
-Each of us will lead one or more learning modules. The lead-instructor will always be the go-to person for addressing questions.
+Each of us will lead one or more learning modules. The lead instructor will always be the go-to person for addressing questions.
 
 Additionally, Andrea Daniele will be responsible of supporting software challenges, and Jacopo hardware related ones. You can learn how to get help [here][sec:how-to-help]
 
@@ -40,25 +45,156 @@ Self-driving Cars with Duckietown is a "grand tour" of robotics. The focus is on
 
 Finally, we want to provide an understanding of the difference in approaches to solving the challenges of autonomy. The buzz of AI is high, but what's it place in robotics? How does using reinforcement or imitation learning relate to the "traditional" robotics approaches to given tasks?
 
-Robotics and AI are a fast-paced field of research. This course is the beginning of a learning adventure.
+Robotics and AI are a fast-paced field of research and this course is the beginning of a learning adventure.
 
 ## Course content
 
+This course includes 9 learning modules in addition to this introduction.
+
+* Module 1: Introduction to self-driving cars
+  ○ The potentials and challenges
+  ○ Levels of autonomy
+  ○ The vision for autonomous vehicles (AVs)
+  ○ Activities: learning environment setup
+
+* Module 2: Towards autonomy
+  ○ Making a robot
+  ○ Sensorimotor architectures
+  ○ Stateful architectures
+  ○ Logical and physical architectures
+  ○ Application: Braitenberg vehicles
+
+* Module 3: Modeling and Control
+  ○ Introduction to control systems
+  ○ Representations and models
+  ○ PID control
+  ○ Application: Duckiebot angular velocity tracking
+
+* Module 4: Robot Vision
+  ○ Introduction to projective geometry
+  ○ Camera modeling and calibration
+  ○ Image processing
+  ○ Application: visual servoing
+
+* Module 5: Object Detection
+  ○ Convolutional neural networks
+  ○ One and two stage object detection
+  ○ Application: duckie detection
+
+* Module 6: State Estimation and Localization
+  ○ Bayes filtering framework
+  ○ Parameterized methods (Kalman filter)
+  ○ Sampling-based methods (Particle and histogram filter)
+  ○ Application: lane following (LF)
+
+* Module 7: Planning
+  ○ Planning formalization
+  ○ Searching Graphs
+  ○ Sampling-based planning
+  ○ Application: duckie avoidance
+
+* Module 8: Learning by Reinforcement
+  ○ Markov decision processes
+  ○ Value functions
+  ○ Policy gradients
+  ○ Domain randomization
+  ○ Application: Lane following with RL
+
+* Module 9: Learning by Imitation
+  ○ Behaviour cloning
+  ○ Online imitation learning
+  ○ Safety and uncertainty
+  ○ Application: Lane following with IL
+
 ## Prerequisites
+
+We will assume that if you are taking this course, you are familiar with some basics of math, physics and programming.
+
+* Basic Linux, Python, Git. We are going to:
+	○  use terminal interface, so basic knowledge of Bash is required
+	○  write "autonomy" code in Python 
+	○  pull repositories, fork, push, branch, etc.  
+
+* Elements of linear algebra, probability, calculus. We are going to:
+	○  use matrices to represent coordinate systems 
+	○  use notions of probability (marginalization, Bayes theorem) to derive perception algorithms for the Duckiebot
+	○  write down equations of motion, which involve time ODEs (recognizing the acronym is a good start!)  
+
+* Elements of kinematics
+  ○ We are going to derive a kinematic model of the Duckiebot 
+
+* Computer with native Ubuntu installation and admin network access 
+  ○ we are going to use Ubuntu 20.04 with a native (e.g., dual boot) installation
+
+* 🚙 Access to your router
+  ○ If you are using a physical Duckiebot, you will require admin access to your router to iron out potential networking issues.
 
 ## The Duckiebot and Duckietown
 
+The physical Duckiebot and Duckietown are not required to follow and complete this course. However, following along with a real robot will make you learn much more. You can get a Duckietown MOOC Founder Edition Kit (robot + city track) [here][dt-shop-mooc-kit].  
+
+
+[dt-shop-mooc-kit]: https://get.duckietown.com/collections/starter-kits/products/db-mooc-kit
+
 ## Format, timeline
 
+The course starts on Monday, March 22, 2021 with the release of the first learning module (in addition to this welcome). This course is instructor paced. To accommodate for the "real world" nuisances we expect from using real robots, and leave no-one behind, we will release a new module every 10 days. The final learning module will be released on Monday, June 14, 2021.
+
+Learning modules will be released on Mondays and Thursdays alternatively, with exceptions for modules 7 and 8, which will happen on Tuesdays and Fridays, to avoid national holidays in some countries.
+
+Each learning module will include video lectures, activities, a homework exercise, and optional additional materials like supplementary readings, surveys, quizzes, etc.
+
+* Video Lectures will cover the theory behind the topics at hand.
+  ○ You should watch all videos
+
+* Activities
+  ○ require you to follow along and reproduce some behaviors
+  ○ can be software and hardware based
+  ○ are **not** graded
+
+* Homework exercises
+  ○ are based upon the theory and activities
+  ○ **are** graded
+
+## Grading and the AI Driving Olympics (AI-DO)
+
+The Duckietown platform is used for benchmarking the state of the art of embodied AI through international competitions that take place biannually at premiere robotics and ML conferences such as [ICRA][icra21] and [NeurIPS][neurips21]. You can learn more about the AI-DO [here][aido-info] if you want.
+
+AI-DO is different from this course, but we will use the same technical infrastructure to grade your exercises. By construction, some exercises we will ask you to do will overlap with existing AI-DO challenges. What you will be doing is highly scientific!
+
+At any time, with an additional line of code, you can decide to submit your "homework" to the actual scientific competition, too. If your agent reaches the finals, you could be featured in this year's AI-DO 6 finals at ICRA 2021!
+
+ 
 
 
-## Grading and the AI Driving Olympics
+- You get the certificate if >60/100
+- There are 9 exercises, all with equal weights
+-
 
-## How to get help {#sec:how-to-help}
+## How to get help {#sec:how-to-help
+
+  - EdX Forum for questions related to learning materials
+- Instructor for each module will take the lead in answering
+- Stack Overflow for technical questions
+ 
+- Hardware: Jacopo
+- Software: Andrea Daniele
+-
 
 ## The certificates
 
+- You can audit the course: welcome!  
+- You can be verified and get a shiny certificate from edx
+- special instructions will be sent by email 
+- Robot not necessary for certificate
+- if you have a robot, special instruction will follow via email
+- dedicated hardware activities during throughout the course modules
+
 ## The Hero Quest
+
+- Enjoy now
+- Suffer in the middle
+- Reach catharsis on the other side
 
 <!--
 Your first task is to set up your development environment.
