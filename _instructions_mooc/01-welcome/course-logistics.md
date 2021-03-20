@@ -20,8 +20,8 @@ The Duckietown platform was created in 2016 to teach the science and technology 
 
 Throughout the course you will meet instructors and staff from all the organizing institutions. In order of appearance:
 
-* Prof. [Emilio Frazzoli][emilio-web], Prof., ETHZ
-* Dr. [Andrea Censi][andrea-web], Ph. D., ETHZ 
+* Prof. [Emilio Frazzoli][emilio-web],  ETHZ
+* Dr. [Andrea Censi][andrea-web],  ETHZ 
 * Dr. [Jacopo Tani][jacopo-web], ETHZ
 * Prof. [Matthew Walter][matt-web], TTIC
 * Prof. [Liam Paull][liam-web], UdM
