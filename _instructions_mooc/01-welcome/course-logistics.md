@@ -2,7 +2,7 @@
 
 Here is some organizational information about the course. Some of this information can be found in the course Syllabus in the "Handouts" section of the "Course" page.
 
- 
+
 
 ## Welcome
 
@@ -19,7 +19,7 @@ The Duckietown platform was created in 2016 to teach the science and technology 
 Throughout the course you will meet instructors and staff from all the organizing institutions. In order of appearance:
 
 * Prof. [Emilio Frazzoli][emilio-web],  ETHZ
-* Dr. [Andrea Censi][andrea-web],  ETHZ 
+* Dr. [Andrea Censi][andrea-web],  ETHZ
 * Dr. [Jacopo Tani][jacopo-web], ETHZ
 * Prof. [Matthew Walter][matt-web], TTIC
 * Prof. [Liam Paull][liam-web], UdM
@@ -55,56 +55,56 @@ Robotics and AI are a fast-paced field of research and this course is the beginn
 This course includes 9 learning modules in addition to this introduction.
 
 * Module 1: Introduction to self-driving cars
-  
+
   - The potentials and challenges
   - Levels of autonomy
   - The vision for autonomous vehicles (AVs)
   - Activities: learning environment setup
 
 * Module 2: Towards autonomy
-  
+
   - Making a robot
   - Sensorimotor architectures
   - Stateful architectures
   - Logical and physical architectures
   - Application: Braitenberg vehicles
-  
+
 * Module 3: Modeling and Control
-  
+
   - Introduction to control systems
   - Representations and models
   - PID control
   - Application: Duckiebot angular velocity tracking
 
 * Module 4: Robot Vision
-  
+
   - Introduction to projective geometry
   - Camera modeling and calibration
   - Image processing
   - Application: visual servoing
 
 * Module 5: Object Detection
-  
+
   - Convolutional neural networks
   - One and two stage object detection
   - Application: duckie detection
 
 * Module 6: State Estimation and Localization
-  
+
   - Bayes filtering framework
   - Parameterized methods (Kalman filter)
   - Sampling-based methods (Particle and histogram filter)
   - Application: lane following (LF)
 
 * Module 7: Planning
-  
+
   - Planning formalization
   - Searching Graphs
   - Sampling-based planning
   - Application: duckie avoidance
 
 * Module 8: Learning by Reinforcement
-  
+
   - Markov decision processes
   - Value functions
   - Policy gradients
@@ -112,7 +112,7 @@ This course includes 9 learning modules in addition to this introduction.
   - Application: Lane following with RL
 
 * Module 9: Learning by Imitation
-  
+
   - Behaviour cloning
   - Online imitation learning
   - Safety and uncertainty
@@ -123,27 +123,27 @@ This course includes 9 learning modules in addition to this introduction.
 We will assume that if you are taking this course, you are familiar with some basics of math, physics and programming.
 
 * Basic Linux, Python, Git. We are going to:
-  
+
 	- use terminal interface, so basic knowledge of Bash is required;
 	- write "autonomy" code in Python;
 	- pull repositories, fork, push, branch, etc.
 
 * Elements of linear algebra, probability, calculus. We are going to:
-  
+
 	- use matrices to represent coordinate systems;
 	- use notions of probability (marginalization, Bayes theorem) to derive perception algorithms for the Duckiebot;
 	- write down equations of motion, which involve continuous time ODEs (recognizing the acronym is a good start!).
 
 * Elements of kinematics
-  
+
   - We are going to derive a kinematic model of the Duckiebot.
-  
+
 * Computer with native Ubuntu installation and admin network access
-  
+
   - we are going to use Ubuntu 20.04 with a native (e.g., dual boot) installation
 
 * 🚙 Access to your router
-  
+
   - If you are using a physical Duckiebot, you will require admin access to your router to iron out potential networking issues.
 
 ## The Duckiebot and Duckietown
@@ -162,18 +162,18 @@ Learning modules will be released on Mondays and Thursdays alternatively, with e
 Each learning module will include video lectures, activities, a homework exercise, and optional additional materials like supplementary readings, surveys, quizzes, etc.
 
 * Video Lectures will cover the theory behind the topics at hand.
-  
+
   - You should watch all videos
 
 
 * Activities
-  
+
   - require you to follow along and reproduce some behaviors
   - can be software and hardware based
   - are **not** graded
 
 * Homework exercises
-  
+
   - are based upon the theory and activities
   - **are** graded
   - are due before the release of the next learning module (exception for the last exercise, which is due on June 25, 2021, AM PT | 10AM ET | 4PM CET | 7.30PM IST)
