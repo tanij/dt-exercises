@@ -190,9 +190,9 @@ If you are in the verified track, to obtain a certificate you will need to pass 
 
 If you are enrolled in the verified track, and/or own a Duckiebot, special instructions will follow via email.
 
-## The Hero Quest
+## "There and back again": a Duckietown learning experience
 
-A final word of advice before proceeding.
+A final word before proceeding.
 
 Like any hero of your favorite historical or mythological saga, you are, right now, walking the first steps in a transformative quest, which might lead you to become a roboticist, a hacker, a software magician, or something else you will discover on the way.
 
@@ -208,21 +208,15 @@ But if you look around, you will see that you are not alone in this journey. Man
 
 During the first part of this quest, your path will lead you downwards. You will face _trials_ and _failures_ which will test your resolve. It is through perseveration and patience that new skills are acquired and cultivated. Remember that "the master has failed more times than the novice has tried."
 
-Although your will be gathering new technical knowledge in this first part of your quest, you will come to feel overwhelmed. As you learn new things, the immensity of what you _do not_ know becomes more evident. And it weighs. 
+Although your will be gathering new technical knowledge in this first part of your quest, you will come to feel overwhelmed. As you learn new things, the immensity of what you _do not_ know becomes more evident. And it weighs.
 
 Half-way through this quest you will hit rock bottom. It's the "abyss of death and rebirth". Here you will metaphorically go through a process of death (nothing works, everything is broken, the course is terrible, everybody complains) and rebirth.
 
 Rebirth is the second part of the quest, and it happens slowly, in a continuous process of revelations and transformation. As your coding skills start improving, and the "nuisances" of the real-world start to become clearer, "things will start working" slowly, but they will.
 
-The final step of your quest to become a hero   
+The final step of your quest to become a hero will be one of atonement. Your hard work will have produced imperishable fruits for you to banquet from and share at large. You will transition from the uncomfortable world of unknown back to the comforts of known territory.
 
-It is going to be an arduous quest, and not everybody will succeed in  
-
-You are about to
-
-- Enjoy now
-- Suffer in the middle
-- Reach catharsis on the other side
+There, and back again. Welcome to the Duckietown learning experience and see you on the other side!
 
 <!--
 Your first task is to set up your development environment.
