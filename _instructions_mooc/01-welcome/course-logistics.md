@@ -1,32 +1,222 @@
 # Course Logistics
 
-Welcome, again, to Self-Driving Cars with Duckietown!
-
 Here is some organizational information about the course. You can some of this information in the course Syllabus in the "Handouts" section of the "Course" page.
 
-This course is the result of the collaboration of ETH Zurich, the University of Montreal, the Toyota Technological Institute at Chicago and Duckietown. Throughout the course you will meet instructors from all these institutions.
+<!--
+🤔 🚗 ❓💡
+-->
 
 ## Welcome
 
-## Introductions
+Welcome, again, to Self-Driving Cars with Duckietown!
+
+This course is the result of the collaboration of ETH Zurich (ETHZ), the University of Montreal (UdM), the Toyota Technological Institute at Chicago (TTIC) and Duckietown.
+
+The Duckietown platform was created in 2016 to teach the science and technology of autonomous vehicles to the master students of MIT. You can learn more about the history of the Duckietown project [here](duckietown-history).
+
+[duckietown-history]: https://www.duckietown.org/about/history
+
+## The Staff
+
+Throughout the course you will meet instructors from all the organizing institutions. In order of appearance:
+
+* Emilio Frazzoli, Prof., ETHZ
+* Andrea Censi, Ph. D., ETHZ
+* Jacopo Tani, Ph. D., ETHZ
+* Matthew Walther, Prof., TTIC
+* Liam Paull, Prof., UdM
+* Andrea Daniele, TTIC
+
+Before the corse starts, we wanted to take a few minutes to introduce ourselves. You can watch this informal video on Vimeo: [Informal staff introductions][video-staff-intro].
+
+[video-staff-intro]: # **TODO**
 
 ## Intended Learning Outcomes
 
+This course is designed to be hands-on. This means that you will actually have to _do_ things in the real world with the information we will provide you. In the context of robotics, "real" world could mean a simulated environment as well as the physical world.   
+
+By the end of this course, we will learn about the fundamental of robotics. What qualifies as a robot? What do they have in common? What are the differences and implications of logical and physical autonomy architectures? How painful is the difference between what _should_ happen in theory and what _actually_ happens, and how do we go from understanding to implementation?
+
+Self-driving Cars with Duckietown is a "grand tour" of robotics. The focus is on the breadth rather than the depth. We  highlight how robotics is a system level discipline where many components interact with each other to produce real world autonomous behaviors. Any of these "components" could absorb an entire professional career.
+
+Finally, we want to provide an understanding of the difference in approaches to solving the challenges of autonomy. The buzz of AI is high, but what's it place in robotics? How does using reinforcement or imitation learning relate to the "traditional" robotics approaches to given tasks?
+
+Robotics and AI are a fast-paced field of research and this course is the beginning of a learning adventure.
+
 ## Course content
+
+This course includes 9 learning modules in addition to this introduction.
+
+* Module 1: Introduction to self-driving cars
+  ○ The potentials and challenges
+  ○ Levels of autonomy
+  ○ The vision for autonomous vehicles (AVs)
+  ○ Activities: learning environment setup
+
+* Module 2: Towards autonomy
+  ○ Making a robot
+  ○ Sensorimotor architectures
+  ○ Stateful architectures
+  ○ Logical and physical architectures
+  ○ Application: Braitenberg vehicles
+
+* Module 3: Modeling and Control
+  ○ Introduction to control systems
+  ○ Representations and models
+  ○ PID control
+  ○ Application: Duckiebot angular velocity tracking
+
+* Module 4: Robot Vision
+  ○ Introduction to projective geometry
+  ○ Camera modeling and calibration
+  ○ Image processing
+  ○ Application: visual servoing
+
+* Module 5: Object Detection
+  ○ Convolutional neural networks
+  ○ One and two stage object detection
+  ○ Application: duckie detection
+
+* Module 6: State Estimation and Localization
+  ○ Bayes filtering framework
+  ○ Parameterized methods (Kalman filter)
+  ○ Sampling-based methods (Particle and histogram filter)
+  ○ Application: lane following (LF)
+
+* Module 7: Planning
+  ○ Planning formalization
+  ○ Searching Graphs
+  ○ Sampling-based planning
+  ○ Application: duckie avoidance
+
+* Module 8: Learning by Reinforcement
+  ○ Markov decision processes
+  ○ Value functions
+  ○ Policy gradients
+  ○ Domain randomization
+  ○ Application: Lane following with RL
+
+* Module 9: Learning by Imitation
+  ○ Behaviour cloning
+  ○ Online imitation learning
+  ○ Safety and uncertainty
+  ○ Application: Lane following with IL
 
 ## Prerequisites
 
+We will assume that if you are taking this course, you are familiar with some basics of math, physics and programming.
+
+* Basic Linux, Python, Git. We are going to:
+	○  use terminal interface, so basic knowledge of Bash is required
+	○  write "autonomy" code in Python 
+	○  pull repositories, fork, push, branch, etc.  
+
+* Elements of linear algebra, probability, calculus. We are going to:
+	○  use matrices to represent coordinate systems 
+	○  use notions of probability (marginalization, Bayes theorem) to derive perception algorithms for the Duckiebot
+	○  write down equations of motion, which involve time ODEs (recognizing the acronym is a good start!)  
+
+* Elements of kinematics
+  ○ We are going to derive a kinematic model of the Duckiebot 
+
+* Computer with native Ubuntu installation and admin network access 
+  ○ we are going to use Ubuntu 20.04 with a native (e.g., dual boot) installation
+
+* 🚙 Access to your router
+  ○ If you are using a physical Duckiebot, you will require admin access to your router to iron out potential networking issues.
+
 ## The Duckiebot and Duckietown
+
+The physical Duckiebot and Duckietown are not required to follow and complete this course. However, following along with a real robot will make you learn much more. You can get a Duckietown MOOC Founder Edition Kit (robot + city track) [here][dt-shop-mooc-kit].  
+
+
+[dt-shop-mooc-kit]: https://get.duckietown.com/collections/starter-kits/products/db-mooc-kit
 
 ## Format, timeline
 
-## Grading and the AI Driving Olympics
+The course starts on Monday, March 22, 2021 with the release of the first learning module (in addition to this welcome). This course is instructor paced. To accommodate for the "real world" nuisances we expect from using real robots, and leave no-one behind, we will release a new module every 10 days. The final learning module will be released on Monday, June 14, 2021. The final homework assignment will be due on June 25, 2021, the end date of this course.
 
-## How to get help
+Learning modules will be released on Mondays and Thursdays alternatively, with exceptions for modules 7 and 8, which will happen on Tuesdays and Fridays, to avoid national holidays in some countries. Modules will always be released at 7AM PT | 10AM ET | 4PM CET | 7.30PM IST unless otherwise specified.
 
-## The certificates
+Each learning module will include video lectures, activities, a homework exercise, and optional additional materials like supplementary readings, surveys, quizzes, etc.
 
-## The Hero Quest
+* Video Lectures will cover the theory behind the topics at hand.
+  ○ You should watch all videos
+
+* Activities
+  ○ require you to follow along and reproduce some behaviors
+  ○ can be software and hardware based
+  ○ are **not** graded
+
+* Homework exercises
+  ○ are based upon the theory and activities
+  ○ **are** graded
+  ○ are due before the release of the next learning module (exception for the last exercise, which is due on June 25, 2021, AM PT | 10AM ET | 4PM CET | 7.30PM IST)
+
+## Grading and the AI Driving Olympics (AI-DO)
+
+The Duckietown platform is used for benchmarking the state of the art of embodied AI through international competitions that take place biannually at premiere robotics and ML conferences such as [ICRA (external link)][icra21] and [NeurIPS (external link)][neurips21]. You can learn more about the AI-DO [here][aido-info] if you want.
+
+AI-DO is different from this course, but we will use the same [technical infrastructure][challenges-server] to grade your exercises. By construction, some exercises we will ask you to do will overlap with existing AI-DO challenges. What you will be doing is highly scientific!
+
+At any time, with an additional line of code, you can decide to submit your "homework" to the actual scientific competition, too. If your agent reaches the finals, you could be featured in this year's AI-DO 6 finals at ICRA 2021!
+
+[icra21]: http://www.icra2021.org/
+[neurips21]: https://nips.cc/
+[aido-info]: https://www.duckietown.org/research/AI-Driving-olympics
+[challenges-server]: https://challenges.duckietown.org/v4/
+
+## How to get help {#sec:how-to-help}
+
+We will be answering questions related to:
+
+* _learning materials_ on the [EdX Discussions forum][edx-disc-forum] and
+
+* _technical questions_ on the [Duckietown Stack Overflow][dt-stack-overflow] space. This is a private space and will require an invitation to join. We will send an invitations out throughout the first week of the course. To receive an invitation you will have to have completed the "Create your Accounts" activity in the very first learning module.  
+
+Each instructor will lead one or more learning modules. The lead instructor will always be the go-to person for addressing questions related to that module.
+
+Additionally, Andrea Daniele will be responsible of supporting software challenges, and Jacopo hardware related ones.
+
+To provide effective support, we will focus on answering questions posted in the above avenues, and ignore other requests for support. Additionally, when using any forum we expect all learners to maintain a constructive, positive and professional attitude (but clearly duckie puns are always welcome!). We will ban / report / take all appropriate actions to maintain a high-quality learning environment.
+
+[dt-stack-overflow]: https://stackoverflow.com/c/duckietown/questions
+
+[EdX Discussions forum]: https://courses.edx.org/courses/course-v1:ETHx+DT-01x+1T2021/discussion/forum/
+
+## The verified track
+
+If you are in the verified track, to obtain a certificate you will need to pass the course. You pass the course with a grade bigger or equal to 60/100. All homework exercises will be graded with the same weight. Late deliveries will not be accepted.  
+
+If you are enrolled in the verified track, and/or own a Duckiebot, special instructions will follow via email.
+
+## "There and back again": a Duckietown learning experience
+
+A final word before proceeding.
+
+Like any hero of your favorite historical or mythological saga, you are, right now, walking the first steps in a transformative quest, which might lead you to become a roboticist, a hacker, a software magician, or something else you will discover on the way.
+
+You are now like Frodo preparing for the banquet in Hobbiton, unaware of the storm coming from east.
+
+In this quest you will step from the comfort zone of what is known to you, in a journey through the unknown.
+
+Like Frodo, you will be able to rely on "supernatural" aid provided by the beauty and perfection of mathematics.
+
+Like Frodo, you will meet mentors. Your Gandalf will be able to point you in the right direction and provide you with essential tools, but, like for Frodo, Gandalf not walk the journey with you.
+
+But if you look around, you will see that you are not alone in this journey. Many peers are setting their first steps, too. Associate, work together, help each other - because the eye of Sauron spotted us all. Build your fellowship of the duckie before marching towards Mount Fate.
+
+During the first part of this quest, your path will lead you downwards. You will face _trials_ and _failures_ which will test your resolve. It is through perseveration and patience that new skills are acquired and cultivated. Remember that "the master has failed more times than the novice has tried."
+
+Although your will be gathering new technical knowledge in this first part of your quest, you will come to feel overwhelmed. As you learn new things, the immensity of what you _do not_ know becomes more evident. And it weighs.
+
+Half-way through this quest you will hit rock bottom. It's the "abyss of death and rebirth". Here you will metaphorically go through a process of death (nothing works, everything is broken, the course is terrible, everybody complains) and rebirth.
+
+Rebirth is the second part of the quest, and it happens slowly, in a continuous process of revelations and transformation. As your coding skills start improving, and the "nuisances" of the real-world start to become clearer, "things will start working" slowly, but they will.
+
+The final step of your quest to become a hero will be one of atonement. Your hard work will have produced imperishable fruits for you to banquet from and share at large. You will transition from the uncomfortable world of unknown back to the comforts of known territory.
+
+There, and back again. Welcome to the Duckietown learning experience and see you on the other side!
 
 <!--
 Your first task is to set up your development environment.
