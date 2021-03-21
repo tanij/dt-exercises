@@ -7,12 +7,7 @@ Compared to other courses you might have taken, it might seem intimidating to se
 However, it's going to be worth it, we promise!
 
 This document summarizes the steps that you need to do. We will write here on edX _a  synthetic summary_ for the steps to take. Usually the details are in one of our Duckiebooks at the site [docs.duckietown.org/daffy/](https://docs.duckietown.org/daffy/).
-
-## Step 0: Watch a short introduction to the development workflow
-
-If you want to know more about the big picture and why we ask you to do all these setup steps, please watch this video on Vimeo:
-
-* [Development workflow (Andrea)][video-devel] **TODO**
+ 
 
 ## Step 1: Make all the accounts first!
 
@@ -64,12 +59,12 @@ If Docker installation went well, then you can run the following command:
 
 If you set up Github account and private key, you should be able to run this command successfully:
 
-	> ssh -T git@github.com
+    > ssh -T git@github.com
     Hi GITHUB_USERNAME! You've successfully authenticated, but GitHub does not provide shell access.
 
 If you have a valid DockerHub account then you can run
 
-	> docker login -u DOCKER_USERNAME
+    > docker login -u DOCKER_USERNAME
     Password:
 
 The second time it will just tell you:
@@ -83,7 +78,7 @@ If the Duckietown Shell was installed, then you can run a command like this:
 
 If you correctly configured the token, then this command should work:
 
-	> dts challenges info
+    > dts challenges info
     ~        You are succesfully authenticated:
     ~
     ~                     ID: 3
@@ -99,5 +94,4 @@ If there is something not working, please stop here. Ask for help on Stack Overf
 [signup-duckietown]: https://www.duckietown.org/site/register
 [signup-stack-overflow]: https://stackoverflow.com/users/signup
 
-[video-devel]: #
 [stack-overflow-duckietown]: https://stackoverflow.com/c/duckietown/

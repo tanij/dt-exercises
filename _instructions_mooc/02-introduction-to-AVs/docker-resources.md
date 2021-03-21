@@ -11,12 +11,11 @@ We have prepared for you [a short video (external video on Vimeo)][vimeo-docker]
 [vimeo-docker]: https://vimeo.com/527006910
 
 
-# 🥷 Still want to know more details?
+## 🥷 Want to know more details?
 
 All right, do you want to know even more? We then would like to point you at [this more detailed introduction of the "under-the-hood" technology at Duckietown][link-RH].
 
-Note: the path of the Duckietown hacker is a solitary path; while the MOOC is taking place, we cannot answer questions on these advanced topics. If you are really interested in going deeper, then maybe you can find a link to our Slack, and from there find the development channels...
+Note: the path of the Duckietown hacker is a solitary path; while the MOOC is taking place, we cannot answer questions on these advanced topics. If you are really interested in going deeper, then maybe you can find a link to our Slack, and from there, find the development channels...
+ 
 
-TODO LINK 
-
-[link-RH]: #
+[link-RH]: https://docs.duckietown.org/daffy/duckietown-robotics-development/out/index.html
