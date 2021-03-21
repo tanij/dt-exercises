@@ -21,7 +21,7 @@ We are sure you are proud of your Duckiebot. Show the world!
 
   - 💪 Write something like: "Getting starting with Self-Driving Cars with Duckietown! I'm ready to go!"
 
-  - 🦆 Tag #duckietown in your post and don't forget to mention us: [Twitter][social-twitter]: @DuckietownAI; [Instagram][social-instagram]: @duckietown; [Facebook][social-fb]: @duckietown, [LinkedIn][social-linkedin]: @duckietown.
+  - 🦆 Tag us in your post ([Twitter][social-twitter]: @DuckietownAI; [Instagram][social-instagram]: @duckietown; [Facebook][social-fb]: @duckietown, [LinkedIn][social-linkedin]: @duckietown) and don't forget to use hashtag #duckietown.
 
 [social-twitter]:https://twitter.com/duckietownai
 [social-instagram]:https://www.instagram.com/duckietown/
