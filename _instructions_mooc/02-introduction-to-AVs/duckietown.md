@@ -9,7 +9,7 @@ The Duckietown cities are standardized and modular urban environments.
 
 - 📐They are standardized because of well defined appearance specification, that detail the geometries and the colors of the road and signal layers. These specifications reduce the complexity of the environment in which Duckiebots operate, providing a degree of control over the "nuisances" of the real world that affect the autonomous behaviors of a self-driving car.   
 
-- 🧩 The are modular because only five road segments are defined: straight, curve, 3-way intersection, 4-way intersection and empty tile. These components, which are built on interlockable "tiles", can be exchanged to produce an arbitrary number of city topologies. For the purpose of this course, we have fixed the size and complexity of the map to provide an introductory level challenge.
+- 🧩 They are modular because only five road segments are defined: straight, curve, 3-way intersection, 4-way intersection and empty tile. These components, which are built on interlockable "tiles", can be exchanged to produce an arbitrary number of city topologies. For the purpose of this course, we have fixed the size and complexity of the map to provide an introductory level challenge.
 
 If you have a Duckietown city pack, follow [these instructions][duckiebook-city-assembly] to build your roads and traffic signs.
 

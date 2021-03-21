@@ -3,7 +3,6 @@
 Here is some organizational information about the course. Some of this information can be found in the course Syllabus in the "Handouts" section of the "Course" page.
 
 
-
 ## Welcome
 
 Welcome, again, to Self-Driving Cars with Duckietown!
@@ -35,8 +34,7 @@ Throughout the course you will meet instructors and staff from all the organizin
 [daniele-web]: https://afdaniele.com/
 
 Before the corse starts, we wanted to take a few minutes to introduce ourselves. You can watch this informal video on Vimeo: [Informal staff introductions][video-staff-intro].
-
-[video-staff-intro]: # **TODO**
+ 
 
 ## Intended Learning Outcomes
 
