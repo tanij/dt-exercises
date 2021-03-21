@@ -6,9 +6,9 @@ We are sure you are proud of your Duckiebot. Show the world!
 
 This contest consists of posting this first milestone  
 
-* 🎬 Starts: now!
+* 🎬 Start time: now!
 
-* ⏱️ Ends: on April 1st, 2021, 15:00 UTC
+* ⏱️ End time: April 1st, 2021, 15:00 UTC
 
 * 📋 Rules 📋:
 
@@ -22,16 +22,14 @@ This contest consists of posting this first milestone
 
 * 🏆 Winners:
 
-- The post with most engagement on **each** social media
-
-- The authors of the posts will receive a prize! 
+- The post with most engagement on **each** social media at the end time of this contest will be declared winner.
 
 ## Prizes:
 
-Prizes include:
+The authors of the winning posts will receive their choice between:
 
 - A Duckie Tie, like the instructors!
 
-- A Special duckies from Amsterdam
+- A special duckie from Amsterdam!
 
 IMPORTANT: This activity will not affect your final grade in any way and it is purely optional.
