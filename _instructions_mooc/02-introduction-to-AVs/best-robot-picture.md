@@ -2,9 +2,10 @@
 
 We are sure you are proud of your Duckiebot. Show the world!
 
-## Best Duckiebot picture
+**Post a picture of you and your Duckiebot on social media. Feel free to decorate the Duckiebot to reflect your character and the culture of your city.** 
 
-This contest consists of posting this first milestone  
+
+## Rules
 
 * 🎬 Start time: now!
 
@@ -12,17 +13,22 @@ This contest consists of posting this first milestone
 
 * 📋 Rules 📋:
 
-- 📸 📹 🤳 Take a picture, video or do a selfie with your Duckiebot.
+  - 📸 📹 🤳 Take a picture, video or do a selfie with your Duckiebot. 
+    
+  - Reminder: each Duckiebot should have a Duckie on top.
 
-- 🌐 Post it on your favorite social media amongst Facebook, Instagram, Twitter and Linkedin!  
+  - 🌐 Post it on your favorite social media amongst Facebook, Instagram, Twitter and Linkedin!  
 
-- 💪 Write something like: "Getting starting with Self-Driving Cars with Duckietown! I'm ready to go!"
+  - 💪 Write something like: "Getting starting with Self-Driving Cars with Duckietown! I'm ready to go!"
 
-- 🦆 Mention @duckietown (@DuckietownAI on Twitter) and tag #duckietown-MOOC in your post!
+  - 🦆 Tag #duckietown in your post and don't forget to mention us: (Twitter: @DuckietownAI; Instagram: TODO; Facebook: TODO, LinkedIn: TODO). 
+    
+**TODO: link to the accounts**
+
 
 * 🏆 Winners:
 
-- The post with most engagement on **each** social media at the end time of this contest will be declared winner.
+  - The posts with most engagement on **each** social media at the end time of this contest will be declared winners.
 
 ## Prizes:
 
@@ -30,6 +36,7 @@ The authors of the winning posts will receive their choice between:
 
 - A Duckie Tie, like the instructors!
 
-- A special duckie from Amsterdam!
+- A special surprise duckie!
+
 
 IMPORTANT: This activity will not affect your final grade in any way and it is purely optional.

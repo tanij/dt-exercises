@@ -1,4 +1,4 @@
-<img src="/static/hero.jpg" width="70%" alt="the hero journey"/>
+<img src="/static/hero.jpg" width="100%" alt="the hero journey"/>
 
 ## "There and back again": a Duckietown learning experience
 
