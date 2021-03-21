@@ -1,3 +1,0 @@
-<strong>Please don't edit. Either tell Andrea or edit directly the Markdown sources for this are in the dt-exercises/_mooc_instructions directory.</strong>
-
-
