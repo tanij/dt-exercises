@@ -3,16 +3,17 @@
 Your first task is to set up your development environment.
 
 Compared to other courses you might have taken, it might seem intimidating to set up so many things at the beginning.
+
 However, it's going to be worth it, we promise!
 
-This document summarizes the steps that you need to do. We will write here on EdX _a  synthetic summary_ for the steps to take. Usually the details are in one of our Duckiebooks at the site [docs.duckietown.org/daffy/](https://docs.duckietown.org/daffy/).
+This document summarizes the steps that you need to do. We will write here on edX _a  synthetic summary_ for the steps to take. Usually the details are in one of our Duckiebooks at the site [docs.duckietown.org/daffy/](https://docs.duckietown.org/daffy/).
 
 ## Step 0: Watch a short introduction to the development workflow
 
 If you want to know more about the big picture and why we ask you to do all these setup steps, please watch this video on Vimeo:
 
 * [Development workflow (Andrea)][video-devel] **TODO**
- 
+
 ## Step 1: Make all the accounts first!
 
 At some point, in the next steps, you will need the following accounts:
@@ -44,7 +45,7 @@ At the end of the instructions, you will have installed some essential software,
 
 Make sure you finish the previous step before continuing!
 
-Follow the instructions [here][duckiebook-account-setup] to set up your local environment with the Duckietown token. 
+Follow the instructions [here][duckiebook-account-setup] to set up your local environment with the Duckietown token.
 
 [duckiebook-account-setup]: https://docs.duckietown.org/daffy/opmanual_duckiebot/out/dt_account.html
 
@@ -68,7 +69,7 @@ If you set up Github account and private key, you should be able to run this com
 
 If you have a valid DockerHub account then you can run
 
-	❯ docker login -u DOCKER_USERNAME
+	> docker login -u DOCKER_USERNAME
     Password:
 
 The second time it will just tell you:
@@ -77,7 +78,7 @@ The second time it will just tell you:
     Login Succeeded
 
 If the Duckietown Shell was installed, then you can run a command like this:
-		
+
     > dts version
 
 If you correctly configured the token, then this command should work:
@@ -90,8 +91,8 @@ If you correctly configured the token, then this command should work:
     ~                  login: YOUR DUCKIETOWN ACCOUNT
 
 
-If there is something not working, please stop here. Ask for help on Stack Overflow. 
- 
+If there is something not working, please stop here. Ask for help on Stack Overflow.
+
 
 [signup-github]: https://github.com/join
 [signup-dockerhub]: https://hub.docker.com/signup
@@ -99,5 +100,4 @@ If there is something not working, please stop here. Ask for help on Stack Overf
 [signup-stack-overflow]: https://stackoverflow.com/users/signup
 
 [video-devel]: #
-[stack-overflow-duckietown]: https://stackoverflow.com/c/duckietown/ 
-
+[stack-overflow-duckietown]: https://stackoverflow.com/c/duckietown/
