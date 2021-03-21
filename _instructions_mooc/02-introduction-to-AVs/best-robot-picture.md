@@ -2,10 +2,10 @@
 
 We are sure you are proud of your Duckiebot. Show the world!
 
-**Post a picture of you and your Duckiebot on social media. Feel free to decorate the Duckiebot to reflect your character and the culture of your city.** 
+**Post a picture of you and your Duckiebot on social media. Feel free to decorate the Duckiebot to reflect your character and the culture of your city.**
 
 
-## Rules
+## Information
 
 * 🎬 Start time: now!
 
@@ -13,18 +13,20 @@ We are sure you are proud of your Duckiebot. Show the world!
 
 * 📋 Rules 📋:
 
-  - 📸 📹 🤳 Take a picture, video or do a selfie with your Duckiebot. 
-    
+  - 📸 📹 🤳 Take a picture, video or do a selfie with your Duckiebot.
+
   - Reminder: each Duckiebot should have a Duckie on top.
 
   - 🌐 Post it on your favorite social media amongst Facebook, Instagram, Twitter and Linkedin!  
 
   - 💪 Write something like: "Getting starting with Self-Driving Cars with Duckietown! I'm ready to go!"
 
-  - 🦆 Tag #duckietown in your post and don't forget to mention us: (Twitter: @DuckietownAI; Instagram: TODO; Facebook: TODO, LinkedIn: TODO). 
-    
-**TODO: link to the accounts**
+  - 🦆 Tag us in your post ([Twitter][social-twitter]: @DuckietownAI; [Instagram][social-instagram]: @duckietown; [Facebook][social-fb]: @duckietown, [LinkedIn][social-linkedin]: @duckietown) and don't forget to use hashtag #duckietown.
 
+[social-twitter]:https://twitter.com/duckietownai
+[social-instagram]:https://www.instagram.com/duckietown/
+[social-fb]:https://www.facebook.com/duckietown/
+[social-linkedin]:https://www.linkedin.com/company/duckietown/
 
 * 🏆 Winners:
 
