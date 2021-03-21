@@ -1,12 +1,11 @@
 # 🚙 Tour of Duckiebot interface
 
-The Duckiebot is equipped with a browser based interface (colloquially, the "Dashboard") that provides intuitive access to some important diagnostics of the Duckiebot.
+The Duckiebot is equipped with a browser based interface (colloquially, the "Dashboard") that provides intuitive access to some important features of the Duckiebot: from the live camera stream, to the software running on the robot, real time diagnostics and more.  
 
-We prepared [a tutorial][book-dashboard-tutorial] on its main features.
+This [Dashboard tutorial][book-dashboard-tutorial] provides an overview of the functionalities.
 
-TODO: Dashboard tutorial (login, portainer (just where it is), mission control, how to set camera)
+[book-dashboard-tutorial]: # TODO: Dashboard tutorial (login, portainer (just where it is), mission control, how to set camera)
 
-[book-dashboard-tutorial]: 
-
-
+<!--
 TODO: Take a selfie with the robot
+-->
