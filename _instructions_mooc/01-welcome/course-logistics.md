@@ -34,7 +34,7 @@ Throughout the course you will meet instructors and staff from all the organizin
 [daniele-web]: https://afdaniele.com/
 
 Before the corse starts, we wanted to take a few minutes to introduce ourselves. You can watch this informal video on Vimeo: [Informal staff introductions][video-staff-intro].
- 
+
 
 ## Intended Learning Outcomes
 
@@ -205,7 +205,7 @@ To provide effective support, we will focus on answering questions posted in the
 
 [dt-stack-overflow]: https://stackoverflow.com/c/duckietown/questions
 
-[EdX Discussions forum]: https://courses.edx.org/courses/course-v1:ETHx+DT-01x+1T2021/discussion/forum/
+[edx-disc-forum]: https://courses.edx.org/courses/course-v1:ETHx+DT-01x+1T2021/discussion/forum/
 
 ## The verified track
 
