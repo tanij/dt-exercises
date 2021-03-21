@@ -12,7 +12,7 @@ We have an optional video tutorial you can follow, as an addition to the documen
 Follow the instruction [here][aido-book] to make a submission to the AI Driving Olympics. 
 
 
-🤔 If you have problems with this step, please ask [a question on our Stack Overflow with tag #MOOC-AIDO-submission](https://stackoverflow.com/c/duckietown/questions/tagged/MOOC-AIDO-submission).
+🤔 If you have problems with this step, please ask [a question on our Stack Overflow with tag `#MOOC-AIDO-submission`](https://stackoverflow.com/c/duckietown/questions/tagged/MOOC-AIDO-submission).
 
 
 [aido-book]: https://docs.duckietown.org/daffy/AIDO/out/cm_first.html
