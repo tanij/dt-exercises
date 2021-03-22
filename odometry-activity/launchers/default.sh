@@ -1,6 +1,7 @@
 #!/bin/bash
 
 source /environment.sh
+source /code/exercise_ws/devel/setup.bash
 
 # initialize launch file
 dt-launchfile-init
@@ -13,9 +14,8 @@ dt-launchfile-init
 
 # launching app
 
-source /code/exercise_ws/devel/setup.bash
 python3 /code/solution.py &
-roslaunch --wait car_interface all.launch veh:=$VEHICLE_NAME &
+dt-exec roslaunch --wait car_interface all.launch veh:=$VEHICLE_NAME &
 
 
 dt-exec roslaunch encoder_pose encoder_pose_node.launch veh:=$VEHICLE_NAME
