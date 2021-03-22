@@ -1,7 +1,7 @@
 _If you don't have a Duckiebot kit, skip this step_. You are missing a lot of the fun, but you can enjoy the course regardless.
 
 
-## 🚙  Duckiebot assembly and setup  
+## 🚙  Duckiebot assembly and handling  
 
 If you have a Duckiebot, [please follow the instructions here until "make it see" included][duckiebook-robot-assembly].
 

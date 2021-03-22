@@ -1,6 +1,6 @@
 _If you don't have a Duckiebot, skip this step_. You are missing a lot of the fun, but you can enjoy the course regardless.
 
-# 🚙 Tour of Duckiebot interface
+# 🚙 Duckiebot user interface and setup
 
 The Duckiebot is equipped with a browser based interface (colloquially, the "Dashboard") that provides intuitive access to live camera stream, containers statistics, software running on the robot, real time diagnostics and more.  
 
