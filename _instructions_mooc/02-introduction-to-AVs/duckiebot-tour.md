@@ -1,6 +1,6 @@
 _If you don't have a Duckiebot, skip this step_. You are missing a lot of the fun, but you can enjoy the course regardless.
 
-# 🚙 Duckiebot user interface and setup
+# 🚙 Duckiebot user interface and operation
 
 Now that we have a powered on Duckiebot and know how to power it off, and repeat the process, it is time to learn how interact with it and verify that the build was successful.
 
