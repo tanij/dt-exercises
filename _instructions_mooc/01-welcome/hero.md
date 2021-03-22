@@ -27,4 +27,4 @@ Rebirth is the second part of the quest, and it happens slowly, in a continuous 
 
 The final step of your quest to become a hero will be one of atonement. Your hard work will have produced imperishable fruits for you to banquet from and share at large. You will transition from the uncomfortable world of unknown back to the comforts of known territory.
 
-There, and back again. Welcome to this Duckietown learning experience. See you on the other side!
+There, and back again. Welcome to this Duckietown learning experience. 
