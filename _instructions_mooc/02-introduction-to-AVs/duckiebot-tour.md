@@ -36,7 +36,7 @@ We used Dashboard to view the camera image stream, but to see what the Duckiebot
 
 At the end of this module you are able to drive your Duckiebot around the house while comfortably sitting at your computer. You are able to see what the robot sees through browser or terminal.  
 
-🤔 If you have problems with making your Duckiebot move or see, please ask [a question on our Stack Overflow with tag `#db21-ops`](https://stackoverflow.com/c/duckietown/questions/tagged/db21-ops).
+🤔 If you have problems with making your Duckiebot move or see, please ask [a question on our Stack Overflow with tag `#DB21M-ops`](https://stackoverflow.com/c/duckietown/questions/tagged/DB21M-ops).
 
 [book-dashboard-setup-tutorial]: # https://docs.duckietown.org/daffy/opmanual_duckiebot/out/duckiebot_dashboard_setup.html
 
