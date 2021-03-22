@@ -19,7 +19,7 @@ Throughout the course you will meet instructors and staff from all the organizin
 * Prof. [Emilio Frazzoli][emilio-web],  ETHZ
 * Dr. [Andrea Censi][andrea-web],  ETHZ ([introduction][ac-intro])
 * Dr. [Jacopo Tani][jacopo-web], ETHZ ([introduction][jt-intro])
-* Prof. [Matthew Walter][matt-web], TTIC ([introduction][mw-intro])
+* Prof. [Matthew Walter][matt-web], TTIC  
 * Prof. [Liam Paull][liam-web], UdM ([introduction][lp-intro])
 * [Andrea Daniele][daniele-web], TTIC ([introduction][afd-intro])
 
@@ -34,12 +34,11 @@ Throughout the course you will meet instructors and staff from all the organizin
 
 [ac-intro]: https://vimeo.com/527052737
 [jt-intro]: https://vimeo.com/526949215
-[lp-intro]: https://vimeo.com/527052564
-[mw-intro]: #
+[lp-intro]: https://vimeo.com/527052564 
 [afd-intro]: https://vimeo.com/527124388
 
 <!--
-TODO: afd, mw intro videos.
+TODO:  mw intro videos.
 -->
 
 
