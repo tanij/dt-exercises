@@ -1,15 +1,42 @@
 _If you don't have a Duckiebot kit, skip this step_. You are missing a lot of the fun, but you can enjoy the course regardless.
 
+# 🚙  Duckiebot assembly and handling  
 
-## 🚙  Duckiebot assembly and handling  
+It is time to prepare a clean, well lit, flat surface and open your Duckiebox.
 
-If you have a Duckiebot, [please follow the instructions here until "make it see" included][duckiebook-robot-assembly].
+## Step 1: Initialize your Duckiebot memory card
 
-At the end of that step, you should have been able to have a Duckiebot that you can drive.
+The Duckiebot is a scaled differential drive vehicle powered by a small but powerful computer, the NVIDA Jetson Nano. Before assembling the robot, we can start setting up the hard drive memory disk of the Duckiebot's onboard computer.
+
+As you lay the Duckiebox components on your working surface, take the micro sd card from the Duckiebox (along with the sd card adapter if needed) and follow [these instructions][duckiebook-init-sd-card] to initialize the Duckiebot's memory from the computer you have previously set up.
+
+[duckiebook-init-sd-card]: https://docs.duckietown.org/daffy/opmanual_duckiebot/out/setup_duckiebot.html
+
+At the end of this step you will have an initialized and verified sd card.
+
+## Step 2: Assemble your Duckiebot
+
+⚠️ The Duckiebot is equipped with a Lithium-Ion battery, like typical power banks for phones. These batteries can be dangerous if mishandled. [Read Sec. 1.1 here ][duckiebook-duckiebattery] to learn what to do and not do with a lithium-ion battery, and about some features of the Duckiebattery.
+
+Once you are ready to proceed, you can follow [these instructions][duckiebook-robot-assembly] to fully assemble the Duckiebot. All the tools necessary for the job are included in the box.
+
+At then end of this step you should have a correctly initialized, fully charged, ready to go Duckiebot.  
+
+[duckiebook-duckiebattery]: https://docs.duckietown.org/daffy/opmanual_duckiebot/out/db_opmanual_preliminaries_electronics.html
+
+[duckiebook-robot-assembly]: https://docs.duckietown.org/daffy/opmanual_duckiebot/out/assembling_duckiebot_db21.html
+
+## Step 3: Duckiebot handling 101
+
+Before delving in the middle of things, let's learn how to perform fundamental operations for Duckiebot handling, such as powering it on and off correctly, recharging it, and keeping the hardware up to date.  
+
+Follow [these instructions][duckiebook-robot-handling]
+
+[duckiebook-robot-handling]: https://docs.duckietown.org/daffy/opmanual_duckiebot/out/handling_duckiebot_db21.html
 
 🤔 If you have problems with this step, please ask [a question on our Stack Overflow with tag `#DB21`](https://stackoverflow.com/c/duckietown/questions/tagged/DB21).
 
-[duckiebook-robot-assembly]: https://docs.duckietown.org/daffy/opmanual_duckiebot/out/assembling_duckiebot_db21.html
+
 
 
 <!--
