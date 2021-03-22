@@ -4,7 +4,6 @@ We are sure you are proud of your Duckiebot. Show the world!
 
 **Post a picture of you and your Duckiebot on social media. Feel free to decorate the Duckiebot to reflect your character and the culture of your city.**
 
-
 ## Information
 
 * 🎬 Start time: now!
