@@ -38,9 +38,9 @@ At the end of this module you are able to drive your Duckiebot around the house 
 
 🤔 If you have problems with making your Duckiebot move or see, please ask [a question on our Stack Overflow with tag `#DB21M-ops`](https://stackoverflow.com/c/duckietown/questions/tagged/DB21M-ops).
 
-[book-dashboard-setup-tutorial]: # https://docs.duckietown.org/daffy/opmanual_duckiebot/out/duckiebot_dashboard_setup.html
+[book-dashboard-setup-tutorial]: https://docs.duckietown.org/daffy/opmanual_duckiebot/out/duckiebot_dashboard_setup.html
 
-[book-dashboard-use-tutorial]: # https://docs.duckietown.org/daffy/opmanual_duckiebot/out/duckiebot_dashboard_use.html
+[book-dashboard-use-tutorial]: https://docs.duckietown.org/daffy/opmanual_duckiebot/out/duckiebot_dashboard_use.html
 
 
 
