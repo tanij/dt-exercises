@@ -36,7 +36,7 @@ Throughout the course you will meet instructors and staff from all the organizin
 [jt-intro]: https://vimeo.com/526949215
 [lp-intro]: https://vimeo.com/527052564
 [mw-intro]: #
-[afd-intro]: #
+[afd-intro]: https://vimeo.com/527124388
 
 <!--
 TODO: afd, mw intro videos.
