@@ -28,7 +28,7 @@ We are ready to have the Duckiebot move! Remotely control your Duckiebot by foll
 
 ## Step 4. See what the Duckiebot sees
 
-We used Dashboard to view the camera image stream, but to see what the Duckiebot sees, we need a different approach. Follow [these][book-db-see] instructions to view the camera data from terminal. 
+We used Dashboard to view the camera image stream, but to see what the Duckiebot sees, we need a different approach. Follow [these][book-db-see] instructions to view the camera data from terminal.
 
 [book-db-see]:https://docs.duckietown.org/daffy/opmanual_duckiebot/out/read_camera_data.html
 
