@@ -17,11 +17,11 @@ The Duckietown platform was created in 2016 to teach the science and technology 
 Throughout the course you will meet instructors and staff from all the organizing institutions. Before starting, we wanted to very briefly introduce ourselves. Check out our informal introductions on Vimeo! In order of appearance:
 
 * Prof. [Emilio Frazzoli][emilio-web],  ETHZ
-* Dr. [Andrea Censi][andrea-web],  ETHZ ([informal introduction][ac-intro])
-* Dr. [Jacopo Tani][jacopo-web], ETHZ ([informal introduction][jt-intro])
-* Prof. [Matthew Walter][matt-web], TTIC ([informal introduction][mw-intro])
-* Prof. [Liam Paull][liam-web], UdM ([informal introduction][lp-intro])
-* [Andrea Daniele][daniele-web], TTIC ([informal introduction][afd-intro])
+* Dr. [Andrea Censi][andrea-web],  ETHZ ([introduction][ac-intro])
+* Dr. [Jacopo Tani][jacopo-web], ETHZ ([introduction][jt-intro])
+* Prof. [Matthew Walter][matt-web], TTIC ([introduction][mw-intro])
+* Prof. [Liam Paull][liam-web], UdM ([introduction][lp-intro])
+* [Andrea Daniele][daniele-web], TTIC ([introduction][afd-intro])
 
 [jacopo-web]: https://www.linkedin.com/in/jacopo-tani/
 [emilio-web]: https://idsc.ethz.ch/research-frazzoli.html
