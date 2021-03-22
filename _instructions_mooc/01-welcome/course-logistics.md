@@ -34,7 +34,7 @@ Throughout the course you will meet instructors and staff from all the organizin
 
 [ac-intro]: https://vimeo.com/527052737
 [jt-intro]: https://vimeo.com/526949215
-[lp-intro]: https://vimeo.com/527052564 
+[lp-intro]: https://vimeo.com/527052564
 [afd-intro]: https://vimeo.com/527124388
 
 <!--
@@ -56,7 +56,7 @@ Robotics and AI are fast-paced fields of research and this course is just the be
 
 ## Course content
 
-This course includes 9 learning modules in addition to this introduction.
+This course includes 10 learning modules in addition to this introduction.
 
 * Module 1: Introduction to self-driving cars
 
@@ -91,7 +91,7 @@ This course includes 9 learning modules in addition to this introduction.
 
   - Convolutional neural networks
   - One and two stage object detection
-  - Application: duckie detection
+  - Application: Duckie detection
 
 * Module 6: State Estimation and Localization
 
@@ -100,14 +100,19 @@ This course includes 9 learning modules in addition to this introduction.
   - Sampling-based methods (Particle and histogram filter)
   - Application: lane following (LF)
 
-* Module 7: Planning
+* Module 7: Planning I
 
   - Planning formalization
-  - Searching Graphs
-  - Sampling-based planning
-  - Application: duckie avoidance
+  - Graphs
+  - Application: Graph Searching
 
-* Module 8: Learning by Reinforcement
+* Module 8: Planning II
+
+  - Probabilistic roadmaps
+  - Sampling-based planning
+  - Application: Duckie avoidance
+
+* Module 9: Learning by Reinforcement
 
   - Markov decision processes
   - Value functions
@@ -115,7 +120,7 @@ This course includes 9 learning modules in addition to this introduction.
   - Domain randomization
   - Application: Lane following with RL
 
-* Module 9: Learning by Imitation
+* Module 10: Learning by Imitation
 
   - Behaviour cloning
   - Online imitation learning
@@ -138,7 +143,6 @@ We will assume that if you are taking this course, you are familiar with some ba
 	- use notions of probability (marginalization, Bayes theorem) to derive perception algorithms for the Duckiebot;
 	- write down equations of motion, which involve continuous time ODEs (recognizing the acronym is a good start!).
 
-
 * Computer with native Ubuntu installation and admin network access
 
   - we are going to use Ubuntu 20.04 with a native (e.g., dual boot) installation
@@ -156,7 +160,7 @@ The physical Duckiebot and Duckietown are not required to follow and complete th
 
 ## Format, timeline
 
-The course starts on Monday, March 22, 2021 with the release of this welcome module. This course is instructor paced. To accommodate for the "real world" nuisances we expect from using real robots, and leave no-one behind, we will release a new module every 10 days. The first module will be released on March 24. The final learning module will be released on Monday, June 14, 2021. The final homework assignment will be due on June 25, 2021, the end date of this course.
+The course starts on Monday, March 22, 2021 with the release of this welcome module. This course is instructor paced. To accommodate for the "real world" nuisances we expect from using real robots, and leave no-one behind, we will release a new module every 10 days. The first module will be released on March 24. The final learning module will be released on Monday, June 24, 2021. The final homework assignment will be due on June 30, 2021, the end date of this course.
 
 Learning modules will be released on Mondays and Thursdays alternatively, with exceptions for modules 1 (March 24), 7 and 8, which will happen on Tuesdays and Fridays, to avoid national holidays in some countries. Modules will always be released at 15:00 UTC unless otherwise specified.
 

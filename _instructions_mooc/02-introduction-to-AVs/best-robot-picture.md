@@ -39,5 +39,10 @@ The authors of the winning posts will receive their choice between:
 
 * A special surprise duckie!
 
-
 IMPORTANT: This activity will not affect your final grade in any way, and it is purely optional.
+
+## 🙀 Example
+
+And they called them "nuisances" @duckietown - just getting started! 💪 #duckietownMOOC
+
+<img src="/static/leia-et-db21-jt.jpeg" width="100%" alt="getting started with the MOOC"/>
