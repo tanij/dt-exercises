@@ -1,5 +1,5 @@
 _If you don't have a Duckiebot kit, skip this step_. You are missing a lot of the fun, but you can enjoy the course regardless.
- 
+
 
 ## 🚙  Duckiebot assembly and setup  
 
@@ -72,9 +72,91 @@ The message "Updating battery" is telling us that the battery is now receiving t
 Well done, the battery is now updated and ready to go back to work.
 
 
+# Dashboard tutorial
+
+In this video we are going to see how to setup the Duckiebot browser interface, or  dashboard,  on our newly flashed Duckiebot.
+
+Once your computer is setup and the Duckiebot is initialized, powered on and connected to the network, we can open a browser tab, and type in the address bar the name of our robot, for example "myrobot" followed by ".local" and a final "slash (/)", and press ENTER.
+
+A setup page will show up. The first two steps of the procedure will appear as already completed as they are not needed on a Duckiebot's dashboard.
+
+On Step 3, you can change things like the name of the Website (which is the name that will appear as the title of your dashboard on the browser tab. Although you can accept the default values provided,  we suggest you make sure that at least the timezone is set to your current one. You can leave the email address as default, as the robot is not going to use this email address for anything.
+
+When you are done, click NEXT.
+
+Step 4 will show you an image of the robot you have, if the image is depicting a different robot, it means that you picked the wrong configuration during the SD card initialization and you should not proceed further.
+
+Duckietown collects usage statistics and bug reports from robots in order to help the developers fix bugs and improve the software.
+
+You can read the Privacy Policy on the Duckietown website before deciding what data to share with Duckietown.
+Make your choices and then click NEXT.
+
+Step 5 is only there to  tell you that you are now ready to use the Dashboard, you can click on FINISH.
+
+By default, the Dashboard shows you the ROBOT page, we will talk about this and other features in the "How to use the Dashboard" video. Right now, we want to go to the LOGIN page, by clicking on the LOGIN on the sidebar.
+
+Right now, your Duckiebot is not linked to your Duckietown account on `duckietown.org`, so we are going to do so by logging in using your personal Duckietown Token. We go ahead and click on "Sign in with Duckietown", a prompt will ask for the Duckietown Token, click on the link "Get your token" to go to duckietown.org and get your token.
+
+You should see your token, if you don't see it, make sure you are logged in on duckietown.org.
+
+Copy your token and go back to the Dashboard tab in your browser then paste your token into the prope r field. When ready, click on LOGIN.
+
+The message in blue "Administrator account created" indicates that your Duckiebot is now linked to your Duckietown account.
+As you can see, now that we are logged in as ADMINISTRATORS, we have access to many more pages. We will cover them in the next video "How to use the Dashboard", make sure to check it
 
 
 
+## How to use the dashboard
+
+In this video we are going to see how to use the Dashboard on our Duckiebot.
+
+If you have not setup your dashboard yet, check out the video on "how to setup the dashboard".
+
+Let's start by opening our browser to the address "ROBOT NAME . local" followed by a slash "/" and login using our personal Duckietown Token. We should end up on the ROBOT page as shown.
+
+The default page of your Dashboard is the ROBOT page.
+
+On this page, you can see:
+- Basic information about the robot;
+- Core temperature;
+- CPU Usage and clock Frequency;
+- RAM and Disk Usage;
+- Battery level and estimated time until empty;
+
+At the bottom of the page, the Status indicators will turn yellow to indicate a warning state and red to indicate a critical state of the health of your Duckiebot. Make sure you check them regularly.
+
+
+From the ROBOT page, we go to the MISSION CONTROL tab. Mission Control is a very powerful tool. It lets you build custom visualization pages, called "missions".
+
+Today we are only going to check out the default mission.
+The first thing to check on Mission Control is that the Bridge is connected. A bridge is a direct connection between your browser and the robot. If the bridge is not connected, then the browser and the robot cannot talk to each other.
+
+Other useful information you will find on this page are the current mission, default in this case and the name of your duckiebot.
+
+The default mission only shows the camera feed and the motor speeds. A more in-depth video will cover the topic of how to create new custom missions in Mission Control.
+
+
+The second Tab is the HEALTH tab. Here we can monitor some signals of our Duckiebot useful for diagnostics, such as Core Temperature, CPU, RAM and SWAP usages.
+
+The third Tab is called ARCHITECTURE. This tool let's us see how the various software modules currently running on our Duckebot are talking to each other. Blue rectangles indicate processes, also called nodes, and grey ovals indicate stream of messages, also known as topics. If you are familiar with ROS, this is what we call the ROS network.
+
+The final tab is the robot SETTINGS tab, which lets you change data permissions and other robot settings like its type and configuration. For most users, this tab will never be touched.
+
+
+The next page we are going to look at is PORTAINER. PORTAINER is a third-party tool that seamlessly integrates into the dashboard and lets us monitor and control the software modules that are running on your Duckiebot.
+The Duckiebot software is Dockerized, and portainer lets us monitor and control the execution of Docker containers.
+We can click on PRIMARY and then on CONTAINERS. This page shows a list of containers and their health. Everything looks healthy, which is great.
+
+The most important role of PORTAINER is that of monitoring our software modules. For any module, say for example, "duckiebot interface", we can see the container LOGS, INSPECT its configuration, look at the STATISTICS of the processes running in that container and for advanced users it is also possible to attach a terminal to that container.
+
+Let's look at the container logs, for example. In this case, the LOGS for the duckiebot interface container show us some debugging messages from the process responsible for talking to the camera on our Duckiebot. From this log you can see for example the list of MODES supported by the camera and the one that the process is using right now.
+
+
+The next page is going to be the FILE MANAGER. The file manager lets us see the files inside our Duckiebot.
+Under "data", we can open for example the "config" directory, then "calibrations". This is the place where sensor calibration files will be stored.
+
+
+The last thing we are going to see today is how we can shutdown or reboot our Duckiebot from the Dashboard. To do so, we go back to the ROBOT page, on the top-right corner of the page we see the POWER button. Click on it to show the options SHUTDOWN and REBOOT.
 
 
 
