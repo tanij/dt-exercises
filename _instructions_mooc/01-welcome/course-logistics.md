@@ -8,7 +8,7 @@ Welcome, again, to Self-Driving Cars with Duckietown!
 
 This course is the result of the collaboration of ETH Zurich (ETHZ), the University of Montreal (UdM), the Toyota Technological Institute at Chicago (TTIC) and Duckietown.
 
-The Duckietown platform was created in 2016 to teach the science and technology of autonomous vehicles to the master students of MIT. You can learn more about the history of the Duckietown project [here][duckietown-history].
+The Duckietown platform was created in 2016 to teach the science and technology of autonomous vehicles to graduate students at MIT. You can [learn more about the history of the Duckietown project][duckietown-history].
 
 [duckietown-history]: https://www.duckietown.org/about/history
 
@@ -19,7 +19,7 @@ Throughout the course you will meet instructors and staff from all the organizin
 * Prof. [Emilio Frazzoli][emilio-web],  ETHZ
 * Dr. [Andrea Censi][andrea-web],  ETHZ ([introduction][ac-intro])
 * Dr. [Jacopo Tani][jacopo-web], ETHZ ([introduction][jt-intro])
-* Prof. [Matthew Walter][matt-web], TTIC ([introduction][mw-intro])
+* Prof. [Matthew Walter][matt-web], TTIC  
 * Prof. [Liam Paull][liam-web], UdM ([introduction][lp-intro])
 * [Andrea Daniele][daniele-web], TTIC ([introduction][afd-intro])
 
@@ -34,26 +34,25 @@ Throughout the course you will meet instructors and staff from all the organizin
 
 [ac-intro]: https://vimeo.com/527052737
 [jt-intro]: https://vimeo.com/526949215
-[lp-intro]: https://vimeo.com/527052564
-[mw-intro]: #
+[lp-intro]: https://vimeo.com/527052564 
 [afd-intro]: https://vimeo.com/527124388
 
 <!--
-TODO: afd, mw intro videos.
+TODO:  mw intro videos.
 -->
 
 
 ## Intended Learning Outcomes
 
-This course is designed to be hands-on. This means that you will actually have to _do_ things in the real world with the information we will provide you. In the context of robotics, "real" world could mean a simulated environment as well as the physical world.   
+This course is designed to be hands-on. This means that you will actually have to _do_ things in the real world with the information we will provide you. In the context of robotics, "real" world could mean a simulated environment as well as the physical world.
 
-By the end of this course, we will learn about the fundamental of robotics. What qualifies as a robot? What do they have in common? What are the differences and implications of logical and physical autonomy architectures? How painful is the difference between what _should_ happen in theory and what _actually_ happens, and how do we go from understanding to implementation?
+By the end of this course, you will learn about the fundamentals of robotics. What qualifies as a robot? What do they have in common? What are the differences and implications of logical and physical autonomy architectures? How significant is the difference between what _should_ happen in theory and what _actually_ happens, and how do we go from understanding to implementation?
 
-Self-driving Cars with Duckietown is a "grand tour" of robotics. The focus is on the breadth rather than the depth. We  highlight how robotics is a system level discipline where many components interact with each other to produce real world autonomous behaviors. Any of these "components" could absorb an entire professional career.
+Self-driving Cars with Duckietown is a "grand tour" of robotics. The focus is on the breadth rather than the depth. We  highlight how robotics is a system-level discipline where many components interact with each other to produce real world autonomous behaviors. Any of these "components" could absorb an entire professional career.
 
-Finally, we want to provide an understanding of the difference in approaches to solving the challenges of autonomy. The buzz of AI is high. What is its place in robotics? How does using reinforcement or imitation learning relate to the "traditional" robotics approaches to given tasks?
+Finally, we want to provide an understanding of the difference in approaches to solving the challenges of autonomy. The buzz surrounding AI is high. What is its place in robotics? How does using reinforcement or imitation learning compare with the "traditional" robotics approaches to given tasks?
 
-Robotics and AI are a fast-paced field of research and this course is just the beginning of a learning adventure.
+Robotics and AI are fast-paced fields of research and this course is just the beginning of a learning adventure.
 
 ## Course content
 
@@ -131,7 +130,7 @@ We will assume that if you are taking this course, you are familiar with some ba
 
 	- use terminal interface, so basic knowledge of Bash is required;
 	- write "autonomy" code in Python;
-	- pull repositories, fork, push, branch, etc.
+	- pull Git repositories, fork, push, branch, etc.
 
 * Elements of linear algebra, probability, calculus. We are going to:
 
@@ -139,9 +138,6 @@ We will assume that if you are taking this course, you are familiar with some ba
 	- use notions of probability (marginalization, Bayes theorem) to derive perception algorithms for the Duckiebot;
 	- write down equations of motion, which involve continuous time ODEs (recognizing the acronym is a good start!).
 
-* Elements of kinematics
-
-  - We are going to derive a kinematic model of the Duckiebot.
 
 * Computer with native Ubuntu installation and admin network access
 
@@ -153,7 +149,7 @@ We will assume that if you are taking this course, you are familiar with some ba
 
 ## The Duckiebot and Duckietown
 
-The physical Duckiebot and Duckietown are not required to follow and complete this course. However, following along with a real robot will make you learn much more. You can get a Duckietown MOOC Founder Edition Kit (robot + city track) [here][dt-shop-mooc-kit].  
+The physical Duckiebot and Duckietown are not required to follow and complete this course. However, following along with a real robot will help you learn much more. You can [get a Duckietown MOOC Founder Edition Kit (robot + city track)][dt-shop-mooc-kit].
 
 
 [dt-shop-mooc-kit]: https://get.duckietown.com/collections/starter-kits/products/db-mooc-kit
@@ -184,7 +180,7 @@ Each learning module will include video lectures, activities, a homework exercis
 
 ## Grading and the AI Driving Olympics (AI-DO)
 
-The Duckietown platform is used for benchmarking the state of the art of embodied AI through international competitions that take place biannually at premiere robotics and ML conferences such as [ICRA (external link)][icra21] and [NeurIPS (external link)][neurips21]. You can learn more about the AI-DO [here][aido-info] if you want.
+The Duckietown platform is used for benchmarking the state of the art of embodied AI through international competitions that take place biannually at premiere robotics and ML conferences such as [ICRA (external link)][icra21] and [NeurIPS (external link)][neurips21]. You can [learn more about the AI-DO][aido-info] if you want.
 
 AI-DO is different from this course, but we will use the same [technical infrastructure][challenges-server] to grade your exercises. By construction, some exercises we will ask you to do will overlap with existing AI-DO challenges. What you will be doing is highly scientific!
 
@@ -201,11 +197,11 @@ We will be answering questions related to:
 
 * _learning materials_ on the [EdX Discussions forum][edx-disc-forum] and
 
-* _technical questions_ on the [Duckietown Stack Overflow][dt-stack-overflow] space. This is a private space and will require an invitation to join. We will send an invitations out throughout the first week of the course. To receive an invitation you will have to have completed the "Create your Accounts" activity in the very first learning module.  
+* _technical questions_ on the [Duckietown Stack Overflow][dt-stack-overflow] space. This is a private space and will require an invitation to join. We will send  invitations throughout the first week of the course. To receive an invitation you will have to have completed the "Create your Accounts" activity in the very first learning module.  
 
-Each instructor will lead one or more learning modules. The lead instructor will always be the go-to person for addressing questions related to that module.
+Each module will be led by an instructor. The lead instructor will always be the go-to person for addressing questions related to that module.
 
-Additionally, Andrea Daniele will be responsible of supporting software challenges, and Jacopo hardware related ones.
+Additionally, Andrea Daniele will be responsible for supporting software challenges, and Jacopo Tani the hardware related ones.
 
 To provide effective support, we will focus on answering questions posted in the above avenues, and ignore other requests for support. Additionally, when using any forum we expect all learners to maintain a constructive, positive and professional attitude (but clearly duckie puns are always welcome!). We will ban / report / take all appropriate actions to maintain a high-quality learning environment.
 
