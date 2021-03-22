@@ -1,7 +1,6 @@
 _If you don't have a Duckiebot kit, skip this step_. You are missing a lot of the fun, but you can enjoy the course regardless.
 
-
-## Duckietown assembly and setup  
+# 🚙 Duckietown assembly and setup  
 
 Duckiebots like driving in Duckietowns!
 
@@ -16,4 +15,3 @@ If you have a Duckietown city pack, follow [these instructions][duckiebook-city-
 🤔 If you have problems with this step, you can ask [a question on our Stack Overflow with tag `#DTNAVM`](https://stackoverflow.com/c/duckietown/questions/tagged/DTNAVM).
 
 [duckiebook-city-assembly]: https://docs.duckietown.org/daffy/opmanual_duckietown/out/index.html
-

@@ -2,7 +2,6 @@
 
 Here is some organizational information about the course. Some of this information can be found in the course Syllabus in the "Handouts" section of the "Course" page.
 
-
 ## Welcome
 
 Welcome, again, to Self-Driving Cars with Duckietown!
@@ -15,25 +14,33 @@ The Duckietown platform was created in 2016 to teach the science and technology 
 
 ## The Staff
 
-Throughout the course you will meet instructors and staff from all the organizing institutions. In order of appearance:
+Throughout the course you will meet instructors and staff from all the organizing institutions. Before starting, we wanted to very briefly introduce ourselves. Check out our informal introductions on Vimeo! In order of appearance:
 
 * Prof. [Emilio Frazzoli][emilio-web],  ETHZ
-* Dr. [Andrea Censi][andrea-web],  ETHZ
-* Dr. [Jacopo Tani][jacopo-web], ETHZ
-* Prof. [Matthew Walter][matt-web], TTIC
-* Prof. [Liam Paull][liam-web], UdM
-* [Andrea Daniele][daniele-web], TTIC
+* Dr. [Andrea Censi][andrea-web],  ETHZ ([introduction][ac-intro])
+* Dr. [Jacopo Tani][jacopo-web], ETHZ ([introduction][jt-intro])
+* Prof. [Matthew Walter][matt-web], TTIC ([introduction][mw-intro])
+* Prof. [Liam Paull][liam-web], UdM ([introduction][lp-intro])
+* [Andrea Daniele][daniele-web], TTIC ([introduction][afd-intro])
 
-[jacopo-web]: https://www.linkedin.com/in/jacopo-tani/ 
+[jacopo-web]: https://www.linkedin.com/in/jacopo-tani/
 [emilio-web]: https://idsc.ethz.ch/research-frazzoli.html
 [andrea-web]: https://censi.science/
 [andrea-linkedin]: https://www.linkedin.com/in/censi/
-
 [liam-web]: https://liampaull.ca/
 [matt-web]: https://ttic.uchicago.edu/~mwalter/
 [daniele-web]: https://afdaniele.com/
 
-Before the corse starts, we wanted to take a few minutes to introduce ourselves. You can watch this informal video on Vimeo: [Informal staff introductions][video-staff-intro].
+
+[ac-intro]: https://vimeo.com/527052737
+[jt-intro]: https://vimeo.com/526949215
+[lp-intro]: https://vimeo.com/527052564
+[mw-intro]: #
+[afd-intro]: https://vimeo.com/527124388
+
+<!--
+TODO: afd, mw intro videos.
+-->
 
 
 ## Intended Learning Outcomes
@@ -44,9 +51,9 @@ By the end of this course, we will learn about the fundamental of robotics. What
 
 Self-driving Cars with Duckietown is a "grand tour" of robotics. The focus is on the breadth rather than the depth. We  highlight how robotics is a system level discipline where many components interact with each other to produce real world autonomous behaviors. Any of these "components" could absorb an entire professional career.
 
-Finally, we want to provide an understanding of the difference in approaches to solving the challenges of autonomy. The buzz of AI is high, but what is its place in robotics? How does using reinforcement or imitation learning relate to the "traditional" robotics approaches to given tasks?
+Finally, we want to provide an understanding of the difference in approaches to solving the challenges of autonomy. The buzz of AI is high. What is its place in robotics? How does using reinforcement or imitation learning relate to the "traditional" robotics approaches to given tasks?
 
-Robotics and AI are a fast-paced field of research and this course is the beginning of a learning adventure.
+Robotics and AI are a fast-paced field of research and this course is just the beginning of a learning adventure.
 
 ## Course content
 
@@ -153,16 +160,15 @@ The physical Duckiebot and Duckietown are not required to follow and complete th
 
 ## Format, timeline
 
-The course starts on Monday, March 22, 2021 with the release of the first learning module (in addition to this welcome). This course is instructor paced. To accommodate for the "real world" nuisances we expect from using real robots, and leave no-one behind, we will release a new module every 10 days. The final learning module will be released on Monday, June 14, 2021. The final homework assignment will be due on June 25, 2021, the end date of this course.
+The course starts on Monday, March 22, 2021 with the release of this welcome module. This course is instructor paced. To accommodate for the "real world" nuisances we expect from using real robots, and leave no-one behind, we will release a new module every 10 days. The first module will be released on March 24. The final learning module will be released on Monday, June 14, 2021. The final homework assignment will be due on June 25, 2021, the end date of this course.
 
-Learning modules will be released on Mondays and Thursdays alternatively, with exceptions for modules 7 and 8, which will happen on Tuesdays and Fridays, to avoid national holidays in some countries. Modules will always be released at 7AM PT | 10AM ET | 4PM CET | 7.30PM IST unless otherwise specified.
+Learning modules will be released on Mondays and Thursdays alternatively, with exceptions for modules 1 (March 24), 7 and 8, which will happen on Tuesdays and Fridays, to avoid national holidays in some countries. Modules will always be released at 15:00 UTC unless otherwise specified.
 
 Each learning module will include video lectures, activities, a homework exercise, and optional additional materials like supplementary readings, surveys, quizzes, etc.
 
 * Video Lectures will cover the theory behind the topics at hand.
 
   - You should watch all videos
-
 
 * Activities
 
@@ -174,7 +180,7 @@ Each learning module will include video lectures, activities, a homework exercis
 
   - are based upon the theory and activities
   - **are** graded
-  - are due before the release of the next learning module (exception for the last exercise, which is due on June 25, 2021, AM PT | 10AM ET | 4PM CET | 7.30PM IST)
+  - are due before the release of the next learning module (exception for the last exercise, which is due on June 25, 2021, 15:00 UTC)
 
 ## Grading and the AI Driving Olympics (AI-DO)
 
@@ -182,7 +188,7 @@ The Duckietown platform is used for benchmarking the state of the art of embodie
 
 AI-DO is different from this course, but we will use the same [technical infrastructure][challenges-server] to grade your exercises. By construction, some exercises we will ask you to do will overlap with existing AI-DO challenges. What you will be doing is highly scientific!
 
-At any time, with an additional line of code, you can decide to submit your "homework" to the actual scientific competition, too. If your agent reaches the finals, you could be featured in this year's AI-DO 6 finals at ICRA 2021!
+At any time, with an additional line of code, you can decide to submit your "homework" to the actual competition, too. If your agent reaches the finals, you could be featured in this year's AI-DO 6 finals at ICRA 2021!
 
 [icra21]: http://www.icra2021.org/
 [neurips21]: https://nips.cc/

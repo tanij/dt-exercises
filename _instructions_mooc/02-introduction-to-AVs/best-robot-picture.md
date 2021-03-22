@@ -4,7 +4,6 @@ We are sure you are proud of your Duckiebot. Show the world!
 
 **Post a picture of you and your Duckiebot on social media. Feel free to decorate the Duckiebot to reflect your character and the culture of your city.**
 
-
 ## Information
 
 * 🎬 Start time: now!
@@ -19,9 +18,9 @@ We are sure you are proud of your Duckiebot. Show the world!
 
   * 🌐 Post it on your favorite social media amongst Facebook, Instagram, Twitter, and Linkedin!  
 
-  * 💪 Write something like: "Getting starting with Self-Driving Cars with Duckietown! I'm ready to go!"
+  * 💪 Write something you like!
 
-  * 🦆 Tag us in your post ([Twitter][social-twitter]: @DuckietownAI; [Instagram][social-instagram]: @duckietown; [Facebook][social-fb]: @duckietown, [LinkedIn][social-linkedin]: @duckietown) and don't forget to use hashtag #duckietown.
+  * 🦆 Tag us in your post ([Twitter][social-twitter]: @DuckietownAI; [Instagram][social-instagram]: @duckietown; [Facebook][social-fb]: @duckietown, [LinkedIn][social-linkedin]: @duckietown) and don't forget to use hashtag #duckietownMOOC!
 
 [social-twitter]: https://twitter.com/duckietownai
 [social-instagram]: https://www.instagram.com/duckietown/
