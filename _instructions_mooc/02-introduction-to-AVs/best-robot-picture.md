@@ -41,7 +41,7 @@ The authors of the winning posts will receive their choice between:
 
 IMPORTANT: This activity will not affect your final grade in any way, and it is purely optional.
 
-## Example
+## 🙀 Example
 
 And they called them "nuisances" @duckietown - just getting started! 💪 #duckietownMOOC
 
