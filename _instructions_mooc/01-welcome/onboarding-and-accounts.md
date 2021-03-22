@@ -7,7 +7,7 @@ Compared to other courses you might have taken, it might seem intimidating to se
 However, it's going to be worth it, we promise!
 
 This document summarizes the steps that you need to do. We will write here on edX _a  synthetic summary_ for the steps to take. Usually the details are in one of our Duckiebooks at the site [docs.duckietown.org/daffy/](https://docs.duckietown.org/daffy/).
- 
+
 
 ## Step 1: Make all the accounts first!
 
@@ -79,7 +79,7 @@ If the Duckietown Shell was installed, then you can run a command like this:
 If you correctly configured the token, then this command should work:
 
     > dts challenges info
-    ~        You are succesfully authenticated:
+    ~        You are successfully authenticated:
     ~
     ~                     ID: 3
     ~                   name: YOUR NAME
