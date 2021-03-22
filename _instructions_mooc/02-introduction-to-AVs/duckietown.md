@@ -1,6 +1,6 @@
 _If you don't have a Duckiebot kit, skip this step_. You are missing a lot of the fun, but you can enjoy the course regardless.
 
-# Duckietown assembly and setup  
+# 🚙 Duckietown assembly and setup  
 
 Duckiebots like driving in Duckietowns!
 
