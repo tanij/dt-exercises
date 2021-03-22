@@ -13,32 +13,32 @@ We are sure you are proud of your Duckiebot. Show the world!
 
 * 📋 Rules 📋:
 
-  - 📸 📹 🤳 Take a picture, video or do a selfie with your Duckiebot.
+  * 📸 📹 🤳 Take a picture, video or do a selfie with your Duckiebot.
 
-  - Reminder: each Duckiebot should have a Duckie on top.
+  * Reminder: each Duckiebot should have a Duckie on top.
 
-  - 🌐 Post it on your favorite social media amongst Facebook, Instagram, Twitter and Linkedin!  
+  * 🌐 Post it on your favorite social media amongst Facebook, Instagram, Twitter, and Linkedin!  
 
-  - 💪 Write something like: "Getting starting with Self-Driving Cars with Duckietown! I'm ready to go!"
+  * 💪 Write something like: "Getting starting with Self-Driving Cars with Duckietown! I'm ready to go!"
 
-  - 🦆 Tag us in your post ([Twitter][social-twitter]: @DuckietownAI; [Instagram][social-instagram]: @duckietown; [Facebook][social-fb]: @duckietown, [LinkedIn][social-linkedin]: @duckietown) and don't forget to use hashtag #duckietown.
+  * 🦆 Tag us in your post ([Twitter][social-twitter]: @DuckietownAI; [Instagram][social-instagram]: @duckietown; [Facebook][social-fb]: @duckietown, [LinkedIn][social-linkedin]: @duckietown) and don't forget to use hashtag #duckietown.
 
-[social-twitter]:https://twitter.com/duckietownai
-[social-instagram]:https://www.instagram.com/duckietown/
-[social-fb]:https://www.facebook.com/duckietown/
-[social-linkedin]:https://www.linkedin.com/company/duckietown/
+[social-twitter]: https://twitter.com/duckietownai
+[social-instagram]: https://www.instagram.com/duckietown/
+[social-fb]: https://www.facebook.com/duckietown/
+[social-linkedin]: https://www.linkedin.com/company/duckietown/
 
 * 🏆 Winners:
 
-  - The posts with most engagement on **each** social media at the end time of this contest will be declared winners.
+  * The posts with the most engagement on **each** social media at the end time of this contest will be declared winners.
 
-## Prizes:
+## Prizes
 
 The authors of the winning posts will receive their choice between:
 
-- A Duckie Tie, like the instructors!
+* A Duckie Tie, like the instructors!
 
-- A special surprise duckie!
+* A special surprise duckie!
 
 
-IMPORTANT: This activity will not affect your final grade in any way and it is purely optional.
+IMPORTANT: This activity will not affect your final grade in any way, and it is purely optional.

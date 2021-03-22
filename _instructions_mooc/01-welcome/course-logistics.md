@@ -24,7 +24,7 @@ Throughout the course you will meet instructors and staff from all the organizin
 * Prof. [Liam Paull][liam-web], UdM
 * [Andrea Daniele][daniele-web], TTIC
 
-[jacopo-web]: https://www.linkedin.com/in/jacopo-tani/?originalSubdomain=ch
+[jacopo-web]: https://www.linkedin.com/in/jacopo-tani/ 
 [emilio-web]: https://idsc.ethz.ch/research-frazzoli.html
 [andrea-web]: https://censi.science/
 [andrea-linkedin]: https://www.linkedin.com/in/censi/
