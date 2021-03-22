@@ -17,20 +17,23 @@ The Duckietown platform was created in 2016 to teach the science and technology 
 Throughout the course you will meet instructors and staff from all the organizing institutions. Before starting, we wanted to very briefly introduce ourselves. Check out our informal introductions on Vimeo! In order of appearance:
 
 * Prof. [Emilio Frazzoli][emilio-web],  ETHZ
-* Dr. [Andrea Censi][andrea-web],  ETHZ ([introduction][ac-intro])
-* Dr. [Jacopo Tani][jacopo-web], ETHZ ([introduction][jt-intro])
-* Prof. [Matthew Walter][matt-web], TTIC  
-* Prof. [Liam Paull][liam-web], UdM ([introduction][lp-intro])
-* [Andrea Daniele][daniele-web], TTIC ([introduction][afd-intro])
+* Dr. [Andrea Censi][andrea-web],  ETHZ ([introduction][ac-intro], [LinkedIn][andrea-linkedin])
+* Dr. [Jacopo Tani][jacopo-web], ETHZ ([introduction][jt-intro], [LinkedIn][jacopo-linkedin])
+* Prof. [Matthew Walter][matt-web], TTIC  ([LinkedIn][matt-linkedin])
+* Prof. [Liam Paull][liam-web], UdM ([introduction][lp-intro], [LinkedIn][liam-linkedin])
+* [Andrea Daniele][daniele-web], TTIC ([introduction][afd-intro], [LinkedIn][daniele-linkedin])
 
 [jacopo-web]: https://www.linkedin.com/in/jacopo-tani/
+[jacopo-linkedin]: https://www.linkedin.com/in/jacopo-tani/
 [emilio-web]: https://idsc.ethz.ch/research-frazzoli.html
 [andrea-web]: https://censi.science/
 [andrea-linkedin]: https://www.linkedin.com/in/censi/
 [liam-web]: https://liampaull.ca/
+[liam-linkedin]: https://www.linkedin.com/in/liam-paull-83a5442b/
 [matt-web]: https://ttic.uchicago.edu/~mwalter/
+[matt-linkedin]: https://www.linkedin.com/in/matthew-walter-70320b2/
 [daniele-web]: https://afdaniele.com/
-
+[daniele-linkedin]: https://www.linkedin.com/in/andreafdaniele/
 
 [ac-intro]: https://vimeo.com/527052737
 [jt-intro]: https://vimeo.com/526949215
@@ -48,7 +51,7 @@ This course is designed to be hands-on. This means that you will actually have t
 
 By the end of this course, you will learn about the fundamentals of robotics. What qualifies as a robot? What do they have in common? What are the differences and implications of logical and physical autonomy architectures? How significant is the difference between what _should_ happen in theory and what _actually_ happens, and how do we go from understanding to implementation?
 
-Self-driving Cars with Duckietown is a "grand tour" of robotics. The focus is on the breadth rather than the depth. We  highlight how robotics is a system-level discipline where many components interact with each other to produce real world autonomous behaviors. Any of these "components" could absorb an entire professional career.
+Self-driving Cars with Duckietown is a "grand tour" of robotics. The focus is on   breadth rather than   depth. We  highlight how robotics is a system-level discipline where many components interact with each other to produce real-world autonomous behaviors. Any of these "components" could absorb an entire professional career.
 
 Finally, we want to provide an understanding of the difference in approaches to solving the challenges of autonomy. The buzz surrounding AI is high. What is its place in robotics? How does using reinforcement or imitation learning compare with the "traditional" robotics approaches to given tasks?
 
@@ -173,20 +176,20 @@ Each learning module will include video lectures, activities, a homework exercis
 * Activities
 
   - require you to follow along and reproduce some behaviors
-  - can be software and hardware based
+  - can be software or hardware based
   - are **not** graded
 
 * Homework exercises
 
   - are based upon the theory and activities
   - **are** graded
-  - are due before the release of the next learning module (exception for the last exercise, which is due on June 25, 2021, 15:00 UTC)
+  - are due before the release of the next learning module (except for the last exercise, which is due on June 25, 2021, 15:00 UTC)
 
 ## Grading and the AI Driving Olympics (AI-DO)
 
 The Duckietown platform is used for benchmarking the state of the art of embodied AI through international competitions that take place biannually at premiere robotics and ML conferences such as [ICRA (external link)][icra21] and [NeurIPS (external link)][neurips21]. You can [learn more about the AI-DO][aido-info] if you want.
 
-AI-DO is different from this course, but we will use the same [technical infrastructure][challenges-server] to grade your exercises. By construction, some exercises we will ask you to do will overlap with existing AI-DO challenges. What you will be doing is highly scientific!
+AI-DO is different from this course, but we will use the same [technical infrastructure][challenges-server] to grade your exercises. By construction, in some exercises we will ask you to do will overlap with existing AI-DO challenges. What you will be doing is highly scientific!
 
 At any time, with an additional line of code, you can decide to submit your "homework" to the actual competition, too. If your agent reaches the finals, you could be featured in this year's AI-DO 6 finals at ICRA 2021!
 
@@ -205,7 +208,8 @@ We will be answering questions related to:
 
 Each module will be led by an instructor. The lead instructor will always be the go-to person for addressing questions related to that module.
 
-Additionally, Andrea Daniele will be responsible for supporting software challenges, and Jacopo Tani the hardware related ones.
+
+Additionally, Andrea Daniele will be responsible for supporting software challenges, and Jacopo Tani the hardware-related ones. 
 
 To provide effective support, we will focus on answering questions posted in the above avenues, and ignore other requests for support. Additionally, when using any forum we expect all learners to maintain a constructive, positive and professional attitude (but clearly duckie puns are always welcome!). We will ban / report / take all appropriate actions to maintain a high-quality learning environment.
 

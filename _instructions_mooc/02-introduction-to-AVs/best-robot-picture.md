@@ -45,4 +45,4 @@ IMPORTANT: This activity will not affect your final grade in any way, and it is 
 
 And they called them "nuisances" @duckietown - just getting started! 💪 #duckietownMOOC
 
-<img src="/static/leia-et-db21-jt.jpeg" width="100%" alt="getting started with the MOOC"/>
+<img src="/static/leia-et-db21-jt.jpg" width="100%" alt="getting started with the MOOC"/>
