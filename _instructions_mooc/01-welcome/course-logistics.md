@@ -66,7 +66,7 @@ This course includes 10 learning modules in addition to this introduction.
   - The potentials and challenges
   - Levels of autonomy
   - The vision for autonomous vehicles (AVs)
-  - Activities: learning environment setup
+  - Activities: Learning environment setup
 
 * Module 2: Towards autonomy
 
@@ -88,7 +88,7 @@ This course includes 10 learning modules in addition to this introduction.
   - Introduction to projective geometry
   - Camera modeling and calibration
   - Image processing
-  - Application: visual servoing
+  - Application: Visual servoing
 
 * Module 5: Object Detection
 
@@ -101,7 +101,7 @@ This course includes 10 learning modules in addition to this introduction.
   - Bayes filtering framework
   - Parameterized methods (Kalman filter)
   - Sampling-based methods (Particle and histogram filter)
-  - Application: lane following (LF)
+  - Application: Lane following (LF)
 
 * Module 7: Planning I
 
@@ -163,7 +163,7 @@ The physical Duckiebot and Duckietown are not required to follow and complete th
 
 ## Format, timeline
 
-The course starts on Monday, March 22, 2021 with the release of this welcome module. This course is instructor paced. To accommodate for the "real world" nuisances we expect from using real robots, and leave no-one behind, we will release a new module every 10 days. The first module will be released on March 24. The final learning module will be released on Monday, June 24, 2021. The final homework assignment will be due on June 30, 2021, the end date of this course.
+The course starts on Monday, March 22, 2021 with the release of this welcome module. This course is instructor paced. To accommodate for the "real world" nuisances we expect from using real robots, and leave no-one behind, we will release a new module every 10 days. The first module will be released on March 24. The final learning module will be released on June 24, 2021. The final homework assignment will be due on June 30, 2021, the end date of this course.
 
 Learning modules will be released on Mondays and Thursdays alternatively, with exceptions for modules 1 (March 24), 7 and 8, which will happen on Tuesdays and Fridays, to avoid national holidays in some countries. Modules will always be released at 15:00 UTC unless otherwise specified.
 
@@ -209,7 +209,7 @@ We will be answering questions related to:
 Each module will be led by an instructor. The lead instructor will always be the go-to person for addressing questions related to that module.
 
 
-Additionally, Andrea Daniele will be responsible for supporting software challenges, and Jacopo Tani the hardware-related ones. 
+Additionally, Andrea Daniele will be responsible for supporting software challenges, and Jacopo Tani the hardware-related ones.
 
 To provide effective support, we will focus on answering questions posted in the above avenues, and ignore other requests for support. Additionally, when using any forum we expect all learners to maintain a constructive, positive and professional attitude (but clearly duckie puns are always welcome!). We will ban / report / take all appropriate actions to maintain a high-quality learning environment.
 
