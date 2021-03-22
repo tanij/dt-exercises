@@ -16,9 +16,9 @@ At the end of this step you will have an initialized and verified sd card.
 
 ## Step 2: Assemble your Duckiebot
 
-⚠️ The Duckiebot is equipped with a Lithium-Ion battery, like typical power banks for phones. These batteries can be dangerous if mishandled. [Read Sec. 1.1 here ][duckiebook-duckiebattery] to learn what to do and not do with a lithium-ion battery, and about some features of the Duckiebattery.
+⚠️ The Duckiebot is equipped with a Lithium-Ion battery, like typical power banks for phones. These batteries can be dangerous if mishandled. [Read Sec. 1.1 here ][duckiebook-duckiebattery] to learn what to do and not do with a lithium-ion battery, and more about the Duckiebattery.
 
-Once you are ready to proceed, you can follow [these instructions][duckiebook-robot-assembly] to fully assemble the Duckiebot. All the tools necessary for the job are included in the box.
+Once you are ready to proceed, you can follow [these instructions][duckiebook-robot-assembly] to fully assemble the Duckiebot. All the tools necessary for the job are included in the box.  
 
 At then end of this step you should have a correctly initialized, fully charged, ready to go Duckiebot.  
 
@@ -28,16 +28,17 @@ At then end of this step you should have a correctly initialized, fully charged,
 
 ## Step 3: Duckiebot handling 101
 
-Before delving in the middle of things, let's learn how to perform fundamental operations for Duckiebot handling, such as powering it on and off correctly, recharging it, and keeping the hardware up to date.  
+Before delving in the middle of things, let's learn how to perform fundamental operations for Duckiebot handling, such as powering it on and off, recharging it, and keeping the hardware up to date.  
 
-Follow [these instructions][duckiebook-robot-handling]
+Follow [these instructions][duckiebook-robot-handling] to learn about Duckiebot handling.
 
 [duckiebook-robot-handling]: https://docs.duckietown.org/daffy/opmanual_duckiebot/out/handling_duckiebot_db21.html
 
+## Step 4: Checkpoint!
+
+At this point you should be able to turn your Duckiebot on for the first time and see the screen on the top turn on and show basic diagnostics, and the LEDs turn white.
+
 🤔 If you have problems with this step, please ask [a question on our Stack Overflow with tag `#DB21`](https://stackoverflow.com/c/duckietown/questions/tagged/DB21).
-
-
-
 
 <!--
 
