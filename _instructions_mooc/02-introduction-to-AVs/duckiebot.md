@@ -24,7 +24,7 @@ At then end of this step you should have a correctly initialized, fully charged,
 
 [duckiebook-duckiebattery]: https://docs.duckietown.org/daffy/opmanual_duckiebot/out/db_opmanual_preliminaries_electronics.html
 
-[duckiebook-robot-assembly]: https://docs.duckietown.org/daffy/opmanual_duckiebot/out/assembling_duckiebot_db21.html
+[duckiebook-robot-assembly]: https://docs.duckietown.org/daffy/opmanual_duckiebot/out/assembling_duckiebot_db21m.html
 
 ## Step 3: Duckiebot handling 101
 
@@ -32,13 +32,13 @@ Before delving in the middle of things, let's learn how to perform fundamental o
 
 Follow [these instructions][duckiebook-robot-handling] to learn about Duckiebot handling.
 
-[duckiebook-robot-handling]: https://docs.duckietown.org/daffy/opmanual_duckiebot/out/handling_duckiebot_db21.html
+[duckiebook-robot-handling]: https://docs.duckietown.org/daffy/opmanual_duckiebot/out/handling_duckiebot_db21m.html
 
 ## Step 4: Checkpoint!
 
 At this point you should be able to turn your Duckiebot on for the first time and see the screen on the top turn on and show basic diagnostics, and the LEDs turn white.
 
-🤔 If you have problems with this step, please ask [a question on our Stack Overflow with tag `#DB21`](https://stackoverflow.com/c/duckietown/questions/tagged/DB21).
+🤔 If you have problems with this step, please ask [a question on our Stack Overflow with tag `#DB21M`](https://stackoverflow.com/c/duckietown/questions/tagged/DB21M).
 
 <!--
 
