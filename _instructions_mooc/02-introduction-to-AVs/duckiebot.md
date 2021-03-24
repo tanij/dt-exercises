@@ -42,10 +42,10 @@ At this point you should be able to:
 
 - find your Duckiebot on the network by typing:
 
-    > dts fleet discover
-    ~          |   Type    | Model |  Status  |  Internet  |  Dashboard  |  Hostname
-    ~     ---- | --------- | ----- | -------- | ---------- | ----------- | ----------
-    ~     argo | duckiebot | DB21M |  Ready   |    Yes     |     Up      | argo.local
+      > dts fleet discover
+      ~          |   Type    | Model |  Status  |  Internet  |  Dashboard  |  Hostname
+      ~     ---- | --------- | ----- | -------- | ---------- | ----------- | ----------
+      ~     argo | duckiebot | DB21M |  Ready   |    Yes     |     Up      | argo.local
 
 it might take a few seconds for the discovery to happen.
 
