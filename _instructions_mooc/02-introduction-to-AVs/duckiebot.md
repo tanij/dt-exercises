@@ -8,15 +8,15 @@ It is time to prepare a clean, well lit, flat surface and open your Duckiebox.
 
 The Duckiebot is a scaled differential drive vehicle powered by a small but powerful computer, the NVIDA Jetson Nano. Before assembling the robot, we can start setting up the hard drive memory disk of the Duckiebot's onboard computer.
 
-As you lay the Duckiebox components on your working surface, take the micro sd card from the Duckiebox (along with the sd card adapter if needed) and follow [these instructions][duckiebook-init-sd-card] to initialize the Duckiebot's memory from the computer you have previously set up.
+As you lay the Duckiebox components on your working surface, take the micro sd card from the Duckiebox (along with the SD card adapter if needed) and follow [these instructions][duckiebook-init-sd-card] to initialize the Duckiebot's memory from the computer you have previously set up.
 
 [duckiebook-init-sd-card]: https://docs.duckietown.org/daffy/opmanual_duckiebot/out/setup_duckiebot.html
 
-At the end of this step you will have an initialized and verified sd card.
+At the end of this step you will have an initialized and verified SD card.
 
 ## Step 2: Assemble your Duckiebot
 
-⚠️ The Duckiebot is equipped with a Lithium-Ion battery, like typical power banks for phones. These batteries can be dangerous if mishandled. [Read Sec. 1.1 here ][duckiebook-duckiebattery] to learn what to do and not do with a lithium-ion battery, and more about the Duckiebattery.
+⚠️ The Duckiebot is equipped with a lithium-ion battery, like a typical power bank for charging phones. These batteries can be dangerous if mishandled. [Read Sec. 1.1 here][duckiebook-duckiebattery] to learn what to do and not do with a lithium-ion battery, and more about the Duckiebattery.
 
 Once you are ready to proceed, you can follow [these instructions][duckiebook-robot-assembly] to fully assemble the Duckiebot. All the tools necessary for the job are included in the box.  
 
@@ -36,7 +36,20 @@ Follow [these instructions][duckiebook-robot-handling] to learn about Duckiebot 
 
 ## Step 4: Checkpoint!
 
-At this point you should be able to turn your Duckiebot on for the first time and see the screen on the top turn on and show basic diagnostics, and the LEDs turn white.
+At this point you should be able to:
+
+- turn your Duckiebot on for the first time and see the screen on the top turn on showing basic diagnostics, and the LEDs turn white.
+
+- find your Duckiebot on the network by typing:
+
+    > dts fleet discover
+    ~          |   Type    | Model |  Status  |  Internet  |  Dashboard  |  Hostname
+    ~     ---- | --------- | ----- | -------- | ---------- | ----------- | ----------
+    ~     argo | duckiebot | DB21M |  Ready   |    Yes     |     Up      | argo.local
+
+it might take a few seconds for the discovery to happen.
+
+You should moreover be able to turn off your Duckiebot by pressing the button on the top plate.
 
 🤔 If you have problems with this step, please ask [a question on our Stack Overflow with tag `#DB21M`](https://stackoverflow.com/c/duckietown/questions/tagged/DB21M).
 
