@@ -8,7 +8,7 @@ from geometry_msgs.msg import PoseStamped
 
 from std_msgs.msg import Bool
 
-class EncoderPoseNode(DTROS):
+class WheelsCalibrationNode(DTROS):
     """
         Computes an estimate of the Duckiebot pose using the wheel encoders.
         Args:
@@ -27,7 +27,7 @@ class EncoderPoseNode(DTROS):
     def __init__(self, node_name):
 
         # Initialize the DTROS parent class
-        super(EncoderPoseNode, self).__init__(
+        super(WheelsCalibrationNode, self).__init__(
             node_name=node_name,
             node_type=NodeType.LOCALIZATION
         )
@@ -48,21 +48,6 @@ class EncoderPoseNode(DTROS):
         # nominal R and L:
         self.R = rospy.get_param(f'/{self.veh}/kinematics_node/radius', 100)
         self.L = rospy.get_param(f'/{self.veh}/kinematics_node/baseline', 100)
-
-        # Construct publishers
-        # self.db_estimated_pose = rospy.Publisher(
-        #     f'/{self.veh}/encoder_localization',
-        #     PoseStamped,
-        #     queue_size=1,
-        #     dt_topic_type=TopicType.LOCALIZATION
-        # )
-
-        # self.pub_car_cmd = rospy.Publisher(
-        #     f'/{self.veh}/joy_mapper_node/car_cmd',
-        #     Twist2DStamped,
-        #     queue_size=1,
-        #     dt_topic_type=TopicType.CONTROL
-        # )
 
         # Wheel encoders subscribers:
         keypress_topic = f'/{self.veh}/EnterPressed'
@@ -95,14 +80,6 @@ class EncoderPoseNode(DTROS):
 
         self.log("Initialized!")
         
-
-    # def driveStraight(self,v):
-    #     car_control_msg = Twist2DStamped()
-    #     car_control_msg.header.stamp = rospy.Time.now()
-    #     car_control_msg.header.frame_id = "car_msg"
-    #     car_control_msg.omega = 0
-    #     car_control_msg.v = v
-    #     self.pub_car_cmd.publish(car_control_msg)
     def cbEnterPressed(self, msg):
         if msg.data == True:
             if not self.START_MOVING:
@@ -117,22 +94,6 @@ class EncoderPoseNode(DTROS):
                 print(f"Suggested trim = {trim}")
                 rospy.set_param(self.TRIM_PARAM, trim)
                 self.START_MOVING=False
-
-    # def calcTrim(self):
-        # self.count+=1
-        # if self.count>=200:
-        #     # Initialize car control msg, add header from input message
-        #     disp=self.ticks_right-self.ticks_left
-        #     print(f"Diparity in n. of ticks right-left = {disp}")
-        #     trim = 0.005*disp # proportional adjustment
-        #     rospy.set_param(self.TRIM_PARAM, trim)
-
-        #     #rospy.ServiceProxy(self.TRIM_PARAM)
-        #     # input("press enter to continue")
-        #     print("PROVA")
-        #     self.ticks_left=0
-        #     self.ticks_right=0
-        #     self.count=0
 
     def cbLeftEncoder(self, msg_encoder):
         """
@@ -177,8 +138,8 @@ class EncoderPoseNode(DTROS):
 
 if __name__ == "__main__":
     # Initialize the node
-    encoder_pose_node = EncoderPoseNode(node_name='encoder_pose_node')
+    wheels_calibration_node = WheelsCalibrationNode(node_name='wheels_calibration_node')
     # Keep it spinning
     rospy.spin()
-    rospy.on_shutdown(encoder_pose_node.onShutdown)
+    rospy.on_shutdown(wheels_calibration_node.onShutdown)
 
