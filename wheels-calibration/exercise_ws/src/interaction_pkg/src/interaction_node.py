@@ -53,7 +53,7 @@ if __name__ == "__main__":
         input("Put you Duckiebot on a lane and press ENTER...")
         print("Enter pressed")
         EnterPressed=True
-        input("Move your Duckiebot along a straight line for 1m then press ENTER...")
+        input("Move your Duckiebot along a straight line for 2 m then press ENTER...")
         EnterPressed=True
         time.sleep(5)
         trim = rospy.get_param(TRIM_PARAM)

@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
-  <name>encoder_pose</name>
+  <name>wheels_calibration</name>
   <version>1.0.0</version>
-  <description>The package containing the pose estimation using wheel encoders.</description>
+  <description>The package containing the wheels calibration using wheel encoders.</description>
 
   <maintainer email="vincenzo.polizzi@student.ethz.ch">Vincenzo</maintainer>
 

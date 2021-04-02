@@ -1,6 +1,6 @@
 <launch>
-	<arg name="pkg_name" default="encoder_pose" doc="name of the package"/>
-	<arg name="node_name" default="encoder_pose_node" doc="name of the node"/>
+	<arg name="pkg_name" default="wheels_calibration" doc="name of the package"/>
+	<arg name="node_name" default="wheels_calibration_node" doc="name of the node"/>
 	<arg name="veh" doc="Name of vehicle. ex: megaman"/>
 
     <group ns="$(arg veh)">

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(encoder_pose)
+project(wheels_calibration)
 
 
 find_package(catkin REQUIRED COMPONENTS
