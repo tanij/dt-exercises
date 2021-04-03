@@ -1,10 +1,48 @@
+# Best Robot Picture Contest
+
 We are sure you are proud of your Duckiebot. Show the world!
 
-Post a picture on <SOCIAL> using tags #duckietown #duckietown-MOOC. The one with most likes will win the following prizes:
+**Post a picture of you and your Duckiebot on social media. Feel free to decorate the Duckiebot to reflect your character and the culture of your city.**
 
-Prizes:
+## Information
 
-1) Duckie Tie, like the instructors!
+* 🎬 Start time: now!
 
-2) Special duckies from Amsterdam
+* ⏱️ End time: April 1st, 2021, 15:00 UTC
 
+* 📋 Rules 📋:
+
+  * 📸 📹 🤳 Take a picture, video or do a selfie with your Duckiebot.
+
+  * Reminder: each Duckiebot should have a Duckie on top.
+
+  * 🌐 Post it on your favorite social media amongst Facebook, Instagram, Twitter, and Linkedin!  
+
+  * 💪 Write something you like!
+
+  * 🦆 Tag us in your post ([Twitter][social-twitter]: @DuckietownAI; [Instagram][social-instagram]: @duckietown; [Facebook][social-fb]: @duckietown, [LinkedIn][social-linkedin]: @duckietown) and don't forget to use hashtag #duckietownMOOC!
+
+[social-twitter]: https://twitter.com/duckietownai
+[social-instagram]: https://www.instagram.com/duckietown/
+[social-fb]: https://www.facebook.com/duckietown/
+[social-linkedin]: https://www.linkedin.com/company/duckietown/
+
+* 🏆 Winners:
+
+  * The posts with the most engagement on **each** social media at the end time of this contest will be declared winners.
+
+## Prizes
+
+The authors of the winning posts will receive their choice between:
+
+* A Duckie Tie, like the instructors!
+
+* A special surprise duckie!
+
+IMPORTANT: This activity will not affect your final grade in any way, and it is purely optional.
+
+## 🙀 Example
+
+And they called them "nuisances" @duckietown - just getting started! 💪 #duckietownMOOC
+
+<img src="/static/leia-et-db21m-jt.jpg" width="100%" alt="getting started with the MOOC"/>

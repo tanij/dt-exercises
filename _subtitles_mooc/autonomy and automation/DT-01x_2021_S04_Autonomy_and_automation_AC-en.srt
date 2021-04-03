@@ -1,0 +1,244 @@
+0
+00:00:05,320 --> 00:00:08,410
+There are two words that you often find in the discussions
+
+1
+00:00:08,410 --> 00:00:12,580
+about self-driving cars: "autonomous" and "automated".
+
+2
+00:00:12,580 --> 00:00:16,329
+These words have different meanings depending on who uses them;
+
+3
+00:00:16,329 --> 00:00:18,310
+and the meanings change with time.
+
+4
+00:00:18,310 --> 00:00:20,450
+Sometimes they're used interchangeably;
+
+5
+00:00:20,450 --> 00:00:23,600
+however, they do imply something slightly different.
+
+6
+00:00:23,600 --> 00:00:25,210
+Let's look at the etymology.
+
+7
+00:00:25,210 --> 00:00:28,660
+The word "automation" comes from the Greek "automaton", which
+
+8
+00:00:28,660 --> 00:00:31,090
+meant something that acts by itself.
+
+9
+00:00:31,090 --> 00:00:33,520
+People called automata those mechanical devices
+
+10
+00:00:33,520 --> 00:00:37,075
+that could recreate complex motions that were mechanically stored.
+
+11
+00:00:37,075 --> 00:00:40,840
+There are examples of such devices created millennia ago,
+
+12
+00:00:40,840 --> 00:00:43,550
+but I will give you a more recent example.
+
+13
+00:00:43,550 --> 00:00:46,930
+100 years ago automatic pianos, or "pianolas",
+
+14
+00:00:46,930 --> 00:00:48,730
+were something common in the West.
+
+15
+00:00:48,730 --> 00:00:52,930
+The music was encoded in perforated papers that would be read mechanically.
+
+16
+00:00:52,930 --> 00:00:56,890
+Each hole corresponded to a key that would be pressed.
+
+17
+00:00:56,890 --> 00:01:01,180
+Eventually, the word "automated" was used to describe manufacturing machines that
+
+18
+00:01:01,180 --> 00:01:03,810
+would always repeat the same motion.
+
+19
+00:01:03,810 --> 00:01:06,460
+This word has a very industrial flavor to it.
+
+20
+00:01:06,460 --> 00:01:09,680
+The other word, "autonomous", means literally something
+
+21
+00:01:09,680 --> 00:01:13,640
+that has its own laws, in the sense that it is self-governing.
+
+22
+00:01:13,640 --> 00:01:16,760
+This suggests something that does not follow predefined steps,
+
+23
+00:01:16,760 --> 00:01:19,700
+but, rather, it has some internal laws or principles or goals
+
+24
+00:01:19,700 --> 00:01:21,480
+that it must achieve.
+
+25
+00:01:21,480 --> 00:01:23,550
+The actions that are chosen are those that achieve
+
+26
+00:01:23,550 --> 00:01:26,650
+the goals given the current scenario.
+
+27
+00:01:26,650 --> 00:01:29,667
+In the field of robotics, we talk about "autonomous robots".
+
+28
+00:01:29,667 --> 00:01:31,750
+It's actually to make the distinction with respect
+
+29
+00:01:31,750 --> 00:01:34,470
+to the previous generation of machines.
+
+30
+00:01:34,470 --> 00:01:37,380
+Another word we use is "embodied autonomy",
+
+31
+00:01:37,380 --> 00:01:39,710
+which clarifies that the systems we're interested in
+
+32
+00:01:39,710 --> 00:01:41,240
+are those that have a body.
+
+33
+00:01:41,240 --> 00:01:42,860
+They are em-bodied.
+
+34
+00:01:42,860 --> 00:01:45,830
+These are systems that interact with the real world, as opposed
+
+35
+00:01:45,830 --> 00:01:48,150
+to a virtual world.
+
+36
+00:01:48,150 --> 00:01:50,360
+What does "robot" mean?
+
+37
+00:01:50,360 --> 00:01:55,520
+Robot comes from the Czech word robota, which means forced labor.
+
+38
+00:01:55,520 --> 00:01:57,767
+Robots are machines that work for us.
+
+39
+00:01:57,767 --> 00:01:59,600
+I would not say they're "forced", because they
+
+40
+00:01:59,600 --> 00:02:02,240
+don't have any choice, or the ability to choose,
+
+41
+00:02:02,240 --> 00:02:05,360
+or the consciousness to understand their place in the world.
+
+42
+00:02:05,360 --> 00:02:07,940
+The way that robotics contributes to society
+
+43
+00:02:07,940 --> 00:02:11,450
+is by creating machines that can do the dull, dirty, and dangerous work
+
+44
+00:02:11,450 --> 00:02:14,160
+that humans should not do.
+
+45
+00:02:14,160 --> 00:02:16,470
+When we say robot, classically we mean both
+
+46
+00:02:16,470 --> 00:02:19,470
+fixed machines like industrial manipulators, as well
+
+47
+00:02:19,470 --> 00:02:22,590
+as those robots that move in an environment, like a vacuum cleaner,
+
+48
+00:02:22,590 --> 00:02:27,920
+a drone, or the micro-robots that one day will be in your guts fixing you up.
+
+49
+00:02:27,920 --> 00:02:31,280
+For moving robots, we use the word "vehicle", which comes from Latin.
+
+50
+00:02:31,280 --> 00:02:33,230
+A vehicle is something that moves and carries
+
+51
+00:02:33,230 --> 00:02:36,660
+something else, like people or cargo.
+
+52
+00:02:36,660 --> 00:02:41,160
+When regular people say "autonomous vehicles" they mean "self-driving cars".
+
+53
+00:02:41,160 --> 00:02:44,250
+However, for the roboticist, also a drone and a vacuum cleaner,
+
+54
+00:02:44,250 --> 00:02:46,290
+are autonomous vehicles.
+
+55
+00:02:46,290 --> 00:02:49,350
+The reality is that the concepts we're going to talk about in this course
+
+56
+00:02:49,350 --> 00:02:52,990
+can be applied to any autonomous vehicle, not just cars.
+
+57
+00:02:52,990 --> 00:02:55,930
+I presented to you the consistent nomenclature that we will follow.
+
+58
+00:02:55,930 --> 00:02:59,770
+We defined automation, autonomy, robot, and vehicle.
+
+59
+00:02:59,770 --> 00:03:01,690
+There are other words that we need to define,
+
+60
+00:03:01,690 --> 00:03:07,380
+such as intelligence and intelligent, but this merits a longer discussion.
+

@@ -1,0 +1,1834 @@
+﻿1
+00:00:00,320 --> 00:00:01,640
+Hi, my name is Frank.
+
+2
+00:00:01,800 --> 00:00:04,000
+And in this video,
+we're going to take a look
+
+3
+00:00:04,200 --> 00:00:09,520
+at Duckietown DP twenty one Molk Robot
+in here, you will see,
+
+4
+00:00:09,720 --> 00:00:14,880
+is a box from Duckietown that contains
+all the parts necessary for the robot.
+
+5
+00:00:15,080 --> 00:00:19,000
+Let's take a look at what's inside.
+
+6
+00:00:19,240 --> 00:00:20,840
+So opening the box,
+
+7
+00:00:21,040 --> 00:00:29,040
+removing the protection from you'll see
+your Jetson nanotube gigabit version
+
+8
+00:00:29,240 --> 00:00:31,520
+set aside.
+You'll have your two ducks.
+
+9
+00:00:31,720 --> 00:00:33,240
+Obviously,
+
+10
+00:00:33,480 --> 00:00:35,080
+you'll have your wheels.
+
+11
+00:00:35,280 --> 00:00:37,720
+These are your two wheels.
+
+12
+00:00:37,920 --> 00:00:42,440
+You will have your motor
+with the encoder assembly here.
+
+13
+00:00:42,720 --> 00:00:47,560
+You also have a micro SD card reader.
+
+14
+00:00:48,280 --> 00:00:51,800
+And inside here, under the SD protection
+
+15
+00:00:52,000 --> 00:00:55,040
+back, you have one of them
+is the back plate.
+
+16
+00:00:55,240 --> 00:00:57,720
+So this goes to back off the robot
+
+17
+00:00:57,920 --> 00:01:00,640
+and then this is your motor driver
+
+18
+00:01:00,840 --> 00:01:04,560
+controller and you connect
+all your accessories
+
+19
+00:01:04,760 --> 00:01:09,000
+like sensors onto this
+board instead of the Jetson
+
+20
+00:01:09,200 --> 00:01:15,440
+in this bag, you have your fan
+as well as your power switch.
+
+21
+00:01:15,640 --> 00:01:21,120
+You also have the blue part
+is your camera Mount Holder.
+
+22
+00:01:21,320 --> 00:01:26,960
+And we also have a USB
+to micro USB connector.
+
+23
+00:01:27,160 --> 00:01:31,200
+And inside this white box
+is your camera module.
+
+24
+00:01:31,400 --> 00:01:33,040
+We'll take a look.
+
+25
+00:01:36,440 --> 00:01:42,640
+You'll see here it is your camera with
+the short ribbon attached to it already
+
+26
+00:01:43,520 --> 00:01:45,320
+inside here.
+Oops.
+
+27
+00:01:45,520 --> 00:01:48,640
+So this is your micro SD card
+
+28
+00:01:49,160 --> 00:01:52,680
+and this is your Wi-Fi adapter dongle
+
+29
+00:01:53,840 --> 00:01:56,680
+in here.
+You will see the cables that you need
+
+30
+00:01:56,880 --> 00:02:02,520
+to build your Duckiebot
+as well at a Internet cable.
+
+31
+00:02:03,080 --> 00:02:09,720
+You will also have the dot matrix
+for your back of your robot for
+
+32
+00:02:09,920 --> 00:02:15,840
+telling the other robot where Duckiebot is
+as well as you also have some stickers.
+
+33
+00:02:16,040 --> 00:02:18,360
+You have a screwdriver
+
+34
+00:02:19,600 --> 00:02:20,120
+in here.
+
+35
+00:02:20,320 --> 00:02:26,840
+You have a this is your front connect
+the front front light this large pieces,
+
+36
+00:02:27,040 --> 00:02:30,200
+your front light and then
+the other two included.
+
+37
+00:02:30,400 --> 00:02:33,480
+One is the image sensor.
+
+38
+00:02:36,640 --> 00:02:38,520
+And then you also have a display module.
+
+39
+00:02:38,720 --> 00:02:42,840
+This is your display module,
+you can see a little screen over there.
+
+40
+00:02:43,040 --> 00:02:45,280
+This is your only display
+
+41
+00:02:46,000 --> 00:02:47,800
+and
+
+42
+00:02:48,080 --> 00:02:51,320
+it's a bit hard to take it out
+
+43
+00:02:51,600 --> 00:02:56,080
+inside here you can see
+your Duckiebot battery.
+
+44
+00:02:58,080 --> 00:03:01,960
+You have all sorts of screws in here,
+
+45
+00:03:02,640 --> 00:03:06,480
+and then this is basically
+the old white back wheel
+
+46
+00:03:07,360 --> 00:03:11,600
+underneath the chassis,
+don't throw the box away yet.
+
+47
+00:03:13,240 --> 00:03:15,800
+Underneath you will
+find these blue pieces.
+
+48
+00:03:16,000 --> 00:03:18,240
+That's your main robot chassis.
+
+49
+00:03:18,440 --> 00:03:23,440
+So don't panic if you don't find your
+robot chassis parts.
+
+50
+00:03:23,640 --> 00:03:25,120
+OK, let's build this robot.
+
+51
+00:03:25,320 --> 00:03:29,600
+Then before we build anything,
+we're going to take apart and piece out
+
+52
+00:03:29,800 --> 00:03:32,160
+the plastic piece we need
+for building our DP.
+
+53
+00:03:32,360 --> 00:03:34,240
+Twenty one local robot
+
+54
+00:03:34,440 --> 00:03:36,360
+to open them up.
+
+55
+00:03:40,240 --> 00:03:45,240
+And as you can see, all the pieces
+are actually on there already.
+
+56
+00:03:45,440 --> 00:03:47,760
+The only thing we will
+need is to pop them off.
+
+57
+00:03:47,960 --> 00:03:49,560
+So these are already cut.
+
+58
+00:03:49,760 --> 00:03:56,280
+So I need to do is just very carefully
+break off all the parts you will need.
+
+59
+00:04:00,120 --> 00:04:06,440
+And that's the first port and then
+the second word contains the larger part,
+
+60
+00:04:06,640 --> 00:04:08,760
+where one of them is going to be the top
+
+61
+00:04:08,960 --> 00:04:12,720
+of the car and the one of them
+is going to be part of your car.
+
+62
+00:04:12,920 --> 00:04:16,760
+And you also have some
+bumper pieces over there.
+
+63
+00:04:16,960 --> 00:04:21,240
+These are your motor holder pieces.
+
+64
+00:04:21,760 --> 00:04:26,920
+We'll go through them later one by one
+after you have broken up all the pieces.
+
+65
+00:04:27,120 --> 00:04:29,680
+Now you're ready to actually
+build your robot.
+
+66
+00:04:29,880 --> 00:04:33,440
+First, we're going to install
+the drive unit and install the motors.
+
+67
+00:04:33,640 --> 00:04:34,760
+Now, before you start,
+
+68
+00:04:34,960 --> 00:04:38,760
+another thing to note is that there are
+protective film on these.
+
+69
+00:04:38,880 --> 00:04:40,880
+All the plastic pieces that you just broke
+
+70
+00:04:41,080 --> 00:04:46,000
+up where you can do is you can
+just easily peel them off.
+
+71
+00:04:51,760 --> 00:04:55,240
+And you will have a relatively shiny bald
+
+72
+00:04:55,440 --> 00:04:59,800
+first, we're going
+to install our drive base
+
+73
+00:05:00,160 --> 00:05:07,200
+to do that first grab two piece of metal
+nut and then insert into those two grooves
+
+74
+00:05:07,400 --> 00:05:07,840
+next.
+
+75
+00:05:08,040 --> 00:05:12,680
+You want to be very careful how you
+hold this board as if you did it wrong.
+
+76
+00:05:12,880 --> 00:05:16,600
+You will have you will have
+trouble installing your OMU unit,
+
+77
+00:05:17,240 --> 00:05:24,600
+make sure these two screw holes is facing
+you while this triangular bit is facing
+
+78
+00:05:24,800 --> 00:05:28,560
+forward that will ensure
+you're holding it upside down.
+
+79
+00:05:28,560 --> 00:05:29,400
+Right.
+
+80
+00:05:29,600 --> 00:05:35,080
+If you flip it, you will have trouble
+later installing your Ayumu unit
+
+81
+00:05:35,320 --> 00:05:39,640
+to install your motor,
+grab these two pieces,
+
+82
+00:05:40,400 --> 00:05:42,640
+insert like this,
+
+83
+00:05:42,840 --> 00:05:45,160
+and then these will hold your motor,
+
+84
+00:05:45,360 --> 00:05:51,760
+make sure your motors
+wire connection faces inward
+
+85
+00:05:51,960 --> 00:05:52,920
+like this.
+
+86
+00:05:53,120 --> 00:05:57,280
+These will be where you
+attach your wheels later.
+
+87
+00:06:00,120 --> 00:06:05,520
+Next, we want to align the holes
+and then putting these long screws in.
+
+88
+00:06:05,720 --> 00:06:09,800
+These are the longest screw
+offered in the package.
+
+89
+00:06:22,640 --> 00:06:24,680
+Next, we want to connect the cables before
+
+90
+00:06:24,880 --> 00:06:28,480
+you put Pollsmoor in, there will be
+a very painful process to do that.
+
+91
+00:06:28,680 --> 00:06:32,600
+Notice that one of the connectors are
+larger, one of the connectors are smaller.
+
+92
+00:06:32,800 --> 00:06:35,720
+The larger one goes to the motor itself.
+
+93
+00:06:35,920 --> 00:06:37,600
+There's also groups on it.
+
+94
+00:06:37,670 --> 00:06:41,120
+So make sure you don't force
+the connectors as they're pretty fragile.
+
+95
+00:06:41,320 --> 00:06:43,200
+You want to make sure you
+align them correctly.
+
+96
+00:06:43,400 --> 00:06:45,920
+And it should be very easy to presetting
+
+97
+00:06:46,120 --> 00:06:47,280
+once you have the cables.
+
+98
+00:06:47,480 --> 00:06:49,800
+There's the cable management.
+
+99
+00:06:50,000 --> 00:06:55,120
+So right there, you want to insert
+your cables through that.
+
+100
+00:06:55,320 --> 00:06:56,720
+Be careful very gently.
+
+101
+00:06:56,920 --> 00:06:59,040
+You don't want to break that little piece.
+
+102
+00:06:59,240 --> 00:07:01,000
+And that's one part of the motor.
+
+103
+00:07:01,200 --> 00:07:04,120
+And then you just do
+it for the other side.
+
+104
+00:07:12,840 --> 00:07:17,200
+It might also be a good idea
+to plug in the cables first.
+
+105
+00:07:22,720 --> 00:07:25,480
+Next, we're going to install the EMU,
+
+106
+00:07:25,680 --> 00:07:28,840
+the EMU is the board with two holes,
+
+107
+00:07:29,040 --> 00:07:33,080
+a connector and a bunch of
+pink connectors.
+
+108
+00:07:33,280 --> 00:07:35,320
+You want to grab the longer cable.
+
+109
+00:07:35,520 --> 00:07:40,280
+Make sure when you plug in these cables,
+be very gentle as there is a direction
+
+110
+00:07:40,480 --> 00:07:46,200
+and you don't want to bend the paint
+grab to nylon screws and two nylon knots.
+
+111
+00:07:46,400 --> 00:07:52,960
+Where you want to do is you want to insert
+your AMMU right there like this.
+
+112
+00:07:53,160 --> 00:07:54,760
+They should be perfectly aligned.
+
+113
+00:07:54,960 --> 00:07:58,240
+So if you flip the board time,
+you will not stay.
+
+114
+00:07:58,440 --> 00:08:00,800
+Next, you want to
+
+115
+00:08:01,000 --> 00:08:05,160
+rulz this wire up through there.
+
+116
+00:08:05,360 --> 00:08:07,600
+We want to do is you want to screw
+
+117
+00:08:07,800 --> 00:08:13,160
+from the reverse side
+and then have the nuts through there.
+
+118
+00:08:15,120 --> 00:08:17,080
+Make sure that you are using the nylon
+
+119
+00:08:17,280 --> 00:08:20,320
+screws,
+since they are electronic components
+
+120
+00:08:20,520 --> 00:08:25,400
+on the board and you don't want
+to use metal parts to short them.
+
+121
+00:08:25,600 --> 00:08:32,560
+Just like that, next, we want to install
+our pactio assembly to do that,
+
+122
+00:08:32,760 --> 00:08:37,600
+still have the motor facing towards you,
+
+123
+00:08:37,800 --> 00:08:42,600
+and then we are going to do
+is with these two screws.
+
+124
+00:08:46,480 --> 00:08:50,240
+They're going to start to stand off.
+
+125
+00:08:55,480 --> 00:09:01,200
+Like, so I recommend you read
+the cables outside the stand off.
+
+126
+00:09:04,760 --> 00:09:11,160
+Then that will mount your motor,
+need another two sets of screws.
+
+127
+00:09:15,320 --> 00:09:18,080
+Now you have complete
+your bottom drive unit.
+
+128
+00:09:18,280 --> 00:09:21,880
+Next, we're going to install our battery,
+hold our power to do this.
+
+129
+00:09:22,080 --> 00:09:24,320
+We need a battery and these four pieces
+
+130
+00:09:24,520 --> 00:09:29,800
+from the plastic, we have also notes
+that there are plastic protection films.
+
+131
+00:09:30,000 --> 00:09:33,680
+Don't forget to peel them out
+while you put this together.
+
+132
+00:09:33,880 --> 00:09:38,880
+Make sure these two school halls
+are like shown in the image
+
+133
+00:09:39,080 --> 00:09:42,760
+not upside down, as you will
+have trouble installing later.
+
+134
+00:09:42,960 --> 00:09:46,640
+So make sure
+your left hand side should have a screw
+
+135
+00:09:46,680 --> 00:09:50,480
+that's closer to the edge and your right
+hand side should have a screw that's
+
+136
+00:09:50,680 --> 00:09:53,800
+farther to the edge and your
+pointing front to do that.
+
+137
+00:09:54,000 --> 00:09:56,160
+First you want to insert a few nuts.
+
+138
+00:09:56,360 --> 00:10:01,480
+These are going to be helpful for later
+when you connect other parts of the robot.
+
+139
+00:10:01,680 --> 00:10:06,200
+Basically, if you see a shape like this,
+there should be a nut inside of it.
+
+140
+00:10:06,400 --> 00:10:10,880
+Those are for holding the nuts
+still while you're squirting.
+
+141
+00:10:16,000 --> 00:10:19,760
+Next, we want to preplanned some
+of the schools in the board,
+
+142
+00:10:19,960 --> 00:10:25,960
+these will be very helpful
+when we start our Jetson's panels,
+
+143
+00:10:26,160 --> 00:10:31,720
+so just make sure these are
+all in those four holes.
+
+144
+00:10:32,040 --> 00:10:35,920
+As shown and then you want to do is
+you want to flip it upside down.
+
+145
+00:10:36,120 --> 00:10:42,000
+You want to basically put some nylon,
+not to hold them in place.
+
+146
+00:10:45,600 --> 00:10:48,520
+Just like that now you
+want to flip it over.
+
+147
+00:10:48,720 --> 00:10:52,360
+Next, we're going to start
+installing the size again.
+
+148
+00:10:52,560 --> 00:10:56,160
+Make sure you have a.
+
+149
+00:10:56,840 --> 00:10:59,680
+Basically, you have a knot in all of these
+
+150
+00:10:59,880 --> 00:11:04,520
+shaped grooves where these are holding
+the knot, if you're having trouble putting
+
+151
+00:11:04,720 --> 00:11:08,440
+these together,
+what the goal is, is the flat side.
+
+152
+00:11:08,640 --> 00:11:11,440
+So it's a hexagon shape, right?
+
+153
+00:11:11,640 --> 00:11:16,360
+The half of the flat side should sitting
+just like that.
+
+154
+00:11:16,560 --> 00:11:19,280
+Next, we're going to put
+this assembly together.
+
+155
+00:11:19,480 --> 00:11:25,440
+So where you want to do is, as you
+can see, there are some notches and
+
+156
+00:11:25,640 --> 00:11:27,200
+little notches all over.
+
+157
+00:11:27,400 --> 00:11:31,240
+We want to do is you want to align them.
+
+158
+00:11:32,160 --> 00:11:37,240
+And what you should have is they
+will just perfectly fitting
+
+159
+00:11:37,680 --> 00:11:42,720
+just like that, and you will
+have the longer part towards you
+
+160
+00:11:42,920 --> 00:11:43,280
+next.
+
+161
+00:11:43,480 --> 00:11:48,480
+Where you want to do is you want
+to grab two smaller size metal screw,
+
+162
+00:11:49,320 --> 00:11:53,840
+flip this upside down very carefully
+without dropping ending up.
+
+163
+00:11:54,160 --> 00:12:00,880
+And then you can see the amazing
+assembly pulling together right there.
+
+164
+00:12:01,680 --> 00:12:05,040
+And all of them should fit perfectly.
+
+165
+00:12:17,040 --> 00:12:18,720
+Just like that.
+
+166
+00:12:19,480 --> 00:12:23,120
+Next, we're going to just
+grab these two pieces.
+
+167
+00:12:25,560 --> 00:12:27,920
+And then those two are going to be
+the battery stopper,
+
+168
+00:12:28,120 --> 00:12:35,040
+so make sure your battery is actually
+upside down when sliding right in there.
+
+169
+00:12:35,360 --> 00:12:40,560
+And also where you can see is
+this little hole will be the way of you
+
+170
+00:12:40,760 --> 00:12:45,320
+accessing the battery
+then will you want to do is just simply
+
+171
+00:12:45,520 --> 00:12:48,000
+insert these tubes
+
+172
+00:12:48,200 --> 00:12:49,800
+right there
+
+173
+00:12:50,000 --> 00:12:52,560
+and your battery shouldn't
+move around anymore.
+
+174
+00:12:52,720 --> 00:12:54,200
+Next, we're going to have the exciting
+
+175
+00:12:54,400 --> 00:12:59,600
+part of putting the top the battery part,
+as well as the drive part together.
+
+176
+00:12:59,800 --> 00:13:03,440
+So to do that, you simply
+
+177
+00:13:03,640 --> 00:13:05,480
+put it on there
+
+178
+00:13:05,680 --> 00:13:07,640
+and then we want to do it very carefully.
+
+179
+00:13:07,840 --> 00:13:10,080
+Also router cables through.
+
+180
+00:13:10,280 --> 00:13:13,040
+So the immutable goes through the front
+
+181
+00:13:13,240 --> 00:13:19,960
+big hole and then the two drivetrain cable
+or the motor cable
+
+182
+00:13:20,160 --> 00:13:23,560
+goes on the back just like that.
+
+183
+00:13:23,760 --> 00:13:28,960
+Then you want to put the screws
+to basically secure them together.
+
+184
+00:13:29,160 --> 00:13:33,760
+There should be four schools
+in total that you want to put it.
+
+185
+00:13:42,320 --> 00:13:48,120
+And now your top part and the bottom
+part are connected together.
+
+186
+00:13:48,440 --> 00:13:51,320
+Next, you want to do is
+install your motors.
+
+187
+00:13:51,520 --> 00:13:55,200
+We want to grab these two
+white little spacers,
+
+188
+00:13:55,400 --> 00:14:00,640
+then your wheels should
+go right like that.
+
+189
+00:14:00,840 --> 00:14:05,200
+And now your Duckiebot DP twenty
+one most resembles a car.
+
+190
+00:14:05,400 --> 00:14:09,200
+Next, we're at the exact moment of
+
+191
+00:14:09,400 --> 00:14:12,600
+opening the Jets and that'll
+
+192
+00:14:13,560 --> 00:14:17,920
+be very careful if you're
+doing this in the winter.
+
+193
+00:14:18,120 --> 00:14:21,480
+Watch out for static chargers.
+
+194
+00:14:23,080 --> 00:14:28,520
+Widgets and Nano should sit
+on your Duckiebot like this.
+
+195
+00:14:28,720 --> 00:14:32,120
+Next, we're going to install our
+Jessan Nano.
+
+196
+00:14:32,320 --> 00:14:35,400
+I'll cover there's basically two parts.
+
+197
+00:14:35,600 --> 00:14:40,600
+As you can see,
+they resemble a somewhat different shape.
+
+198
+00:14:40,800 --> 00:14:44,080
+What's that?
+This part have a little loose piece on it
+
+199
+00:14:44,280 --> 00:14:49,960
+that basically helps you to cover
+your Jetson 2G version when you put
+
+200
+00:14:50,160 --> 00:14:55,040
+together the sidepiece notes that you
+might have to let go Jetson Nano a little
+
+201
+00:14:55,240 --> 00:15:00,840
+bit for the sidepiece to sit
+perfectly and huggin the Jetson Nano
+
+202
+00:15:01,040 --> 00:15:02,400
+once you have a line down.
+
+203
+00:15:02,600 --> 00:15:04,800
+Skouris Grusin.
+
+204
+00:15:05,880 --> 00:15:10,080
+Not that there is another little piece
+that if you accidentally pop it off like
+
+205
+00:15:10,280 --> 00:15:14,840
+me, you can just stick it back in,
+that basically it was for the two
+
+206
+00:15:15,040 --> 00:15:18,360
+different jets and nanobots,
+again, for the other side.
+
+207
+00:15:18,560 --> 00:15:19,960
+Same story.
+
+208
+00:15:20,160 --> 00:15:23,600
+Make sure they align perfectly.
+
+209
+00:15:28,760 --> 00:15:30,200
+Once you have make sure you adjust
+
+210
+00:15:30,400 --> 00:15:35,280
+and then I'll sit tight in the robot,
+you can then put out your nylon screws
+
+211
+00:15:35,480 --> 00:15:40,400
+to make sure the detonator
+doesn't move to drive.
+
+212
+00:15:46,440 --> 00:15:50,200
+Once you have installed your two I o plate
+
+213
+00:15:50,400 --> 00:15:54,720
+and the two side plates will you want
+to do is you want to grab these little
+
+214
+00:15:54,920 --> 00:16:00,000
+spacers and then just pop
+it right onto the screws.
+
+215
+00:16:07,800 --> 00:16:13,680
+Next, why you want to do is you want
+to grab the spacers, you need two of them
+
+216
+00:16:13,880 --> 00:16:17,160
+double connect it like this.
+
+217
+00:16:18,320 --> 00:16:25,840
+And then two of them at just the regular
+size, and then you want to screw them
+
+218
+00:16:26,280 --> 00:16:32,440
+onto the screws,
+so the two long one goes in the front.
+
+219
+00:16:34,080 --> 00:16:38,080
+And the two short ones grossing about.
+
+220
+00:16:40,880 --> 00:16:45,520
+Next, you want to connect the battery
+cables for the battery cables.
+
+221
+00:16:45,720 --> 00:16:49,640
+You'll have a total
+of three battery cables,
+
+222
+00:16:49,840 --> 00:16:54,200
+you will have one with two and
+
+223
+00:16:54,400 --> 00:16:58,680
+then two regular cables.
+
+224
+00:16:58,880 --> 00:17:05,920
+So first, we want to do is want
+to connect this to end of the cables
+
+225
+00:17:06,360 --> 00:17:09,720
+on the bottom USB swap,
+
+226
+00:17:10,360 --> 00:17:13,560
+then right into
+
+227
+00:17:13,760 --> 00:17:15,600
+the battery pack.
+
+228
+00:17:24,400 --> 00:17:27,120
+It should fit very neatly
+
+229
+00:17:27,320 --> 00:17:30,120
+at the correct Linus
+
+230
+00:17:30,720 --> 00:17:32,840
+for your middle cable,
+
+231
+00:17:33,040 --> 00:17:37,280
+where you want to do
+is you want to root it.
+
+232
+00:17:38,120 --> 00:17:39,680
+Thorough
+
+233
+00:17:40,040 --> 00:17:43,120
+and then plug it upside down.
+
+234
+00:17:46,000 --> 00:17:47,800
+Just like that,
+
+235
+00:17:48,280 --> 00:17:51,960
+and then for your other
+cable where you want to do
+
+236
+00:17:52,160 --> 00:17:54,640
+is you want to plug it in.
+
+237
+00:17:59,280 --> 00:18:02,560
+And then rode it all the way to.
+
+238
+00:18:06,400 --> 00:18:09,920
+Just like that, next,
+we're going to plug in our Wi-Fi card,
+
+239
+00:18:10,120 --> 00:18:16,240
+Wi-Fi card goes to the top, you the USB
+slot that's next to the HDMI cable.
+
+240
+00:18:16,440 --> 00:18:19,720
+Next, we're going to install
+our back bumper assembly.
+
+241
+00:18:19,920 --> 00:18:22,720
+First, plugging the cable in for this one.
+
+242
+00:18:22,720 --> 00:18:24,360
+We're going to use a short cable.
+
+243
+00:18:24,560 --> 00:18:32,400
+Your back bumper should have the little
+triangular trapezoidal tip on top.
+
+244
+00:18:32,600 --> 00:18:33,680
+When you connect them,
+
+245
+00:18:33,880 --> 00:18:41,960
+make sure your router cable through the
+hole where the motor is routed to.
+
+246
+00:18:43,480 --> 00:18:45,520
+Should look like that
+
+247
+00:18:45,720 --> 00:18:49,200
+then you're just going
+to screw this grusin.
+
+248
+00:18:56,680 --> 00:18:59,960
+Next, we're going to install
+the controller,
+
+249
+00:19:00,160 --> 00:19:04,800
+the controller board holder,
+so to install that, it's very simple.
+
+250
+00:19:04,800 --> 00:19:05,760
+It's just two screws.
+
+251
+00:19:05,960 --> 00:19:10,400
+So the controller is
+going to go at the back
+
+252
+00:19:10,720 --> 00:19:11,000
+end.
+
+253
+00:19:11,200 --> 00:19:15,400
+Where we want to do is
+to screws and then screw.
+
+254
+00:19:18,080 --> 00:19:20,280
+Uncontrollable should be standing up
+
+255
+00:19:20,480 --> 00:19:23,920
+a little bit behind
+the regular display board.
+
+256
+00:19:24,120 --> 00:19:25,800
+Next, we're going to install the fan
+
+257
+00:19:26,000 --> 00:19:29,720
+assembly to install the fan
+and just put it right there.
+
+258
+00:19:29,920 --> 00:19:33,920
+And then you should use
+the longer of the four screws.
+
+259
+00:19:34,120 --> 00:19:36,680
+We can also do is you can pre table
+
+260
+00:19:36,880 --> 00:19:44,240
+management a little bit since we don't
+meet that much of a fan table outside.
+
+261
+00:19:47,320 --> 00:19:49,080
+Next, we're going to grab our control
+
+262
+00:19:49,280 --> 00:19:57,720
+board and start installing the wires first
+you want to install your friend header,
+
+263
+00:19:57,920 --> 00:20:00,400
+the fan header should be plugged onto
+
+264
+00:20:00,600 --> 00:20:05,200
+the microcontroller boards pings as
+illustrated in the picture next to work.
+
+265
+00:20:05,400 --> 00:20:09,120
+And why are these motor cables?
+
+266
+00:20:09,320 --> 00:20:14,960
+So to do so we want to do is you want
+to use this thought as your guide
+
+267
+00:20:15,160 --> 00:20:17,760
+or McKibbon management site
+
+268
+00:20:17,960 --> 00:20:20,960
+and then you will be able to
+
+269
+00:20:21,160 --> 00:20:23,000
+just like that.
+
+270
+00:20:27,440 --> 00:20:31,280
+Slide them writing, as well as
+
+271
+00:20:31,720 --> 00:20:36,200
+allowing them
+onto the Jets Nanos ping header.
+
+272
+00:20:39,120 --> 00:20:40,640
+And then make sure you remember
+
+273
+00:20:40,840 --> 00:20:43,960
+which cable is which, if not,
+then you can just
+
+274
+00:20:44,160 --> 00:20:48,880
+yank it a little bit and then you
+can tell which one is from which.
+
+275
+00:20:49,080 --> 00:20:51,560
+Make sure your router allied cable towards
+
+276
+00:20:51,760 --> 00:20:57,760
+the right hand side as the LCD connector
+would go to this one
+
+277
+00:20:57,960 --> 00:20:59,680
+might be a little bit of a stretch.
+
+278
+00:20:59,880 --> 00:21:02,200
+Just be very careful
+
+279
+00:21:02,400 --> 00:21:06,200
+not to break any connectors.
+
+280
+00:21:08,320 --> 00:21:10,040
+Just like that,
+
+281
+00:21:10,440 --> 00:21:13,680
+you do seem to connect your motor cable,
+
+282
+00:21:13,880 --> 00:21:19,560
+make sure so your right one goes
+on to the top of the two slot.
+
+283
+00:21:22,840 --> 00:21:27,800
+That and your bottom line
+goes to the left, Malter.
+
+284
+00:21:30,240 --> 00:21:33,720
+And just like that, and you can tuck away
+
+285
+00:21:33,920 --> 00:21:37,320
+slacks a little bit inside next,
+you want to connect?
+
+286
+00:21:37,520 --> 00:21:39,400
+I am cable
+
+287
+00:21:40,040 --> 00:21:41,040
+to your connector.
+
+288
+00:21:41,240 --> 00:21:42,840
+That's in the middle
+
+289
+00:21:43,040 --> 00:21:44,560
+right there.
+
+290
+00:21:44,760 --> 00:21:46,840
+Just want to plug it in.
+
+291
+00:21:50,960 --> 00:21:54,320
+Going to be very gentle,
+you don't want to break the board,
+
+292
+00:21:54,840 --> 00:21:57,640
+and that's who I am you going
+
+293
+00:21:57,840 --> 00:22:02,640
+next to, we're going to install
+the camera assembly.
+
+294
+00:22:02,840 --> 00:22:06,320
+So first we're going to put our camera,
+
+295
+00:22:06,520 --> 00:22:09,200
+the ribbon cable through.
+
+296
+00:22:09,400 --> 00:22:11,000
+Like that
+
+297
+00:22:11,200 --> 00:22:16,720
+camera should have these four
+little notches facing the camera
+
+298
+00:22:17,280 --> 00:22:18,520
+like that.
+
+299
+00:22:18,720 --> 00:22:22,400
+And then you want to insert.
+
+300
+00:22:22,880 --> 00:22:27,400
+The four smaller,
+smaller sized nylon screws.
+
+301
+00:22:27,600 --> 00:22:29,480
+Just like that.
+
+302
+00:22:32,240 --> 00:22:34,560
+You want to installed the nuts,
+
+303
+00:22:34,760 --> 00:22:39,680
+the four extremely things,
+small nylon nuts at the back.
+
+304
+00:22:44,360 --> 00:22:49,240
+Next, we want to do is we want to connect
+this metal piece
+
+305
+00:22:49,440 --> 00:22:55,200
+or the connector piece actually
+to the camera assembly, to do that
+
+306
+00:22:56,200 --> 00:22:58,760
+we want to do is see there's a little slot
+
+307
+00:22:58,960 --> 00:23:04,480
+right there and it should align
+perfectly with the slope right there.
+
+308
+00:23:04,680 --> 00:23:09,440
+We want to do is for one side,
+grab a middle school
+
+309
+00:23:10,400 --> 00:23:12,240
+pocket through.
+
+310
+00:23:14,400 --> 00:23:17,920
+And then connect on that at the end.
+
+311
+00:23:22,400 --> 00:23:26,440
+And then for the other end,
+we want to do is there's a single plastic
+
+312
+00:23:26,640 --> 00:23:32,000
+piece standoff we want to do is
+you want to grab a metal screw
+
+313
+00:23:32,200 --> 00:23:33,960
+and then
+
+314
+00:23:34,720 --> 00:23:37,760
+poke it right through
+from the back to the front.
+
+315
+00:23:39,120 --> 00:23:42,760
+So that you can screw
+this plastic piece on.
+
+316
+00:23:44,160 --> 00:23:49,880
+Just like that, I have one facing
+front and one school facing downward.
+
+317
+00:23:50,840 --> 00:23:55,680
+Next, we want to do is you want
+to grab another connector cable
+
+318
+00:23:55,880 --> 00:23:58,400
+and then we want to do is you want to flip
+
+319
+00:23:58,600 --> 00:24:01,520
+to the back and then
+plug in to this point.
+
+320
+00:24:04,080 --> 00:24:05,640
+Like that,
+
+321
+00:24:06,240 --> 00:24:08,320
+additionally, you want to put another
+
+322
+00:24:08,520 --> 00:24:13,480
+cable on top right corner or
+top left corner excuse me,
+
+323
+00:24:13,920 --> 00:24:17,680
+and you want to insert it right there
+
+324
+00:24:18,000 --> 00:24:19,560
+just like that,
+
+325
+00:24:19,760 --> 00:24:23,920
+then we're going to meet
+these two piece together
+
+326
+00:24:24,120 --> 00:24:28,240
+going around the cable through
+just like how we related to Rimu.
+
+327
+00:24:29,880 --> 00:24:33,000
+And then pull it through all the way.
+
+328
+00:24:35,360 --> 00:24:37,040
+Just like that,
+
+329
+00:24:37,800 --> 00:24:41,160
+and then these are going to be connecting
+
+330
+00:24:41,560 --> 00:24:44,800
+towards the middle one, the first one
+
+331
+00:24:45,040 --> 00:24:46,120
+we also wanted to tell.
+
+332
+00:24:46,320 --> 00:24:48,960
+So this is the one that connects
+
+333
+00:24:49,160 --> 00:24:54,040
+to the middle piece, this one
+to be connecting to the back
+
+334
+00:24:54,240 --> 00:24:57,360
+of the three ports over there.
+
+335
+00:24:58,960 --> 00:25:00,840
+Right there.
+
+336
+00:25:01,040 --> 00:25:04,560
+And this one is going to connect.
+
+337
+00:25:05,120 --> 00:25:08,560
+To this point,
+
+338
+00:25:08,960 --> 00:25:13,280
+which is in the middle of the bottom three
+right there.
+
+339
+00:25:13,480 --> 00:25:21,240
+So this one should be empty and then this
+one goes to the top, her top part
+
+340
+00:25:21,440 --> 00:25:27,600
+of the front bumper already
+and then the middle cable after
+
+341
+00:25:27,800 --> 00:25:33,280
+from bumper LCD shirttail
+to the latter of these three.
+
+342
+00:25:33,560 --> 00:25:37,440
+Next, we're going to just
+install this onto their.
+
+343
+00:25:37,760 --> 00:25:42,240
+SO to do that, we're just going
+to grab some screws and a security.
+
+344
+00:25:50,960 --> 00:25:52,680
+Once we have put the front bumper
+
+345
+00:25:52,880 --> 00:25:58,880
+assembly, we're going to attach
+a camera ribbon cable.
+
+346
+00:26:00,320 --> 00:26:03,520
+Make sure your metal part
+is facing the right way.
+
+347
+00:26:03,720 --> 00:26:07,240
+It's always a good rule of thumb
+that the metal part should be facing
+
+348
+00:26:07,440 --> 00:26:10,720
+the trace side
+and then the plastic side should have
+
+349
+00:26:10,920 --> 00:26:16,880
+to prove I should have the blue side
+facing from the camera ribbon cable
+
+350
+00:26:17,080 --> 00:26:20,960
+next to work and to install the distance
+sensor module on the stand off.
+
+351
+00:26:21,160 --> 00:26:22,160
+That's standing up.
+
+352
+00:26:22,360 --> 00:26:27,040
+So the camera in the distance
+module is a little piece.
+
+353
+00:26:28,520 --> 00:26:30,680
+We want to do is you just want to
+
+354
+00:26:30,880 --> 00:26:37,000
+attach it right there,
+want to do is just attach it right there
+
+355
+00:26:37,200 --> 00:26:42,320
+and then scream your nylon that.
+
+356
+00:26:43,800 --> 00:26:46,160
+Next, we want to connect this assembly
+
+357
+00:26:46,360 --> 00:26:52,800
+to the plate where you want to do is
+grab the extremely short piece of cable
+
+358
+00:26:53,000 --> 00:26:55,280
+and then plug it in from the bottom.
+
+359
+00:26:55,480 --> 00:26:59,240
+Just be again, be very
+careful with the connector.
+
+360
+00:26:59,440 --> 00:27:07,240
+Like that, and then you want to plug in
+the third quarter just right there.
+
+361
+00:27:09,240 --> 00:27:11,400
+Lastly, we can install the interactive
+
+362
+00:27:11,600 --> 00:27:15,600
+cover to do that, we're going
+to first install our button.
+
+363
+00:27:15,800 --> 00:27:18,240
+So here's our button we want to do is you
+
+364
+00:27:18,440 --> 00:27:22,480
+want to unscrew and get
+the nut after that.
+
+365
+00:27:22,680 --> 00:27:25,440
+And the next we want to do is make sure
+
+366
+00:27:25,640 --> 00:27:29,640
+it's facing upwards
+with the Fangoria on the right hand side.
+
+367
+00:27:29,840 --> 00:27:32,280
+The screen on the left hand side
+
+368
+00:27:32,480 --> 00:27:36,120
+that you want to do is just simply.
+
+369
+00:27:36,320 --> 00:27:38,720
+Scoop Arcangel not.
+
+370
+00:27:40,200 --> 00:27:44,200
+Right, that and this will
+hold the buttons stable.
+
+371
+00:27:44,400 --> 00:27:48,760
+Make sure you align
+the button so it looks nice.
+
+372
+00:27:49,080 --> 00:27:50,800
+Just like that,
+
+373
+00:27:51,160 --> 00:27:55,720
+next, we're going to install the screen,
+so to install the screen.
+
+374
+00:27:56,600 --> 00:27:58,320
+Simply
+
+375
+00:27:58,880 --> 00:28:03,400
+put, four Nilus screws and then
+tie them up with a nylon, that's.
+
+376
+00:28:06,360 --> 00:28:07,880
+Next, we're going to connect
+
+377
+00:28:08,080 --> 00:28:11,680
+to the display table,
+this might be a little bit tricky if you
+
+378
+00:28:11,880 --> 00:28:16,360
+get a cable like I do,
+where it's only two black cables and one
+
+379
+00:28:16,560 --> 00:28:19,840
+yellow and one red cables,
+if that's the case,
+
+380
+00:28:20,040 --> 00:28:25,240
+the black cable next to the red cable,
+that should be your ground and the other
+
+381
+00:28:25,440 --> 00:28:29,040
+black cable next to the yellow
+cable, that's your state.
+
+382
+00:28:29,240 --> 00:28:33,000
+So there are actual labels on the
+
+383
+00:28:33,200 --> 00:28:37,560
+screen itself, as well as
+labels on the driver hat.
+
+384
+00:28:37,760 --> 00:28:40,040
+Just make sure these each wire goes
+
+385
+00:28:40,240 --> 00:28:44,640
+to where they intend to go and they are
+properly aligned next to, well,
+
+386
+00:28:44,840 --> 00:28:49,200
+plugging the button and
+displaying cable for the button.
+
+387
+00:28:49,400 --> 00:28:51,640
+There is a port on the board.
+
+388
+00:28:51,840 --> 00:28:53,000
+That's a stop button.
+
+389
+00:28:53,200 --> 00:28:56,520
+So you just connect it right there.
+
+390
+00:28:56,720 --> 00:29:03,760
+And then as for the display cable,
+you connect it right there
+
+391
+00:29:03,960 --> 00:29:09,560
+and then what you do is you carefully
+
+392
+00:29:09,760 --> 00:29:11,600
+wrapped it up,
+
+393
+00:29:12,320 --> 00:29:15,800
+then attached to it
+to complete the install,
+
+394
+00:29:16,000 --> 00:29:21,520
+put your top play along in these
+four corners and the two standoffs.
+
+395
+00:29:21,720 --> 00:29:25,800
+And I simply use two nylon screws
+
+396
+00:29:26,400 --> 00:29:28,200
+and screw adding.
+
+397
+00:29:28,400 --> 00:29:30,840
+For the front to stand off
+
+398
+00:29:31,040 --> 00:29:38,400
+to other nylon, screw nylon nuts, sorry,
+and then simply tighten it off.
+
+399
+00:29:39,680 --> 00:29:42,320
+Lastly, plugging in your power cable,
+
+400
+00:29:42,520 --> 00:29:46,760
+the split off power cable
+show in the first port.
+
+401
+00:29:47,520 --> 00:29:52,200
+Plugging the other USB cable
+from the power bank to the fourth port
+
+402
+00:29:52,400 --> 00:29:56,720
+on a controller
+and plugging the USB charging port
+
+403
+00:29:56,920 --> 00:30:03,360
+on the power bank into the port,
+that's next to the splatting USB port.
+
