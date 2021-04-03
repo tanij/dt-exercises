@@ -16,7 +16,7 @@ dt-launchfile-init
 
 python3 /code/solution.py &> /dev/null &
 dt-exec roslaunch --wait car_interface all.launch veh:=$VEHICLE_NAME &
-dt-exec roslaunch encoder_pose encoder_pose_node.launch veh:=$VEHICLE_NAME &
+dt-exec roslaunch wheels_calibration wheels_calibration_node.launch veh:=$VEHICLE_NAME &
 # roslaunch interaction_pkg interaction_node.launch veh:=$VEHICLE_NAME
 #python3 /code/exercise_ws/src/interaction_pkg/src/interaction_node.py
 
