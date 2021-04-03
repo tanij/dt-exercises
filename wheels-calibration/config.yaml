@@ -28,9 +28,9 @@ agent_base: "duckietown_baseline" # currently not implemented, the agent base im
 ws_dir: "exercise_ws" # directory that contains the code
 agent_run_cmd: "default.sh" # the script in "launchers" to run the agent with
 
-notebooks:
-  - notebook:
-      package_name: "encoder_pose"
-      name: "odometry_activity"
+# notebooks:
+#   - notebook:
+#       package_name: "encoder_pose"
+#       name: "odometry_activity"
     
   

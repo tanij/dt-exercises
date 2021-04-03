@@ -127,11 +127,6 @@ class WheelsCalibrationNode(DTROS):
         self.ticks_right+=delta_ticks
         print(f"RIGHT ticks : {self.ticks_right}") 
             
-
-    #
-    # Pose estimation is the function that is created by the user.
-    #
-
     def onShutdown(self):
         print("Shutting down, bye, bye!")
 
