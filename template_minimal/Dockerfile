@@ -5,9 +5,9 @@ COPY requirements.* ./
 RUN cat requirements.* > .requirements.txt
 RUN  pip3 install --use-feature=2020-resolver -r .requirements.txt
 
-RUN mkdir /code/exercise_ws
-
-COPY exercise_ws /code/exercise_ws
+# RUN mkdir /code/exercise_ws
+# COPY exercise_ws /code/exercise_ws
 COPY launchers /code
+COPY solution /code
 
-CMD ["bash", "/code/submit.sh"]
+CMD ["bash", "/code/run_agent.sh"]
