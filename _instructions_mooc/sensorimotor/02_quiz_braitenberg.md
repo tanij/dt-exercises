@@ -17,7 +17,7 @@ Before running we must learn how to walk. Autonomy is not magic and interesting 
 ( ) Childish attempts at quantifying emotions.
 
 [explanation]
-
+The Braitenberg vehicle executes simple reactive behaviors. The behavior is of the vehicle is directly controlled by the sensors without any intermediate logic. 
 [explanation]
 
 >> Why are Braitenberg vehicles important? <<

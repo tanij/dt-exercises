@@ -44,13 +44,13 @@ Kalman filters, A*, and MPC are examples of particular algorithms used in estima
 
 >> What is the main role of the Estimation block? <<
 
-( ) Smoothen the observation data to mitigate unavoidable measurement noise.
+( ) Smooth the observation data to mitigate unavoidable measurement noise.
 (x) Transform sensor data into actionable information for the robot to accomplish its task.
 ( ) Select which sensor data stream to utilize when multiple sensors are present.
 ( ) Determine the probability of success of the robot's mission. 
 
 [explanation]
-The estimation block contains some algorithm (many exist) to transform data from sensors to estimate of information for the planner and controller to accomplish their objectives.
+The estimation block contains some algorithm (many exist) to transform data from sensors to an estimate of information used by the planner and controller to accomplish their objectives.
 [explanation]
 
 >> Why is it a "belief"? <<
@@ -61,7 +61,7 @@ The estimation block contains some algorithm (many exist) to transform data from
 ( ) "Belief" is a variable with exact definition, but it hasn't been introduced to us yet. 
 
 [explanation]
-The estimation block derives information, or tentative values for the state variables at each time instant, from the data made available from sensors. Real data is always noisy (has random fluctuations on what would be the "real" value), and sometimes it might simply not contain enough information for the estimation algorithm to provide the "real" value. Estimators produce estimates, or "guesses" of the real values of state variables. 
+The estimation block derives information, or tentative values for the state variables at each time instant, from the data made available from sensors. Real data is always noisy (has random fluctuations to the "real" value), and sometimes it might simply not contain enough information for the estimation algorithm to provide the "real" value. Estimators produce estimates, or "guesses," of the real values of state variables. 
 [explanation]
 
 >> In the case of a Duckiebot driving in Duckietown, how many valid state variables choices could there be? <<
@@ -73,18 +73,18 @@ The estimation block derives information, or tentative values for the state vari
 ( ) It depends on the task. 
 
 [explanation]
-Although not all choices of states are equally informative and efficient for computational reasons, there are always infinite choices of states for any controlled system.  
+Although not all choices of states are equally informative and efficient for computational reasons, there are always infinite choices of states for any controlled system.
 [explanation]
 
 >> What is the main role of the Planning block? <<
 
 ( ) Make sure to compute the optimal strategy for achieving the given task to the controller block.
-(x) Determine a nominal plan based on the robot's belief of the world, and readjusting it on the fly as need be.
+(x) Determine a nominal plan based on the robot's belief of the world, and readjust it on the fly as need be.
 ( ) Inform the estimation block on which subset of the data to focus on.
-(x) Act as "supervisor" to prevent undesirable outcomes, as crashes in the case of self-driving.
+(x) Act as "supervisor" to prevent undesirable outcomes, such as crashes in the case of self-driving.
 
 [explanation]
-The role of a planner is to provide a nominal plan, i.e., values for the state variables to be taken as ideal "references" from the controller, at every time instant.  
+The role of a planner is to provide a nominal plan, i.e., values for the state variables to be taken as ideal "references" from the controller, at every time instant.
 [explanation]
 
 >> What is the main role of the Control block? <<
@@ -92,7 +92,7 @@ The role of a planner is to provide a nominal plan, i.e., values for the state v
 ( ) Make sure the planner and estimators are efficiently executing their functions.
 ( ) Decide on the best course of action to accomplish the given task.
 ( ) Enable the robot sensors to collect more informative data as time goes by.
-(x) Determine commands to the actuators to "fill the gap" between the plan and the belief of the robot.
+(x) Determine commands for the actuators to "fill the gap" between the plan and the belief of the robot.
 
 [explanation]
 The controller receives as input the state estimates (belief) and a nominal plan, and uses some algorithm (many exist) to compute commands for the actuators to drive the robot states towards the plan. 
@@ -106,10 +106,10 @@ The controller receives as input the state estimates (belief) and a nominal plan
 ( ) It's a way to have the controller place the robot so the sensors can provide more informative data. 
 
 [explanation]
-The planner could inform the perception module on what to focus. 
+The planner could inform the perception module on what is most important to focus on. 
 [explanation]
 
->> Do you believe learning-based methods to be superior to traditional architectures? <<
+>> Do you believe learning-based methods are superior to traditional architectures? <<
 
 (x) Yes. 
 (x) No.
