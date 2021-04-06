@@ -23,8 +23,14 @@
 # agent_run_cmd: "run_all.sh" # the script in "launchers" to run the agent with
 
   
+
 agent_base: "duckietown_baseline" # currently not implemented, the agent base image to use
 ws_dir: "exercise_ws" # directory that contains the code
-agent_run_cmd: "run_all.sh" # the script in "launchers" to run the agent with
+agent_run_cmd: "default.sh" # the script in "launchers" to run the agent with
 
+notebooks:
+  - notebook:
+      package_name: "encoder_pose"
+      name: "odometry_activity"
+    
   
