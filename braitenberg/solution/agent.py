@@ -7,10 +7,21 @@ import math
 import numpy as np
 from braitenberg01 import rgb_from_jpg_bytes
 from braitenberg02 import get_motor_left_matrix, get_motor_right_matrix
-from mysolution import get_motor_left_matrix, get_motor_right_matrix
 
-from aido_schemas import (Context, DB20Commands, DB20Observations, EpisodeStart, GetCommands, JPGImage,
-                          LEDSCommands, logger, protocol_agent_DB20, PWMCommands, RGB, wrap_direct)
+from aido_schemas import (
+    Context,
+    DB20Commands,
+    DB20Observations,
+    EpisodeStart,
+    GetCommands,
+    JPGImage,
+    LEDSCommands,
+    logger,
+    protocol_agent_DB20,
+    PWMCommands,
+    RGB,
+    wrap_direct,
+)
 
 
 @dataclass
@@ -104,10 +115,12 @@ class BraitenbergAgent:
     def finish(self, context: Context):
         context.info("finish()")
 
-def rescale(a:float, L:float, U: float):
+
+def rescale(a: float, L: float, U: float):
     if np.allclose(L, U):
         return 0.0
-    return (a - L) / (U-L)
+    return (a - L) / (U - L)
+
 
 def main():
     node = BraitenbergAgent()
