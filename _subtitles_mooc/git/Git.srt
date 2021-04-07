@@ -1,0 +1,303 @@
+﻿1
+00:00:01,120 --> 00:00:05,440
+This short video is an introduction to version control with git.
+
+2
+00:00:06,120 --> 00:00:08,400
+Why do we need to use version control?
+
+3
+00:00:08,600 --> 00:00:10,800
+One reason is collaboration: it allows you
+
+4
+00:00:11,000 --> 00:00:14,000
+to work on the same project with many other people.
+
+5
+00:00:14,200 --> 00:00:16,800
+With version control, you can work on parallel branches,
+
+6
+00:00:17,000 --> 00:00:20,160
+which means different versions of the code at the same time.
+
+7
+00:00:20,360 --> 00:00:25,400
+Version control is also an essential part of a formal development process.
+
+8
+00:00:25,680 --> 00:00:28,240
+It's fun to look at the history of version control.
+
+9
+00:00:28,960 --> 00:00:32,880
+In the '60s the way you would store code was just to print it out.
+
+10
+00:00:33,080 --> 00:00:34,760
+This is Margaret Hamilton next
+
+11
+00:00:34,960 --> 00:00:38,200
+to the source code for one
+of the Apollo missions to the moon.
+
+12
+00:00:38,400 --> 00:00:40,000
+In the 90s, the main tool for Russian
+
+13
+00:00:40,200 --> 00:00:44,640
+control was CVS, in which each file
+would have an independent history.
+
+14
+00:00:44,840 --> 00:00:48,560
+Subversion introduced a client-server architecture and the notion of snapshots
+
+15
+00:00:48,760 --> 00:00:52,400
+of the entire codebase, instead of single files.
+
+16
+00:00:52,600 --> 00:00:56,680
+A big improvement came with distributed version control system, such as Git,
+
+17
+00:00:56,880 --> 00:01:01,160
+which is now the most used system, and the one we are going to use.
+
+18
+00:01:02,280 --> 00:01:04,120
+On top of Git there is a large ecosystem
+
+19
+00:01:04,320 --> 00:01:09,160
+of services such as GitHub and Gitlab. such as Github and Gitlab. These services provide features
+
+20
+00:01:09,360 --> 00:01:13,480
+like issue tracking and pull requests that make collaboration easy.
+
+21
+00:01:13,680 --> 00:01:17,640
+Git was created by Linus Torvalds, the same Finnish guy who invented Linux.
+
+22
+00:01:17,840 --> 00:01:22,280
+And as he says, just like Linux, Git was named after him.
+
+23
+00:01:22,480 --> 00:01:24,800
+Git was created for the Linux development.
+
+24
+00:01:25,000 --> 00:01:28,560
+There was no other tool that was sufficient for projects of that scale.
+
+25
+00:01:28,760 --> 00:01:31,680
+You can find on Github a copy of the repository for the Linux kernel,
+
+26
+00:01:31,880 --> 00:01:36,440
+and you will see that it has millions of
+commits and thousands of contributors.
+
+27
+00:01:36,640 --> 00:01:38,680
+Linus inventing Git is a demonstration
+
+28
+00:01:38,880 --> 00:01:42,040
+of the principle that Jedi knights
+build their own lightsabers.
+
+29
+00:01:42,240 --> 00:01:44,360
+This principle also works for robotics.
+
+30
+00:01:44,560 --> 00:01:46,800
+As a roboticist, we will use plenty of tools,
+
+31
+00:01:47,000 --> 00:01:49,080
+but chances are that, none is quite sufficient.
+
+32
+00:01:49,280 --> 00:01:52,560
+And you will need to go and extend
+them or build your own.
+
+33
+00:01:52,760 --> 00:01:56,760
+Getting back to Git: At the core of Git there is
+the concept of a commit graph.
+
+34
+00:01:56,960 --> 00:02:01,080
+For example, this is the commit graph
+for one of the Duckietown repositories.
+
+35
+00:02:01,280 --> 00:02:06,040
+On Github you access this through the "insights"
+menu and then choosing "network".
+
+36
+00:02:06,640 --> 00:02:09,640
+This is a graph where each node
+represents a state of the source code.
+
+37
+00:02:09,840 --> 00:02:13,000
+The edges are changes that bring
+you from one state to another.
+
+38
+00:02:13,200 --> 00:02:14,440
+The graph is not linear,
+
+39
+00:02:14,640 --> 00:02:17,520
+There can be parallel branches
+in which development happens,
+
+40
+00:02:17,720 --> 00:02:20,000
+for example,
+two people can work at the same time
+
+41
+00:02:20,000 --> 00:02:22,600
+in the same project without
+interfering with each other.
+
+42
+00:02:22,800 --> 00:02:25,280
+Then, later, they can merge their work.
+
+43
+00:02:25,480 --> 00:02:27,320
+This is another example of a commit graph.
+
+44
+00:02:27,520 --> 00:02:30,520
+In this visualization, time goes
+from the bottom to the top.
+
+45
+00:02:30,720 --> 00:02:33,800
+This is the first repository for the Duckietown project in 2016.
+
+46
+00:02:34,000 --> 00:02:37,000
+You can see that at the beginning only few people were working on the project.
+
+47
+00:02:37,200 --> 00:02:39,000
+Then, eventually, many other people joined.
+
+48
+00:02:39,200 --> 00:02:42,360
+And so the graph became less linear.
+
+49
+00:02:42,880 --> 00:02:43,760
+If we zoom in at the top,
+
+50
+00:02:43,760 --> 00:02:47,320
+you will see the "master" branch
+This contains the master copy of the project, .
+
+51
+00:02:47,520 --> 00:02:51,360
+In the sense that eventually all of the
+branches will be merged into master.
+
+52
+00:02:51,560 --> 00:02:54,640
+If we zoom in, we see that at the time
+that this snapshot was taken,
+
+53
+00:02:54,840 --> 00:02:58,600
+there were many branches that awaited to be merged in the masterbrand.
+
+54
+00:02:59,480 --> 00:03:01,360
+Git is incredibly flexible.
+
+55
+00:03:01,560 --> 00:03:04,440
+It doesn't specify the semantics
+for the different branches,
+
+56
+00:03:04,640 --> 00:03:07,680
+but there are conventions that are
+very useful to organize development.
+
+57
+00:03:07,880 --> 00:03:12,360
+One of the most used is the "Git Flow"
+model, which specifies how teams can
+
+58
+00:03:12,560 --> 00:03:16,480
+coordinate the development
+of different versions in parallel.
+
+59
+00:03:17,360 --> 00:03:18,960
+We provide you with several pointers to
+
+60
+00:03:19,160 --> 00:03:22,200
+resources that you can use
+to learn Git.
+
+61
+00:03:22,400 --> 00:03:25,680
+In your journey, you will realize that it is very
+powerful and it has many features.
+
+62
+00:03:25,880 --> 00:03:26,960
+Don't be intimidated.
+
+63
+00:03:27,160 --> 00:03:31,080
+Keep in mind that you typically only
+need the basic functionality of Git.
+
+64
+00:03:31,280 --> 00:03:34,680
+This is a summary of the basic
+operations that you might want to learn.
+
+65
+00:03:34,880 --> 00:03:36,640
+You should learn how to clone a repository,
+
+66
+00:03:36,840 --> 00:03:40,920
+how to commit modifications, and how to push the changes remotely.
+
+67
+00:03:41,120 --> 00:03:44,760
+Branching and merging are very
+useful to learn at some point.
+
+68
+00:03:44,960 --> 00:03:46,680
+Finally, it is very useful to learn GitHub
+
+69
+00:03:46,880 --> 00:03:49,400
+features such as pull
+requests and issue tracking.
+

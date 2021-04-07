@@ -1,0 +1,375 @@
+﻿1
+00:00:01,120 --> 00:00:05,920
+Este breve vídeo es una introducción
+al control de versiones con git.
+
+2
+00:00:06,120 --> 00:00:08,400
+¿Por qué es necesario utilizar
+el control de versiones?
+
+3
+00:00:08,600 --> 00:00:10,800
+Una de las razones es la
+colaboración: permite
+
+4
+00:00:11,000 --> 00:00:14,000
+trabajar en el mismo proyecto
+con muchas otras personas.
+
+5
+00:00:14,200 --> 00:00:16,800
+Con el control de versiones, puedes
+trabajar en ramas paralelas,
+
+6
+00:00:17,000 --> 00:00:20,160
+lo que significa diferentes versiones
+del código al mismo tiempo.
+
+7
+00:00:20,360 --> 00:00:22,520
+El control de versiones también es una
+
+8
+00:00:22,720 --> 00:00:25,480
+parte esencial de un proceso
+de desarrollo formal.
+
+9
+00:00:25,680 --> 00:00:28,760
+Es divertido mirar la historia
+del control de versiones.
+
+10
+00:00:28,960 --> 00:00:32,880
+En los años 60, la forma de almacenar
+el código era simplemente imprimirlo.
+
+11
+00:00:33,080 --> 00:00:34,760
+Esta es Margaret Hamilton siguiente
+
+12
+00:00:34,960 --> 00:00:38,200
+al código fuente de una de
+las misiones Apolo a la Luna.
+
+13
+00:00:38,400 --> 00:00:40,000
+En los años 90, la principal
+herramienta para los rusos
+
+14
+00:00:40,200 --> 00:00:44,640
+control era CVS, en el que cada archivo
+tendría un historial independiente.
+
+15
+00:00:44,840 --> 00:00:46,520
+Subversion introdujo una arquitectura
+
+16
+00:00:46,520 --> 00:00:48,560
+cliente-servidor y la
+noción de instantáneas
+
+17
+00:00:48,760 --> 00:00:52,400
+de todo el código base, en
+lugar de archivos individuales.
+
+18
+00:00:52,600 --> 00:00:54,520
+Una gran mejora llegó con el sistema de
+
+19
+00:00:54,580 --> 00:00:56,680
+control de versiones
+distribuido, como Git,
+
+20
+00:00:56,880 --> 00:01:02,080
+que es ahora el sistema más utilizado,
+y el que vamos a utilizar.
+
+21
+00:01:02,280 --> 00:01:04,120
+Además de Git hay un gran ecosistema
+
+22
+00:01:04,320 --> 00:01:05,920
+de servicios como GitHub y Gitlab.
+
+23
+00:01:05,960 --> 00:01:06,960
+como Github y Gitlab.
+
+24
+00:01:07,010 --> 00:01:09,160
+Estos servicios proporcionan
+características
+
+25
+00:01:09,360 --> 00:01:11,320
+como el seguimiento de incidencias y los
+
+26
+00:01:11,330 --> 00:01:13,480
+pull requests que
+facilitan la colaboración.
+
+27
+00:01:13,680 --> 00:01:17,640
+Git fue creado por Linus Torvalds, el
+mismo finlandés que inventó Linux.
+
+28
+00:01:17,840 --> 00:01:22,280
+Y como él dice, al igual que Linux,
+Git fue nombrado en su honor.
+
+29
+00:01:22,480 --> 00:01:24,800
+Git fue creado para el
+desarrollo de Linux.
+
+30
+00:01:25,000 --> 00:01:26,480
+No había ninguna otra herramienta que
+
+31
+00:01:26,480 --> 00:01:28,560
+fuera suficiente para
+proyectos de esa envergadura.
+
+32
+00:01:28,760 --> 00:01:31,680
+Puedes encontrar en Github una copia
+del repositorio del núcleo de Linux,
+
+33
+00:01:31,880 --> 00:01:36,440
+y verás que tiene millones de
+commits y miles de colaboradores.
+
+34
+00:01:36,640 --> 00:01:38,680
+Linus inventando Git es una demostración
+
+35
+00:01:38,880 --> 00:01:42,040
+del principio de que los caballeros Jedi
+construyen sus propios sables de luz.
+
+36
+00:01:42,240 --> 00:01:44,360
+Este principio también
+funciona para la robótica.
+
+37
+00:01:44,560 --> 00:01:46,800
+Como robotista, utilizaremos
+muchas herramientas,
+
+38
+00:01:47,000 --> 00:01:49,080
+pero lo más probable es que
+ninguno sea suficiente.
+
+39
+00:01:49,280 --> 00:01:52,560
+Y tendrás que ir y ampliar o
+construir los tuyos propios.
+
+40
+00:01:52,760 --> 00:01:56,760
+Volviendo a Git: En el núcleo de Git hay
+el concepto de un gráfico de commit.
+
+41
+00:01:56,960 --> 00:02:01,080
+Por ejemplo, este es el gráfico de commit
+de uno de los repositorios de Duckietown.
+
+42
+00:02:01,280 --> 00:02:06,440
+En Github se accede a través del menú
+"insights" y luego eligiendo "red".
+
+43
+00:02:06,640 --> 00:02:09,640
+Se trata de un gráfico en el que cada nodo
+representa un estado del código fuente.
+
+44
+00:02:09,840 --> 00:02:13,000
+Los bordes son cambios que te
+llevan de un estado a otro.
+
+45
+00:02:13,200 --> 00:02:14,440
+El gráfico no es lineal,
+
+46
+00:02:14,640 --> 00:02:17,520
+Puede haber ramas paralelas en
+las que se produce el desarrollo,
+
+47
+00:02:17,720 --> 00:02:20,000
+por ejemplo, dos personas
+pueden trabajar al mismo tiempo
+
+48
+00:02:20,200 --> 00:02:22,600
+en el mismo proyecto sin
+interferir entre sí.
+
+49
+00:02:22,800 --> 00:02:25,280
+Luego, más tarde, pueden
+fusionar su trabajo.
+
+50
+00:02:25,480 --> 00:02:27,320
+Este es otro ejemplo de
+gráfico de confirmación.
+
+51
+00:02:27,520 --> 00:02:30,520
+En esta visualización, el tiempo
+va de abajo hacia arriba.
+
+52
+00:02:30,720 --> 00:02:33,800
+Este es el primer depósito del
+proyecto Duckietown en 2016.
+
+53
+00:02:34,000 --> 00:02:35,240
+Se puede ver que al principio sólo
+
+54
+00:02:35,240 --> 00:02:37,000
+trabajaban en el proyecto
+unas pocas personas.
+
+55
+00:02:37,200 --> 00:02:39,000
+Luego, con el tiempo, se
+unieron muchas otras personas.
+
+56
+00:02:39,200 --> 00:02:43,760
+Y así el gráfico se volvió menos lineal.
+Si nos acercamos a la parte superior,
+
+57
+00:02:43,760 --> 00:02:44,840
+verá la rama "master".
+
+58
+00:02:45,040 --> 00:02:47,320
+Esta contiene la copia
+maestra del proyecto, .
+
+59
+00:02:47,520 --> 00:02:51,360
+En el sentido de que eventualmente todas
+las ramas se fusionarán en el maestro.
+
+60
+00:02:51,560 --> 00:02:54,640
+Si ampliamos la imagen, vemos que en el
+momento que se tomó esta instantánea,
+
+61
+00:02:54,840 --> 00:02:59,280
+había muchas ramas que esperaban
+ser fusionadas en la marca maestra.
+
+62
+00:02:59,480 --> 00:03:01,360
+Git es increíblemente flexible.
+
+63
+00:03:01,560 --> 00:03:04,440
+No especifica la semántica
+para las diferentes ramas,
+
+64
+00:03:04,640 --> 00:03:07,680
+pero hay convenciones que son muy
+útiles para organizar el desarrollo.
+
+65
+00:03:07,880 --> 00:03:09,920
+Uno de los más utilizados es el modelo "
+
+66
+00:03:10,010 --> 00:03:12,360
+Git Flow" que especifica
+cómo los equipos pueden
+
+67
+00:03:12,560 --> 00:03:17,160
+coordinar el desarrollo de
+diferentes versiones en paralelo.
+
+68
+00:03:17,360 --> 00:03:18,960
+Le proporcionamos varias indicaciones para
+
+69
+00:03:19,160 --> 00:03:22,200
+recursos que puedes
+utilizar para aprender Git.
+
+70
+00:03:22,400 --> 00:03:25,680
+En su viaje, se dará cuenta de que es muy
+potente y tiene muchas características.
+
+71
+00:03:25,880 --> 00:03:26,960
+No te sientas intimidado.
+
+72
+00:03:27,160 --> 00:03:31,080
+Ten en cuenta que normalmente sólo
+necesita la funcionalidad básica de Git.
+
+73
+00:03:31,280 --> 00:03:32,800
+Este es un resumen de las operaciones
+
+74
+00:03:32,800 --> 00:03:34,680
+operaciones básicas que
+puede querer aprender.
+
+75
+00:03:34,880 --> 00:03:36,640
+Deberías aprender a clonar un repositorio,
+
+76
+00:03:36,840 --> 00:03:40,920
+cómo confirmar las modificaciones y cómo
+enviar los cambios de forma remota.
+
+77
+00:03:41,120 --> 00:03:44,760
+La ramificación y la fusión son muy
+útiles para aprender en algún momento.
+
+78
+00:03:44,960 --> 00:03:46,680
+Por último, es muy útil aprender GitHub
+
+79
+00:03:46,880 --> 00:03:49,360
+características como pull y
+el seguimiento de problemas.
+

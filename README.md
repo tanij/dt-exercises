@@ -2,12 +2,6 @@
 
 This is the `dt-exercises` repo. It contains a suite of exercises that are designed to be used for learning. 
 
-## Getting Started
-
-Start by installing the requirements:
-
-    $ pip install -r requirements.txt
-
 ## How to use this Repository
 
 Enter into an exercise folder. From there you can do the following:

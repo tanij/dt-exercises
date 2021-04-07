@@ -1,0 +1,404 @@
+0
+00:00:05,480 --> 00:00:08,660
+We want to create autonomous vehicles that are intelligent enough
+
+1
+00:00:08,660 --> 00:00:10,520
+to drive us around.
+
+2
+00:00:10,520 --> 00:00:13,160
+We don't see autonomy as a binary value:
+
+3
+00:00:13,160 --> 00:00:16,940
+either you have it, or not, but as a continuum of capabilities
+
+4
+00:00:16,940 --> 00:00:18,980
+that vehicles might possess.
+
+5
+00:00:18,980 --> 00:00:21,710
+I will present a generally accepted classification
+
+6
+00:00:21,710 --> 00:00:24,170
+called the "levels of automation", from Level 0
+
+7
+00:00:24,170 --> 00:00:27,660
+to level 5, which means completely autonomous.
+
+8
+00:00:27,660 --> 00:00:29,820
+Because it was created by automotive engineers,
+
+9
+00:00:29,820 --> 00:00:31,560
+they used the word "automation",
+
+10
+00:00:31,560 --> 00:00:34,960
+but roboticists like to use the word "autonomy" here.
+
+11
+00:00:34,960 --> 00:00:38,500
+This graphic shows the description of the levels of autonomy.
+
+12
+00:00:38,500 --> 00:00:40,300
+Let's start with Level 5.
+
+13
+00:00:40,300 --> 00:00:43,120
+Level 5 corresponds to a completely autonomous car.
+
+14
+00:00:43,120 --> 00:00:45,370
+These cars don't exist today.
+
+15
+00:00:45,370 --> 00:00:49,390
+A level 5 car is a car that you can call and will show up at your door.
+
+16
+00:00:49,390 --> 00:00:52,330
+It will ask you where you want to go, and it will get you there
+
+17
+00:00:52,330 --> 00:00:55,000
+while you relax and play Sudoku in the back.
+
+18
+00:00:55,000 --> 00:00:57,040
+Think of a taxi, but without a taxi driver,
+
+19
+00:00:57,040 --> 00:01:00,220
+and completely missing the pedals or the steering wheel.
+
+20
+00:01:00,220 --> 00:01:03,280
+Let's get back to Earth and see what exists today.
+
+21
+00:01:03,280 --> 00:01:07,030
+In Level 0 cars the human fully controls the car,
+
+22
+00:01:07,030 --> 00:01:11,230
+in the sense of steering and acceleration at all normal times.
+
+23
+00:01:11,230 --> 00:01:14,950
+There can still be some electronic mediation between the user's commands
+
+24
+00:01:14,950 --> 00:01:17,980
+and the car's actuators in case of emergency.
+
+25
+00:01:17,980 --> 00:01:22,390
+Since the 90s, there have been electronic systems such as ABS  (anti-lock braking
+
+26
+00:01:22,390 --> 00:01:26,230
+system) and ESC (electronic stability control)
+
+27
+00:01:26,230 --> 00:01:30,420
+as well as many other variations on those ideas.
+
+28
+00:01:30,420 --> 00:01:33,750
+You have felt them if you have ever driven on a wet surface,
+
+29
+00:01:33,750 --> 00:01:38,070
+on snow and ice, and something happened, and you slammed on the brakes,
+
+30
+00:01:38,070 --> 00:01:42,090
+and heard some weird vibrations, and eventually you came to a safe stop.
+
+31
+00:01:42,090 --> 00:01:44,550
+Without assistance, the car would have spun out of control.
+
+32
+00:01:47,100 --> 00:01:51,060
+More recently, Level 0 features include the generation of safety warnings,
+
+33
+00:01:51,060 --> 00:01:54,670
+such as a parking warning or a lane departure warning.
+
+34
+00:01:54,670 --> 00:01:57,850
+These features require the system to be aware of the environment,
+
+35
+00:01:57,850 --> 00:02:00,700
+so they need cameras or distance sensors.
+
+36
+00:02:00,700 --> 00:02:02,790
+However, the system does not act.
+
+37
+00:02:02,790 --> 00:02:05,730
+The warning tells the driver that something is concerning
+
+38
+00:02:05,730 --> 00:02:10,060
+and it is the driver that must rectify the situation.
+
+39
+00:02:10,060 --> 00:02:13,630
+In Level 1 cars, the human shares control of the vehicle.
+
+40
+00:02:13,630 --> 00:02:16,600
+The human is required to maintain eyes on the road and hands
+
+41
+00:02:16,600 --> 00:02:21,080
+on the steering wheel, but some control is automated.
+
+42
+00:02:21,080 --> 00:02:24,440
+An example is a feature like automatic cruise control, which
+
+43
+00:02:24,440 --> 00:02:28,610
+keeps the velocity constant or the distance to the next vehicle constant,
+
+44
+00:02:28,610 --> 00:02:30,860
+while the human controls the steering.
+
+45
+00:02:30,860 --> 00:02:33,590
+These systems can reduce driver fatigue in traffic
+
+46
+00:02:33,590 --> 00:02:36,180
+along stretches of highway.
+
+47
+00:02:36,180 --> 00:02:38,520
+Another example is a parking assistance system
+
+48
+00:02:38,520 --> 00:02:42,030
+in which the car steers, but the human controls the speed of the vehicle.
+
+49
+00:02:42,030 --> 00:02:45,870
+In Level 2 cars, the machine can take full control of the vehicle
+
+50
+00:02:45,870 --> 00:02:48,420
+for both steering and acceleration.
+
+51
+00:02:48,420 --> 00:02:50,710
+These cars already exist.
+
+52
+00:02:50,710 --> 00:02:54,220
+Level 2 cars can drive along a lane by themselves.
+
+53
+00:02:54,220 --> 00:02:58,240
+They may still require confirmation from the user in some cases, for example
+
+54
+00:02:58,240 --> 00:03:00,640
+when to initiate a lane change.
+
+55
+00:03:00,640 --> 00:03:04,300
+At Level 2 there are two "drivers", a human driver and a machine driver,
+
+56
+00:03:04,300 --> 00:03:06,500
+and they alternate.
+
+57
+00:03:06,500 --> 00:03:11,490
+The human must be alert and ready to take back control at any time.
+
+58
+00:03:11,490 --> 00:03:15,540
+In Level 3 cars, the human would be supposedly allowed to direct attention
+
+59
+00:03:15,540 --> 00:03:17,420
+away from the driving task.
+
+60
+00:03:17,420 --> 00:03:20,980
+In a Level 3 car you will be able to watch a movie on your phone,
+
+61
+00:03:20,980 --> 00:03:23,340
+but you still have to sit-in the driver's seat
+
+62
+00:03:23,340 --> 00:03:27,910
+and be ready to take over when the system requires you to do it.
+
+63
+00:03:27,910 --> 00:03:31,860
+Whether safe Level 3 systems are possible is still an open question.
+
+64
+00:03:31,860 --> 00:03:34,238
+The problem here is that, presumably, when
+
+65
+00:03:34,238 --> 00:03:36,030
+the car would ask you to take back control,
+
+66
+00:03:36,030 --> 00:03:37,680
+you would have to react very quickly.
+
+67
+00:03:37,680 --> 00:03:40,230
+And you can imagine it would take you a few seconds just
+
+68
+00:03:40,230 --> 00:03:42,900
+to stop watching the movie, and try to get your bearings,
+
+69
+00:03:42,900 --> 00:03:45,470
+and assess the situation.
+
+70
+00:03:45,470 --> 00:03:47,900
+Level 3 seemed a good idea at the beginning.
+
+71
+00:03:47,900 --> 00:03:51,560
+It seemed a small, feasible, incremental step from Level 2.
+
+72
+00:03:51,560 --> 00:03:53,400
+However, people have realized that it may
+
+73
+00:03:53,400 --> 00:03:58,400
+be more difficult to create Level to 2 than the higher levels of autonomy.
+
+74
+00:03:58,400 --> 00:04:02,140
+In levels 4 and 5, the car is completely autonomous.
+
+75
+00:04:02,140 --> 00:04:04,690
+There's only one driver, which is the machine.
+
+76
+00:04:04,690 --> 00:04:08,500
+You sit in the back and the car gets to the destination.
+
+77
+00:04:08,500 --> 00:04:12,130
+The difference between level 4 and 5 is just the scope.
+
+78
+00:04:12,130 --> 00:04:15,430
+Level 5 means that the car can operate anywhere, on any road,
+
+79
+00:04:15,430 --> 00:04:17,800
+on any condition.
+
+80
+00:04:17,800 --> 00:04:20,220
+So the steering wheel is completely useless.
+
+81
+00:04:20,220 --> 00:04:26,810
+Level 4 means that the car is able to be autonomous in only in a smaller operating domain.
+
+82
+00:04:26,810 --> 00:04:29,630
+Level 4 is feasible, depending on the scope.
+
+83
+00:04:29,630 --> 00:04:33,500
+An autonomous taxi company can choose where and when to operate.
+
+84
+00:04:33,500 --> 00:04:37,440
+It can choose to deploy in sunny weather rather than in  snowy weather.
+
+85
+00:04:37,440 --> 00:04:41,610
+There are already several examples of companies deploying an autonomous taxi
+
+86
+00:04:41,610 --> 00:04:43,350
+service in limited areas.
+
+87
+00:04:43,350 --> 00:04:46,440
+It is now a question of progressively enlarging the scope.
+
+88
+00:04:46,440 --> 00:04:49,030
+Level 5 is the North Star for the field.
+
+89
+00:04:49,030 --> 00:04:53,000
+It gives us the direction, although we may never reach it.
+
+90
+00:04:53,000 --> 00:04:56,210
+As of today, Level 5 autonomy does not appear
+
+91
+00:04:56,210 --> 00:05:00,903
+to be inconceivable, although it is hard to speculate on a timeline.
+
+92
+00:05:00,903 --> 00:05:03,570
+The more we understand about these problems, the more optimistic
+
+93
+00:05:03,570 --> 00:05:06,150
+we are about getting there eventually.
+
+94
+00:05:06,150 --> 00:05:09,930
+But the timeline seems to expand as we learn of the genuine challenges
+
+95
+00:05:09,930 --> 00:05:12,400
+that we need to solve.
+
+96
+00:05:12,400 --> 00:05:16,630
+To summarize, we have seen the definition of the levels of autonomy.
+
+97
+00:05:16,630 --> 00:05:19,750
+Although they are numbered 0 to 5, and in the past
+
+98
+00:05:19,750 --> 00:05:25,630
+we went incrementally from 0 to 1 to 2, there is a discontinuity at Level 3.
+
+99
+00:05:25,630 --> 00:05:29,350
+Most of the industry players are starting directly at Level 4,
+
+100
+00:05:29,350 --> 00:05:31,590
+skipping Level 3.
+
