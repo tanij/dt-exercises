@@ -4,7 +4,7 @@ AIDONODE_CONFIG: |
   env_constructor: Simulator
   blur_time: 0.01
   max_pixel_mov: 1000
-  debug_profile: False
+  debug_profile: True
   debug_profile_summary: True
   env_parameters:
     max_steps: 500001
