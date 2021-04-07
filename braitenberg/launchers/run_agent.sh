@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python3 /code/solution/exercise_solution.py
+python3 /code/solution/agent.py
