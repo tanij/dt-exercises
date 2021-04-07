@@ -13,3 +13,4 @@ catkin_ws/.catkin_tools/
 */assets/setup/challenges/tmp
 *resolved
 .ipynb_checkpoints
+*-filtered*
