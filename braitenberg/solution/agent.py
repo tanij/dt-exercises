@@ -5,9 +5,8 @@ from typing import Optional, Tuple
 
 import math
 import numpy as np
-from braitenberg01 import rgb_from_jpg_bytes
-from braitenberg02 import get_motor_left_matrix, get_motor_right_matrix
 
+import duckietown_code_utils as dcu
 from aido_schemas import (
     Context,
     DB20Commands,
@@ -22,6 +21,8 @@ from aido_schemas import (
     RGB,
     wrap_direct,
 )
+from mysolution import get_motor_left_matrix, get_motor_right_matrix
+from preprocessing import preprocess
 
 
 @dataclass
@@ -60,7 +61,7 @@ class BraitenbergAgent:
     def on_received_observations(self, context: Context, data: DB20Observations):
         logger.info("received", data=data)
         camera: JPGImage = data.camera
-        self.rgb = rgb_from_jpg_bytes(camera.jpg_data)
+        self.rgb = dcu.bgr_from_rgb(dcu.bgr_from_jpg(camera.jpg_data))
 
     def compute_commands(self) -> Tuple[float, float]:
         """ Returns the commands (pwm_left, pwm_right) """
@@ -75,10 +76,10 @@ class BraitenbergAgent:
             self.right = get_motor_right_matrix(shape)
 
         # let's take only the intensity of RGB
-        gray = np.sum(self.rgb, axis=2)
+        P = preprocess(self.rgb)
         # now we just compute the activation of our sensors
-        l = float(np.sum(gray * self.left))
-        r = float(np.sum(gray * self.right))
+        l = float(np.sum(P * self.left))
+        r = float(np.sum(P * self.right))
 
         # These are big numbers -- we want to normalize them.
         # We normalize them using the history

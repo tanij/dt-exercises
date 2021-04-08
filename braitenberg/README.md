@@ -19,13 +19,15 @@ You can test your agent using these modalities:
 2. `dts exercises test --duckiebot_name DUCKIEBOT` -- tries the agent on your robot.
 3. `dts exercises test --local --duckiebot_name DUCKIEBOT` -- tries the agent on your robot but running on the laptop.
 
+
+You can the evaluate your work using
+
+    dts challenges evaluate
+
 At the end, you should submit your work using
 
     dts challenges submit 
 
-You can submit as many times as you wish.
-
-TODO: performance to pass?
 
 
 
