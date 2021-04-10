@@ -57,7 +57,7 @@ RUN pip3 install --use-feature=2020-resolver -r ${REPO_PATH}/dependencies-py3.tx
 
 
 # copy the source code
-COPY ./exercise_ws "${REPO_PATH}/packages"
+COPY ./solution/ "${REPO_PATH}/packages"
 
 # build packages
 RUN . /opt/ros/${ROS_DISTRO}/setup.sh && \
