@@ -1,2 +1,13 @@
-Control Systems basics
+PID Control
 =====
+
+>> <<
+
+[ ]
+[ ]
+[ ]
+[ ]
+
+[explanation]
+
+[explanation]
