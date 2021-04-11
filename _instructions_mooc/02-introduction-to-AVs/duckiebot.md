@@ -26,7 +26,7 @@ At then end of this step you should have a correctly initialized, fully charged,
 
 [duckiebook-robot-assembly]: https://docs.duckietown.org/daffy/opmanual_duckiebot/out/assembling_duckiebot_db21m.html
 
-## Step 3: Duckiebot handling 101
+## Step 3: Duckiebot handling
 
 Before delving in the middle of things, let's learn how to perform fundamental operations for Duckiebot handling, such as powering it on and off, recharging it, and keeping the hardware up to date.  
 
@@ -42,10 +42,10 @@ At this point you should be able to:
 
 - find your Duckiebot on the network by typing:
 
-    > dts fleet discover
-    ~          |   Type    | Model |  Status  |  Internet  |  Dashboard  |  Hostname
-    ~     ---- | --------- | ----- | -------- | ---------- | ----------- | ----------
-    ~     argo | duckiebot | DB21M |  Ready   |    Yes     |     Up      | argo.local
+      > dts fleet discover
+      ~          |   Type    | Model |  Status  |  Internet  |  Dashboard  |  Hostname
+      ~     ---- | --------- | ----- | -------- | ---------- | ----------- | ----------
+      ~     argo | duckiebot | DB21M |  Ready   |    Yes     |     Up      | argo.local
 
 it might take a few seconds for the discovery to happen.
 

@@ -1,7 +1,7 @@
 >> Approximately, what is the value of autonomy in the case of a private car? <<
 
 ( ) $100 / year
-( ) $2,000 / year
+(x) $2,000 / year
 ( ) $36,000 / year
 ( ) $125,000 / year
 
@@ -10,7 +10,7 @@
 
 ( ) $100 / year
 ( ) $2,000 / year
-( ) $36,000 / year
+(x) $36,000 / year
 ( ) $125,000 / year
 
 
@@ -25,7 +25,7 @@
 (x) Level 5
 
 
->> What level of autonomy do you need to have autonomous private cars? <<
+>> What level of autonomy do you need to have for a taxi service? <<
 
 ( ) Level 0
 ( ) Level 1

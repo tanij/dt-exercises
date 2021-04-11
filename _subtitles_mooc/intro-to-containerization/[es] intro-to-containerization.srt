@@ -1,0 +1,440 @@
+﻿1
+00:00:00,200 --> 00:00:03,280
+Este vídeo es una breve introducción
+a la contenedorización con Docker.
+
+2
+00:00:03,480 --> 00:00:06,280
+. Un contenedor incluye una aplicación
+
+3
+00:00:06,480 --> 00:00:09,840
+y sus dependencias. Como un contenedor
+de transporte del mundo real,
+
+4
+00:00:10,040 --> 00:00:13,160
+pensar en los contenedores como
+fácil de transportar y manipular.
+
+5
+00:00:13,360 --> 00:00:14,840
+Docker es una tecnología particular de
+
+6
+00:00:14,840 --> 00:00:17,600
+contenedorización de contenedores.
+Dentro de un contenedor se incluye
+
+7
+00:00:17,760 --> 00:00:19,080
+el código de su aplicación y todas las
+
+8
+00:00:19,080 --> 00:00:21,760
+bibliotecas en tiempo de ejecución
+bibliotecas para las dependencias, además
+
+9
+00:00:21,960 --> 00:00:25,320
+a las herramientas del sistema y
+los archivos de configuración.
+
+10
+00:00:25,520 --> 00:00:26,960
+El resultado es que el contenedor
+
+11
+00:00:27,160 --> 00:00:29,480
+aplicación se ejecutará de forma idéntica
+
+12
+00:00:29,680 --> 00:00:32,720
+en cualquier host sin
+ninguna incompatibilidad.
+
+13
+00:00:32,920 --> 00:00:34,160
+Tradicionalmente, un sistema operativo
+
+14
+00:00:34,160 --> 00:00:36,320
+como Ubuntu tiene un gestor de
+paquetes que instala aplicaciones,
+
+15
+00:00:36,520 --> 00:00:38,280
+y las bibliotecas en tiempo de ejecución
+
+16
+00:00:38,280 --> 00:00:40,240
+bibliotecas compartidas
+entre aplicaciones.
+
+17
+00:00:40,440 --> 00:00:42,040
+Por lo tanto, las aplicaciones están
+
+18
+00:00:42,040 --> 00:00:44,920
+acopladas, porque tienen que
+compartir las mismas dependencias.
+
+19
+00:00:45,120 --> 00:00:49,160
+Usando la contenedorización, cada
+aplicación viene con sus bibliotecas.
+
+20
+00:00:49,360 --> 00:00:50,920
+Cada aplicación está aislada.
+
+21
+00:00:51,120 --> 00:00:54,600
+Ahora puede actualizar cada
+aplicación de forma independiente.
+
+22
+00:00:54,800 --> 00:00:56,520
+La contenedorización es
+diferente a la utilización de
+
+23
+00:00:56,720 --> 00:00:59,160
+máquinas virtuales. En un
+despliegue de máquinas virtuales,
+
+24
+00:00:59,360 --> 00:01:03,200
+tiene un sistema anfitrión que
+ejecuta un hipervisor como VMware.
+
+25
+00:01:03,400 --> 00:01:05,360
+El hipervisor reparte los recursos físicos
+
+26
+00:01:05,360 --> 00:01:08,080
+recursos físicos de hardware
+entre las máquinas virtuales.
+
+27
+00:01:08,280 --> 00:01:11,720
+Cada máquina virtual ejecuta
+su propio sistema operativo.
+
+28
+00:01:11,920 --> 00:01:15,720
+La desventaja de esto es que hay de los
+procesos no pueden ser controlados.
+
+29
+00:01:15,920 --> 00:01:18,560
+comunicarse a través de
+diferentes máquinas virtuales.
+
+30
+00:01:18,760 --> 00:01:20,600
+En cambio, la contenedorización tiene una
+
+31
+00:01:20,600 --> 00:01:22,880
+sobrecarga mínima y nos
+permite desplegar múltiples
+
+32
+00:01:23,080 --> 00:01:27,160
+aplicaciones para que puedan
+comunicarse entre sí.
+
+33
+00:01:27,360 --> 00:01:31,000
+Ahora es común desplegar aplicaciones
+web utilizando pilas de contenedores,
+
+34
+00:01:31,200 --> 00:01:34,280
+por ejemplo, puede desplegar su blog
+utilizando una pila que contenga
+
+35
+00:01:34,480 --> 00:01:39,880
+su propia instancia de una base de datos
+y su propia instancia de un servidor web.
+
+36
+00:01:40,080 --> 00:01:43,080
+Quiero darles una visión general
+del flujo de trabajo de Docker.
+
+37
+00:01:43,280 --> 00:01:44,600
+Hay dos comandos principales,
+
+38
+00:01:44,800 --> 00:01:46,280
+"docker build" y "docker run".
+
+39
+00:01:46,430 --> 00:01:49,680
+"Docker build" construye una imagen
+a partir de un archivo Docker.
+
+40
+00:01:49,880 --> 00:01:53,760
+Docker run crea un contenedor a
+partir de la imagen y lo ejecuta.
+
+41
+00:01:53,960 --> 00:01:57,000
+En las siguientes diapositivas,
+explicaré todos estos términos.
+
+42
+00:01:57,200 --> 00:01:58,600
+Deberías ejecutar "docker build" en un
+
+43
+00:01:58,600 --> 00:02:00,480
+directorio que contenga el
+código de la aplicación
+
+44
+00:02:00,680 --> 00:02:01,640
+y el Dockerfile.
+
+45
+00:02:01,840 --> 00:02:05,000
+El Dockerfile es la receta
+para construir la imagen.
+
+46
+00:02:05,200 --> 00:02:08,320
+Una imagen es un archivo con
+la aplicación empaquetada.
+
+47
+00:02:08,520 --> 00:02:10,400
+Dada una imagen, usando "docker run",
+
+48
+00:02:10,600 --> 00:02:13,160
+podemos producir muchos
+contenedores en ejecución.
+
+49
+00:02:13,360 --> 00:02:15,160
+Quiero mostrarte un ejemplo mínimo.
+
+50
+00:02:15,360 --> 00:02:19,240
+Puede que tengas un directorio con
+un script de Python llamado Hello.
+
+51
+00:02:19,320 --> 00:02:19,480
+py.
+
+52
+00:02:19,680 --> 00:02:24,320
+Este es un simple Dockerfile que crea
+una imagen que empaqueta el script.
+
+53
+00:02:24,520 --> 00:02:27,400
+En otro vídeo, veremos el
+significado de todos los comandos.
+
+54
+00:02:27,600 --> 00:02:31,000
+Por ahora, fíjate en que hay un comentario
+"FROM" que especifica la imagen base.
+
+55
+00:02:31,200 --> 00:02:34,320
+El comando "RUN" se utiliza para llamar
+al el gestor de paquetes e instalar
+
+56
+00:02:34,520 --> 00:02:35,360
+las dependencias.
+
+57
+00:02:35,560 --> 00:02:38,160
+Puede fijar las dependencias
+exactas que necesitas.
+
+58
+00:02:38,360 --> 00:02:40,040
+El comando "COPY" copia el script
+
+59
+00:02:40,240 --> 00:02:41,680
+dentro de la imagen.
+
+60
+00:02:41,880 --> 00:02:44,880
+"CMD" hace que el ejecutable por defecto.
+
+61
+00:02:45,080 --> 00:02:46,960
+Docket cuenta con un rico
+ecosistema de herramientas
+
+62
+00:02:47,160 --> 00:02:49,400
+para ejecutar y supervisar contenedores.
+
+63
+00:02:49,600 --> 00:02:51,360
+Portainer es un ejemplo de ello.
+
+64
+00:02:51,560 --> 00:02:52,880
+Es una interfaz que le indica qué
+
+65
+00:02:52,880 --> 00:02:54,800
+contenedores se están
+ejecutando en su sistema.
+
+66
+00:02:55,000 --> 00:02:58,360
+Aquí vemos qué contenedores se
+están ejecutando en un Duckiebot.
+
+67
+00:02:59,200 --> 00:03:01,280
+Un registro Docker es un servicio en línea
+
+68
+00:03:01,480 --> 00:03:04,560
+que contiene una base de datos de imágenes
+Docker que cualquiera puede utilizar.
+
+69
+00:03:04,760 --> 00:03:07,960
+También es posible ejecutar
+su propio registro.
+
+70
+00:03:08,160 --> 00:03:09,760
+Puedes pensar en un registro Docker como
+
+71
+00:03:09,960 --> 00:03:11,960
+una tienda de aplicaciones que contiene
+
+72
+00:03:12,160 --> 00:03:15,080
+aplicaciones que puedes
+instalar en tu ordenador.
+
+73
+00:03:15,280 --> 00:03:18,720
+El mayor registro es Dockerhub
+que es el que vamos a utilizar.
+
+74
+00:03:18,920 --> 00:03:20,440
+A menudo le diremos que utilice una
+
+75
+00:03:20,440 --> 00:03:22,920
+determinada imagen publicada
+en la cuenta de Duckietown.
+
+76
+00:03:23,120 --> 00:03:27,160
+Si tiene curiosidad, puede ir a y navegar
+por todas las imágenes disponibles.
+
+77
+00:03:27,360 --> 00:03:30,520
+Le mostraré cómo podemos compartir
+imágenes utilizando registros.
+
+78
+00:03:30,720 --> 00:03:32,880
+Hay dos flujos de trabajo diferentes, uno
+
+79
+00:03:33,080 --> 00:03:35,280
+para el desarrollador y
+otro para el usuario.
+
+80
+00:03:35,480 --> 00:03:37,080
+Un desarrollador utiliza el comando "
+
+81
+00:03:37,080 --> 00:03:39,520
+docker build" para construir
+una imagen en su ordenador.
+
+82
+00:03:39,720 --> 00:03:43,600
+El comando "Docker push"
+sube una copia al registro.
+
+83
+00:03:43,800 --> 00:03:46,040
+El usuario ejecuta el
+comentario "docker pulll"
+
+84
+00:03:46,240 --> 00:03:50,440
+para copiar una imagen en su ordenador,
+entonces "docker run" crea la ejecución
+
+85
+00:03:50,640 --> 00:03:53,320
+contenedores de la imagen.
+
+86
+00:03:53,520 --> 00:03:56,720
+Docker ha facilitado mucho la
+vida de los desarrolladores.
+
+87
+00:03:56,920 --> 00:03:58,440
+Los archivos Docker son una forma de hacer
+
+88
+00:03:58,440 --> 00:04:00,280
+que las construcciones
+producibles y documentadas.
+
+89
+00:04:00,480 --> 00:04:03,960
+Con Docker, usted tiene el control
+total de su entorno de ejecución y
+
+90
+00:04:04,160 --> 00:04:06,080
+no tienen ninguna incompatibilidad.
+
+91
+00:04:06,280 --> 00:04:10,120
+Sin embargo, las aplicaciones
+pueden comunicarse.
+
+92
+00:04:10,320 --> 00:04:13,360
+Por último, usted tiene un control
+control del uso de los recursos.
+
+93
+00:04:13,560 --> 00:04:17,520
+Hay formas de limitar la CPU y la RAM
+que un contenedor puede utilizar.
+
+94
+00:04:17,720 --> 00:04:19,360
+También es posible limitar la utilización
+
+95
+00:04:19,360 --> 00:04:21,920
+de la red la utilización de la
+red, lo que aumenta la seguridad.
+

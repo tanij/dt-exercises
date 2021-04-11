@@ -7,6 +7,15 @@ We have made every effort to keep the number of accounts and requirements to an 
 This document summarizes the steps that you need to do. We will write here on edX _a  synthetic summary_ for the steps to take. Usually the details are in one of our Duckiebooks at the site [docs.duckietown.org/daffy/](https://docs.duckietown.org/daffy/).
 
 
+Change history:
+
+- March 24, 2021:
+  
+    - We clarified the Checkpoint step related to `docker login`.  
+    - Removed mention of duckietown.org profile link because it might take some time to appear.
+
+
+
 ## Step 1: Make all the accounts first!
 
 At some point, in the next steps, you will need the following accounts:
@@ -60,15 +69,11 @@ If you set up a Github account and private key, you should be able to run this c
     > ssh -T git@github.com
     Hi GITHUB_USERNAME! You've successfully authenticated, but GitHub does not provide shell access.
 
-If you have a valid DockerHub account then you can run
+If you have a valid DockerHub account then you can login as follows.
 
     > docker login -u DOCKER_USERNAME
     Password:
-
-The second time it will just tell you:
-
-    Authenticating with existing credentials...
-    Login Succeeded
+ 
 
 If the Duckietown Shell was installed, then you can run a command like this:
 
@@ -81,8 +86,7 @@ If you correctly configured the token, then this command should work:
     ~
     ~                     ID: YOUR ID
     ~                   name: YOUR NAME
-    ~                  login: YOUR DUCKIETOWN ACCOUNT
-    ~                profile: LINK TO YOUR DUCKIETOWN PROFILE
+    ~                  login: YOUR DUCKIETOWN ACCOUNT 
     ~
     ~         You can find the list of your submissions at the page:
     ~
