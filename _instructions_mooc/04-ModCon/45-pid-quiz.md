@@ -112,3 +112,12 @@ We're not sure about the correct answer as of today, but it is "common knowledge
 
 K.J. Åström, T. Hägglund, The future of PID control, Control Engineering Practice, Volume 9, Issue 11, 2001, Pages 1163-1175, ISSN 0967-0661, https://doi.org/10.1016/S0967-0661(01)00062-4.
 [explanation]
+
+>> Finally: which one is better, Star Wars or Star Trek? <<
+
+(x) Star Trek
+(x) Star Trek
+
+[explanation]
+Star Trek is like math. The only reason one can't fall in love with it is because it is not understood. And the only reason for which is not understood is because it not taught well enough. And the only reason for which this question is here, is because Dr. Censi needs to spend more time watching Star Trek. Peace, and long life!
+[explanation]
