@@ -119,5 +119,5 @@ K.J. Åström, T. Hägglund, The future of PID control, Control Engineering Prac
 (x) Star Trek
 
 [explanation]
-Star Trek is like math. The only reason one can't fall in love with it is because it is not understood. And the only reason for which is not understood is because it not taught well enough. And the only reason for which this question is here, is because Dr. Censi needs to spend more time watching Star Trek. Peace, and long life!
+Star Trek is like math. The only reason one can't fall in love with it is because it is not understood. And the only reason for which is not understood is because it not explained well enough. And the only reason for which this question is here, is because Andrea Censi needs to spend more time watching Star Trek, and less playing with robots! Peace, and long life.
 [explanation]
