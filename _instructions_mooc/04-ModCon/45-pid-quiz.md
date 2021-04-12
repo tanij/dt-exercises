@@ -4,7 +4,7 @@ PID Control
 >> How do you make a brick wall fly? <<
 
 [ ] I didn't get it before, I don't get it now.
-[ ]  Brick walls fall, they don't fly.
+[ ] Brick walls stand or fall, they don't fly.
 [ ] By dividing it by a brick wall and multiplying by an airplane.
 [x] By dividing it by exactly the same brick wall and multiplying by an airplane.
 
@@ -15,7 +15,7 @@ The flying brick wall example is an attempt at showing the power of feed-forward
 >> How are brick walls related to PID control? <<
 
 [ ] The instructor is trying to be funny.
-[x] Making the point that model-based controller design is the standard approach.
+[x] Making the point that model-based controller design is a desirable approach.
 [x] Making the point that PID control is not the best approach to control a plant.
 [ ] Making the point that aerospace engineering uses more advanced control systems than the self-driving car industry.
 [x] Making the point that there is a difference between theory and practice.
@@ -24,21 +24,21 @@ The flying brick wall example is an attempt at showing the power of feed-forward
 Feedforward control, ideally, is the best control approach. Unfortunately, more often than not, it does not work in the real world and is, at most, used in conjunction with feedback controllers. PID happens to not even be the second-best control approach, which is state feedback. They why PID?
 [explanation]
 
->> Why are looking at PID control? <<
+>> Why PID control? <<
 
 [x] It is popular.
 [x] It is intuitive.
 [x] It is simple to implement and tune.
 [x] It is computationally efficient.
-[x] It is the first thing to try if you are a control systems person. Never overengineer solutions!
+[x] It is the first thing to try if you are a control systems person. Never over engineer solutions!
 [x] It works (well enough)!
 [ ] With enough patience, optimal performance can be achieved.
 [ ] With enough patience, constraints are guaranteed to be respected.
 [ ] It never requires a model of the controlled plant.
-[x] I can be implemented without a model of the plant.
+[x] It can be implemented without a model of the plant.
 
 [explanation]
-PID control is the most popular controller for many good reasons. It just happens not to be the best controller, especially when the controlled systems become more complex (MIMO, nonlinear, coupled, etc.).
+PID control is the most popular controller for many good reasons. It just happens not to be the "best" (most resrouce efficient, most performant, most robust, etc.) controller, especially when the controlled systems become more complex (MIMO, nonlinear, coupled, etc.).
 [explanation]
 
 >> For what reason are we not using the plant model to design our PID controller? <<
@@ -49,7 +49,7 @@ PID control is the most popular controller for many good reasons. It just happen
 [ ] Because there are no ways to tune PID coefficients based deductively.
 
 [explanation]
-We are striving to offer a sequence of approaches to solve tasks of increasing complexity. If the task defined is to, e.g., drive a robot straight, there is no need to overcomplicate things. For a more formal approach to PID control design, we would need to introduce concepts like linear time-invariant (LTI) system, state-space representations, transfer functions, harmonic analysis, and loop shaping. For those of you interested in delving deeper, check out the provided "Thinking Activities" section of this module!
+We discuss a sequence of approaches to solving tasks of increasing complexity. If the task defined is to, e.g., drive a robot straight, there is no need to overcomplicate things. For a more formal approach to PID control design, we would need to introduce concepts like linear time-invariant (LTI) system, state-space representations, transfer functions, harmonic analysis, and loop shaping. For those of you interested in delving deeper, check out the provided "Thinking Activities" section of this module!
 [explanation]
 
 >> P, I, and D, to what? <<
@@ -119,5 +119,5 @@ K.J. Åström, T. Hägglund, The future of PID control, Control Engineering Prac
 (x) Star Trek
 
 [explanation]
-Star Trek is like math. The only reason one can't fall in love with it is because it is not understood. And the only reason for which is not understood is because it not explained well enough. And the only reason for which this question is here, is because Andrea Censi needs to spend more time watching Star Trek, and less playing with robots! Peace, and long life.
+Star Trek is like math. The only reason one can't fall in love with it is because it is not well understood. The only reason for which this question is here is because Andrea Censi should to spend more time watching Star Trek, and less playing with robots! Live long and prosper.
 [explanation]
