@@ -9,7 +9,7 @@ Control Systems basics
 [x] The perception, planning, and control modules
 
 [explanation]
-For historical reasons, there is some ambiguity on the use of the term "control systems" or "controls". Technically it would relate only to the design of the actual controller block, but it has become to be a synecdoche for the whole agent design.
+For historical reasons, there is some ambiguity on the use of the term "control systems" (or just "controls"). Technically it would relate only to the design of the actual controller block, but it has become to be a synecdoche for the whole agent design.
 [explanation]
 
 
@@ -26,16 +26,16 @@ Systems have their natural dynamics, fundamentally dictated by the laws of physi
 
 >> Assuming we can measure quantities of interest and drive the system through actuators, are all systems controllable? <<
 
-[ ] In principle, yes, but some will be (significantly) more complicated and costly in terms of resources than others, so in practice not always.
+[ ] In principle, yes, but some will be (significantly) more complicated and costly than others, so in practice not always.
 [ ] In principle yes, but only through more advanced controllers (not covered in this course).
-[ ] Not yet, because we have not discovered sufficiently advanced controllers yet. AI might solve this challenge.
+[ ] No, because we have not discovered sufficiently advanced controllers yet. AI might solve this challenge.
 [x] No, because some systems simply can't be controlled.
 [ ] It depends on our understanding/ability to model the system mathematically.
 
 [explanation]
 "You can't make the Enterprise out of a car."
 
-There are intrinsic limitations to our ability to drive a given system's evolution in time. It depends on the choice of actuators (e.g., let's add a warp drive to that Sedan!), as well as the _system's behavior_. The latter is given by the laws of physics. In the example above, we would first need to install inertial dampeners to our car to make things happen (which would imply having to change the laws of physics).
+There are intrinsic limitations to our ability to drive a given system's evolution in time. It depends on the choice of actuators (e.g., let's add a warp drive to that sedan!), as well as the _system's behavior_. The latter is given by the laws of physics. In the example above, we would first need to install inertial dampeners to our car to make things happen (which would imply having to change the laws of physics).
 
 This notion is technically known as _controllability_.        
 [explanation]
@@ -44,7 +44,7 @@ This notion is technically known as _controllability_.
 
 [x] Lines of code.
 [x] One or more mechanical devices.
-[ ] Human beings.
+[ ] Human beings doing things.
 
 [explanation]
 A controller is typically a _logic_, that outputs _decisions_. These decisions are translated to the real world through actuators. It is actually possible to create control logics with analog devices too (see example below).
@@ -84,7 +84,7 @@ According to the definition of stability provided (BIBO stability), a system goe
 [x] Tracking error: how closely a reference signal is followed.
 
 [explanation]
-These are all examples of good performance criteria. Each could be formalized and quantified, but it would require a mathematical background outside the scope of this course. Please visit the "Thinking activities" module for pointers to learn the details of this (in particular, the Controls I course).
+These are all examples of good performance criteria. Each could be formalized and quantified, but it would require a mathematical background outside the scope of this course. Please visit the "Thinking activities" module to learn more about this (in particular, the Controls I course).
 [explanation]
 
 >> What does a robust controller guarantee? <<
@@ -95,7 +95,7 @@ These are all examples of good performance criteria. Each could be formalized an
 [ ] Stability and performance despite limited access to resources (e.g., the energy available).
 
 [explanation]
-Model uncertainty is defined as a "bounded variation" of the parameters describing the controlled system's model. Choosing completely different sensors (e.g., a camera instead of the planned pressure sensor for altitude control of a hot air balloon) might induce a completely different structure in the plant's mode.
+Model uncertainty is defined as a "bounded variation" of the parameters describing the controlled system's model. Choosing completely different sensors (e.g., a camera instead of the planned pressure sensor for altitude control of a hot air balloon) might induce a completely different structure in the plant's model, which wouldn't not therefore be a "bounded" variation.
 [explanation]
 
 >> What could count as "bounded variation" in the system's behavior of a Duckiebot?  <<
@@ -106,7 +106,7 @@ Model uncertainty is defined as a "bounded variation" of the parameters describi
 [ ] Not placing a Duckie on top of the Duckiebot while driving.
 
 [explanation]
-When it comes to duckies, we lose it. Duckies are non-functional _yet essential_ to get everything working!
+When it comes to Duckies, we lose it. Duckies are non-functional _yet essential_ to get everything working!
 [explanation]
 
 Open vs. closed-loop control
@@ -122,7 +122,7 @@ Open vs. closed-loop control
 [ ] This system is not controlled.
 
 [explanation]
-To keep the fire going (and generate heat), one needs to add, e.g., wood. Typical fireplaces are open-loop controlled, as wood is added manually. (There is a chance that a mechanical system not in the picture is throwing wood in the fireplace once the temperature in the room is too high).
+To keep the fire going (and generate heat), one needs to add, e.g., wood. Typical fireplaces are open-loop controlled, as wood is added manually. There is a slim chance that a mechanical system not in the picture is throwing wood in the fireplace once the temperature in the room is too high.
 [explanation]
 
 <img src="/static/saloon-door.jpg" style="width: 40%" alt="fireplace"/>

@@ -3,10 +3,10 @@ Modeling of a differential drive robot
 
 >> What is the purpose of mathematical modeling? <<
 
-[ ] To truthfully represent the real physical processes ongoing.
-[x] To predict the future.
-[ ] To understand the influence of various terms on the variables of interest.
-[ ] To obtain a useful infrastructure to solve problems.
+[ ] To truthfully represent the real physical processes ongoing in the system.
+[x] To predict the future behavior of the system.
+[x] To understand the influence of various parameters on the variables of interest to us.
+[x] To obtain an actionable mathematical infrastructure to analyze and solve problems.
 
 [explanation]
 "All models are wrong, but some are useful." (-- George Box, 1919-2013). The point of modeling is to obtain something useful, not to describe the truth. Nobody knows what the truth is. All physics is about creating frameworks that justify observations. All is "as if" the framework were a truthful representation, but nobody knows exactly what is going on.
@@ -33,7 +33,7 @@ We have derived a kinematics model for a differential drive vehicle. Kinematics 
 >> Why is the kinematics model of the Duckiebot wrong? <<
 
 [x] The Duckiebot has a mass!
-[x] The Duckiebot has friction!
+[x] The Duckiebot has friction(s)!
 [x] The Duckiebot is not symmetric!
 [ ] The Duckiebot is not a differential drive vehicle!
 
@@ -71,12 +71,12 @@ The kinematic model captures the essence of the vehicle driving experience given
 >> What is a practical implication of the no slipping assumption made? <<
 
 [ ] Only drive on the Duckietown road tiles.
-[ ] Change the robot wheels until it doesn't slip.
+[ ] Change the robot wheels so it doesn't slip on any surface.
 [x] Lower the robot's speed until it doesn't slip.
 [ ] Drive as fast as you can and try to "break" the model.
 
 [explanation]
-While the slipping indeed is a function of the material of the wheel and the surface on which we are driving, the best thing we can do to make our model still preserves predictive power is to lower the speed of the robot until the wheels do not slip.
+While the slipping indeed is a function of the materials of the wheel and the surface on which we are driving, the best thing we can do to make our model still preserves predictive power is to lower the speed of the robot until the wheels do not slip.
 [explanation]
 
 >> Looking at the model, what is the expected outcome of having a loose battery on the Duckiebot? <<

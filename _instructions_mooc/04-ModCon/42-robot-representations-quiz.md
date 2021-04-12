@@ -23,12 +23,12 @@ Autonomous robots accomplish tasks. Robots need to be able to estimate how succe
 Which representation best suits a given task is typically determined by the designer, as they belong to the agent side of the autonomy loop.
 [explanation]
 
->> What are examples of valid representations for a robot? <<
+>> What are examples of valid representations in the Duckietown world? <<
 
-[x] GPS coordinates.
-[x] Duckietown-tile spatial discretization.
-[x] Eye-in-sky point of view.
-[x] Robot point of view.
+[x] Spherical topography, GPS coordinates.
+[x] Duckietown-tile gridmap (each city tile is a cell).
+[x] Road network graph (nodes are intersections, edges are drivable roads).
+[x] Feature-based map, where features could be line segments, traffic signs, etc.
 
 [explanation]
 All these representations might be useful for different tasks. Not all of these examples would work equally well for a given task. E.g., GPS localization might not be sufficiently accurate to allow a Duckiebot to avoid a Duckie on the road.
@@ -36,13 +36,13 @@ All these representations might be useful for different tasks. Not all of these 
 
 >> What do all representations have in common? <<
 
-[ ]  The computational efficiency.
-[ ]  The perception algorithms used.
-[ ]  The planning algorithms used.
+[ ] The computational efficiency.
+[ ] The perception algorithms used.
+[ ] The planning algorithms used.
 [x] The need for a reference frame.
 
 [explanation]
-Representations require defining a reference system, whether the robot, the map, the world, etc.
+Representations require defining a reference system, whether the robot, the world reference frame, Greenwich meridian, etc.
 [explanation]
 
 >> How do we quantify representations? <<
@@ -57,6 +57,7 @@ Representations require defining a reference system, whether the robot, the map,
 [ ] Robots using that parametrization will successfully accomplish their tasks.
 [x] Estimating present states can be done with minimal memory and computation.  
 [x] The values of the state variables at present completely summarize the history of the state.
+[x] The future state variables are independent of the past, given the present.
 
 [explanation]
 The Markov assumption implies that the present completely summarizes the history of inputs and evolution of the state., so it's no longer needed to keep memory of it.
@@ -76,7 +77,7 @@ The Markov assumption implies that the present completely summarizes the history
 [ ] It's impossible to tell with the provided information.
 
 [explanation]
-The pose is calculated w.r.t. different reference frames, e.g., a fixed world frame or the robot frame, which is "attached" to the robot and moves with it. A duckie on the road, therefore, might be at a certain pose w.r.t. the Duckiebot, but a different one w.r.t. the world frame.
+The pose cab calculated w.r.t. different reference frames, e.g., a fixed world frame or the robot frame, which is "attached" to the robot and moves with it. A Duckie on the road, therefore, might be at a certain pose w.r.t. the Duckiebot, but a different one w.r.t. the world frame.
 [explanation]
 
 >> What is special about the rotation matrix?<<
@@ -92,22 +93,22 @@ Rotation matrices are orthogonal, which implies that their inverse is equal to t
 
 >> How can we express the pose of any point in the world?<<
 
-[  ] Through elements of the special Orthogonal group.
-[  ] Through rotations.
+[ ] Through elements of the special Orthogonal group.
+[ ] Through rotations.
 [x] Through elements of the special Euclidean group.
-[  ] Through translations.
+[ ] Through translations.
 
 [explanation]
-The special Euclidean group includes matrices, that include in their structure both rotations and translations, i.e., all the information needed to express poses w.r.t. different reference frames.
+The special Euclidean group includes matrices, that include in their structure both rotations matrices and translation vectors, i.e., all the information needed to express poses w.r.t. different reference frames.
 [explanation]
 
 >> Why do we introduce SE(2)?<<
 
-[  ] For the sake of completeness.
-[  ] To provide a structure to analyze n-dimensional representations.
-[  ] Because they're the only way to express poses w.r.t. different reference frames.
+[ ] For the sake of completeness.
+[ ] To provide a structure to analyze n-dimensional representations.
+[ ] Because they're the only way to express poses w.r.t. different reference frames.
 [x] Because its elements allow to "move between frames" with matrix multiplication operations.
 
 [explanation]
-Matrix multiplications are mathematical structures that can be treated efficiently. For example, relations can be inverted easily and "daisy-chained" intuitively (see activity for a practical example!).
+Matrix multiplications are mathematical structures that can be treated efficiently. For example, relations can be inverted easily and "daisy-chained" intuitively.
 [explanation]
